@@ -1,0 +1,40 @@
+11:19:42 AM
+Source : Portal.Controllers.SiteConsumptionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+--------------------------------------------------------------------------------------------------------------------------------
+
+11:31:14 AM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : OnException
+Error Line No : 0
+Exception Type : Microsoft.Reporting.WebForms.LocalProcessingException
+Details: An error occurred during local report processing.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:47:15 AM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : OnException
+Error Line No : 0
+Exception Type : Microsoft.Reporting.WebForms.LocalProcessingException
+Details: An error occurred during local report processing.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:37:42 PM
+Source : Portal.Controllers.SiteConsumptionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:58:14 PM
+Source : Portal.Controllers.SiteConsumptionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+

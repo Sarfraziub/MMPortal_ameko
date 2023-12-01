@@ -1,0 +1,46 @@
+﻿@model List<Portal.Core.ViewModel.ReorderPointProductCountViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div  style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblCompanyList">
+            <thead>
+                <tr >
+                    <th>Product</th>
+                    <th>ProductCode</th>
+                    <th>ProductShortDesc</th>
+                    <th>ProductFullDesc</th>
+                    <th>Reorder Qty</th>
+                    <th>Available Stock</th>
+
+                </tr>
+
+            </thead>
+            <tbody style="border:1px solid #ccc;">
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td>@item.ProductName</td>
+                        <td>@item.ProductCode</td>
+                        <td>@item.ProductShortDesc</td>
+                        <td>@item.ProductFullDesc</td>
+                        <td>@item.ReorderQty</td>
+                        <td>@item.AvailableStock</td>
+                    </tr>
+                }
+              
+            </tbody>
+        </table>
+    </div>
+
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Product Reorder not pending</h3>
+}

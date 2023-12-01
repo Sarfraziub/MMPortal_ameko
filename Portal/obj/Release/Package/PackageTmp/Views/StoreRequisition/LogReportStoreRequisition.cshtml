@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "List Product Site Consumption";
+    Layout = "~/Views/Shared/_InventoryLayout.cshtml";
+}
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<style>
+      .ui-autocomplete {
+         max-height: 500px;
+         overflow-y: auto;
+         z-index:999999;        
+         overflow-x: hidden;
+     }
+     /* IE 6 doesn't support max-height
+    * we use height instead, but this forces the menu to always be this tall
+    */
+     * html .ui-autocomplete {
+         height: 500px;
+     }
+</style>
+<div class="row top-head">
+    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/InventoryDashboard">Inventory</a> >>Log Report Store Requisition</b></p></div>
+</div>
+<section>
+    <form action="#" id="frmListProductBOM" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+        <div class="row inner">
+            <div class="message">
+
+            </div>
+            <div class="col-md-12 ftop">
+                <div class="form-group col-md-6">
+                    <label for="ddlRequisition" class="col-sm-4 control-label">Select Requisition</label>
+                    <div class="col-sm-8">
+                        <select id="ddlRequisition" name="ddlRequisition" onchange="ChangeSearchRequisition(); GenerateReportParameters();" tabindex="4" class="form-control">
+                            <option selected="selected" value="All Requisitions">All Requisitions</option>
+                            <option value="With Requisitions No">With Requisition No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group  col-md-6" style="display:none;" id="divRequisitionNo">
+                    <label for="txtRequisitionNo" class="col-sm-4 control-label">Requisition No.</label>
+                    <div class="col-sm-8 ">
+                        <input class="form-control" id="txtRequisitionNo" name="txtRequisitionNo" tabindex="1" placeholder="Search with Requisition No." type="text" maxlength="50" />
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtFromDate" class="col-sm-4 control-label">Requisition From Date</label>
+                    <div class="col-sm-8 ">
+                        <input class="form-control" id="txtFromDate" name="txtFromDate" tabindex="5" value="@ViewData["fromDate"]" type="text" maxlength="50" />
+                        <input id="hdnFromDate" name="hdnFromDate" value="@ViewData["fromDate"]" type="hidden" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtToDate" class="col-sm-4 control-label">To Date</label>
+                    <div class="col-sm-8 ">
+                        <input class="form-control" id="txtToDate" name="txtToDate" tabindex="6" value="@ViewData["toDate"]" type="text" maxlength="50" />
+                        <input id="hdnToDate" name="hdnToDate" value="@ViewData["toDate"]" type="hidden" />
+                    </div>
+                </div>
+            </div>
+            @*<div class="col-md-12 ftop">
+                <div class="form-group col-md-6">
+                    <label for="txtCustomerName" class="col-sm-4 control-label">Customer&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="txtCustomerName" name="txtCustomerName" tabindex="3" placeholder="Enter Customer Name" type="text" />
+                        <input id="hdnCustomerId" type="hidden" value="" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="ddlCustomerBranch" class="col-sm-4 control-label">Customer Branch&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlCustomerBranch" name="ddlCustomerBranch" tabindex="4" class="form-control"></select>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtFromDate" class="col-sm-4 control-label">Consumption From Date</label>
+                    <div class="col-sm-8 ">
+                        <input class="form-control" id="txtFromDate" name="txtFromDate" tabindex="5" value="@ViewData["fromDate"]" type="text" maxlength="50" />
+                        <input id="hdnFromDate" name="hdnFromDate" value="@ViewData["fromDate"]" type="hidden" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtToDate" class="col-sm-4 control-label">Consumption To Date</label>
+                    <div class="col-sm-8 ">
+                        <input class="form-control" id="txtToDate" name="txtToDate" tabindex="6" value="@ViewData["toDate"]" type="text" maxlength="50" />
+                        <input id="hdnToDate" name="hdnToDate" value="@ViewData["toDate"]" type="hidden" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                 <div class="form-group col-md-6">
+                     <label for="txtProductName" class="col-sm-4 control-label">Product Name&nbsp;<span class="Mandatory">(*)</span></label>
+                     <div class="col-sm-8">
+                         <input class="form-control" id="txtProductName" name="txtProductName" tabindex="14" placeholder="Enter Product Name" type="text" maxlength="100" />
+                         <input id="hdnProductId" type="hidden" value="0" />
+                         <input id="hdnSequenceNo" type="hidden" value="0" />
+                     </div>
+                 </div>
+                <div class="col-md-6">
+
+                </div>
+             </div>*@
+             <div class="row col-sm-6 col-lg-12 col-md-12">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                                         
+                        <a class="btn btn-success" alt="Export" tabindex="10" id="btnExport" onclick="OpenPrintPopup();" border="0">Log Report Store Requisition</a>                   
+                   
+                </div>
+               
+            </div>
+          
+        </div>    
+        <div class="modal fade" id="printModel" role="dialog">
+            <div class="modal-dialog  modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Log Report Store Requisition</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="ddlPrintOption" class="col-sm-4 control-label">Report Option</label>
+                            <div class="col-sm-8">
+                                <select id="ddlPrintOption" name="ddlPrintOption" onchange="ShowHidePrintOption()" tabindex="1" class="form-control">
+                                    <option selected="selected" value="PDF">PDF</option>
+                                    <option value="Excel">Excel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-success" target="_blank" href="#" id="btnPdf">Print</a>
+                        <a class="btn btn-success" style="display:none;" target="_blank" href="#" id="btnExcel">Print</a>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="alertModel" role="dialog">
+            <div class="modal-dialog  modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="modelHeader"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modelText"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary  btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</section>
+<script src="~/Scripts/StoreRequisition/LogReportStoreRequisition.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/paging.js"></script>
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+
+</script>

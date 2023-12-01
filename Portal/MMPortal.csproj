@@ -1,0 +1,3340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59BF9E47-E080-4B3D-9CCA-B424A67CEC87}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Portal</RootNamespace>
+    <AssemblyName>Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.Design.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.WinForms.12.0.2402.15\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Portal.Common">
+      <HintPath>..\Portal.Common\bin\Debug\Portal.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Portal.DAL">
+      <HintPath>..\Portal.DAL\bin\Debug\Portal.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CustomerSiteMRNController .cs" />
+    <Compile Include="Controllers\CustomerSiteMRNRegisterController.cs" />
+    <Compile Include="Controllers\DailyExpensesController.cs" />
+    <Compile Include="Controllers\EscalationMasterController.cs" />
+    <Compile Include="Controllers\SupervisorDashboardController.cs" />
+    <Compile Include="Controllers\MasterDashboardController.cs" />
+    <Compile Include="Controllers\PayHeadGLMappingController.cs" />
+    <Compile Include="Controllers\PayrollMonthlyAdjustmentController.cs" />
+    <Compile Include="Controllers\PayrollOtherEarningDeductionController.cs" />
+    <Compile Include="Controllers\SalaryReportController.cs" />
+    <Compile Include="Controllers\SiteDeliveryChallanController.cs" />
+    <Compile Include="Controllers\EmployeeAttendanceController.cs" />
+    <Compile Include="Controllers\CustomMailController.cs" />
+    <Compile Include="Controllers\ManufacturerController.cs" />
+    <Compile Include="Controllers\SiteProductSerialController.cs" />
+    <Compile Include="Controllers\SiteProductOpeningStockController .cs" />
+    <Compile Include="Controllers\ProductSerialController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\PurchaseQuotationController.cs" />
+    <Compile Include="Controllers\PurchaseReturnController.cs" />
+    <Compile Include="Controllers\AttendanceController.cs" />
+    <Compile Include="Controllers\SaleReturnController.cs" />
+    <Compile Include="Controllers\EmailTemplateController.cs" />
+    <Compile Include="Controllers\EmployeeClearanceProcessController.cs" />
+    <Compile Include="Controllers\PMS_AssessmentController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\SeparationOrderController.cs" />
+    <Compile Include="Controllers\ExitInterviewController.cs" />
+    <Compile Include="Controllers\ClearanceTemplateController.cs" />
+    <Compile Include="Controllers\SeparartionApplicationController.cs" />
+    <Compile Include="Controllers\EmployeeLeaveDetailController.cs" />
+    <Compile Include="Controllers\PayrollProcessPeriodController.cs" />
+    <Compile Include="Controllers\PMSGoalController.cs" />
+    <Compile Include="Controllers\PMSGoalCategoryController.cs" />
+    <Compile Include="Controllers\EmployeeClaimApplicationController.cs" />
+    <Compile Include="Controllers\EmployeeLeaveApplicationController.cs" />
+    <Compile Include="Controllers\PMS_EmployeeAppraisalReviewController.cs" />
+    <Compile Include="Controllers\PMS_EmployeeAppraisalTemplateMappingController.cs" />
+    <Compile Include="Controllers\PMS_PerformanceCycleController.cs" />
+    <Compile Include="Controllers\PMS_SectionController.cs" />
+    <Compile Include="Controllers\PMS_AppraisalTemplateController.cs" />
+    <Compile Include="Controllers\SeparationCategoryController.cs" />
+    <Compile Include="Controllers\SeparationClearListController.cs" />
+    <Compile Include="Controllers\AdvanceTypeController.cs" />
+    <Compile Include="Controllers\AppointmentController.cs" />
+    <Compile Include="Controllers\InterviewController.cs" />
+    <Compile Include="Controllers\EmployeeTravelAppController.cs" />
+    <Compile Include="Controllers\EmployeeAdvanceAppController.cs" />
+    <Compile Include="Controllers\EmployeeAssetApplicationController.cs" />
+    <Compile Include="Controllers\EmployeeLoanApplicationController.cs" />
+    <Compile Include="Controllers\ApplicantController.cs" />
+    <Compile Include="Controllers\RoasterControlle.cs" />
+    <Compile Include="Controllers\ResumeSourceController.cs" />
+    <Compile Include="Controllers\ShiftController.cs" />
+    <Compile Include="Controllers\SINRegisterController.cs" />
+    <Compile Include="Controllers\SaleReturnRegisterController.cs" />
+    <Compile Include="Controllers\SiteConsumptionController.cs" />
+    <Compile Include="Controllers\SizeController.cs" />
+    <Compile Include="Controllers\PurchaseIndentController.cs" />
+    <Compile Include="Controllers\InternalRequisitionController.cs" />
+    <Compile Include="Controllers\SiteLedgerController.cs" />
+    <Compile Include="Controllers\StoreRequisitionController.cs" />
+    <Compile Include="Controllers\FabricationController.cs" />
+    <Compile Include="Controllers\UnitController.cs" />
+    <Compile Include="Controllers\WorkOrderController.cs" />
+    <Compile Include="Controllers\ThoughtController.cs" />
+    <Compile Include="Controllers\SINController.cs" />
+    <Compile Include="Controllers\VerificationAgencyController.cs" />
+    <Compile Include="Controllers\LoanTypeController.cs" />
+    <Compile Include="Controllers\TravelTypeController.cs" />
+    <Compile Include="Controllers\HolidayCalenderController.cs" />
+    <Compile Include="Controllers\AdditionalTaxController.cs" />
+    <Compile Include="Controllers\ChasisSerialMappingController.cs" />
+    <Compile Include="Controllers\CTCTypeController.cs" />
+    <Compile Include="Controllers\LeaveTypeController.cs" />
+    <Compile Include="Controllers\ReligionController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
+    <Compile Include="Controllers\ShiftTypeController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
+    <Compile Include="Controllers\ClaimTypeController.cs" />
+    <Compile Include="Controllers\ActivityCalenderController.cs" />
+    <Compile Include="Controllers\HolidayTypeController.cs" />
+    <Compile Include="Controllers\AssetTypeController.cs" />
+    <Compile Include="Controllers\PositionLevelController.cs" />
+    <Compile Include="Controllers\InterviewTypeController.cs" />
+    <Compile Include="Controllers\CalenderController.cs" />
+    <Compile Include="Controllers\PositionTypeController.cs" />
+    <Compile Include="Controllers\JobOpeningController.cs" />
+    <Compile Include="Controllers\PurchaseVoucherController.cs" />
+    <Compile Include="Controllers\SaleVoucherController.cs" />
+    <Compile Include="Controllers\ResourceRequisitionController.cs" />
+    <Compile Include="Controllers\TBDrillDownController.cs" />
+    <Compile Include="Controllers\PLStatementPrintController.cs" />
+    <Compile Include="Controllers\SLTrialBalancePrintController.cs" />
+    <Compile Include="Controllers\GLTrialBalancePrintController.cs" />
+    <Compile Include="Controllers\SubLedgerPrintController.cs" />
+    <Compile Include="Controllers\GeneralLedgerPrintController.cs" />
+    <Compile Include="Controllers\BookPrintController.cs" />
+    <Compile Include="Controllers\CityController.cs" />
+    <Compile Include="Controllers\CompanyBranchController .cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\CountryController.cs" />
+    <Compile Include="Controllers\CustomerFormController.cs" />
+    <Compile Include="Controllers\CustomerFormRegisterController.cs" />
+    <Compile Include="Controllers\CreditNoteVoucherController.cs" />
+    <Compile Include="Controllers\GLController.cs" />
+    <Compile Include="Controllers\CostCenterController.cs" />
+    <Compile Include="Controllers\DebitNoteVoucherController.cs" />
+    <Compile Include="Controllers\JournalVoucherController.cs" />
+    <Compile Include="Controllers\ProductGLMappingController.cs" />
+    <Compile Include="Controllers\SLController.cs" />
+    <Compile Include="Controllers\SLDetailController.cs" />
+    <Compile Include="Controllers\UploadUtilityController.cs" />
+    <Compile Include="Controllers\UserEmailSettingController.cs" />
+    <Compile Include="Controllers\VendorFormController.cs" />
+    <Compile Include="Controllers\PurchaseSummaryController.cs" />
+    <Compile Include="Controllers\SaleInvoiceSummaryController.cs" />
+    <Compile Include="Controllers\VendorPaymentRegisterController.cs" />
+    <Compile Include="Controllers\CustomerPaymentRegisterController.cs" />
+    <Compile Include="Controllers\DeliveryChallanController.cs" />
+    <Compile Include="Controllers\MRNRegisterController.cs" />
+    <Compile Include="Controllers\SaleInvoiceRegisterController.cs" />
+    <Compile Include="Controllers\STRRegisterController.cs" />
+    <Compile Include="Controllers\STNRegisterController.cs" />
+    <Compile Include="Controllers\STNController.cs" />
+    <Compile Include="Controllers\STRController.cs" />
+    <Compile Include="Controllers\PurchaseInvoiceRegisterController .cs" />
+    <Compile Include="Controllers\StockLedgerController.cs" />
+    <Compile Include="Controllers\PORegisterController.cs" />
+    <Compile Include="Controllers\DeliveryChallanRegisterController .cs" />
+    <Compile Include="Controllers\SORegisterController.cs" />
+    <Compile Include="Controllers\QuotationRegisterController.cs" />
+    <Compile Include="Controllers\VendorPaymentController.cs" />
+    <Compile Include="Controllers\DocumentTypeController.cs" />
+    <Compile Include="Controllers\CustomerPaymentController.cs" />
+    <Compile Include="Controllers\MRNController.cs" />
+    <Compile Include="Controllers\FollowUpActivityTypeController.cs" />
+    <Compile Include="Controllers\FormTypeController .cs" />
+    <Compile Include="Controllers\ScheduleController .cs" />
+    <Compile Include="Controllers\SOSettingsController.cs" />
+    <Compile Include="Controllers\ProductTaxMappingController.cs" />
+    <Compile Include="Controllers\PurchaseInvoiceController.cs" />
+    <Compile Include="Controllers\SaleInvoiceController.cs" />
+    <Compile Include="Controllers\SOController.cs" />
+    <Compile Include="Controllers\TermsTemplateController.cs" />
+    <Compile Include="Controllers\GLSubGroupController.cs" />
+    <Compile Include="Controllers\GLMainGroupController.cs" />
+    <Compile Include="Controllers\POController.cs" />
+    <Compile Include="Controllers\QuotationSettingsController.cs" />
+    <Compile Include="Controllers\QuotationController.cs" />
+    <Compile Include="Controllers\VendorController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DesignationController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\EmployeeStateMapController.cs" />
+    <Compile Include="Controllers\BookController.cs" />
+    <Compile Include="Controllers\CustomerTypeController.cs" />
+    <Compile Include="Controllers\TaxController.cs" />
+    <Compile Include="Controllers\UOMController.cs" />
+    <Compile Include="Controllers\FinYearController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PaymentModeController.cs" />
+    <Compile Include="Controllers\ProductSubGroupController.cs" />
+    <Compile Include="Controllers\ProductMainGroupController.cs" />
+    <Compile Include="Controllers\PaymentTermController.cs" />
+    <Compile Include="Controllers\LeadSourceController.cs" />
+    <Compile Include="Controllers\LeadStatusController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProductBOMController.cs" />
+    <Compile Include="Controllers\ProductOpeningStockController.cs" />
+    <Compile Include="Controllers\ProductTypeController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\SLTypeController.cs" />
+    <Compile Include="Controllers\StateController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\LeadController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\CashVoucherController.cs" />
+    <Compile Include="Controllers\VoucherController.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ApprovedPOCustomerSiteMRNNotDoneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApprovedPOCustomerSiteMRNNotDoneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ApprovedPODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApprovedPODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ApprovedPOMRNNotDoneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApprovedPOMRNNotDoneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ApprovedStoreRequisitionsWithoutPODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApprovedStoreRequisitionsWithoutPODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BankVoucherDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BankVoucherReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankVoucherReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BookPrintDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookPrintDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CashVoucherDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CashVoucherReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashVoucherReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CreditNoteVoucherDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditNoteVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerFormRegisterReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerFormRegisterReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerSiteWiseReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerSiteWiseReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DailyExpensesReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyExpensesReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DebitNoteVoucherDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitNoteVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DebitNoteVoucherReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitNoteVoucherReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DeliveryChallanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeliveryChallanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DeliveryChallanRegisterReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeliveryChallanRegisterReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EmployeeAttendanceReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeAttendanceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GeneralLedgerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GLTrialBalanceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GLTrialBalanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GSTR1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSTR1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\JournalVoucherDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JournalVoucherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\JournalVoucherReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JournalVoucherReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LeadReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeadReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LogReportNewStoreRequisitionDetailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogReportNewStoreRequisitionDetailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MRNDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MRNDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PendingStoreRequisitionsReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PendingStoreRequisitionsReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PIDateSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIDateSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PLStatementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PLStatementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PMSEmployeeAssessmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSEmployeeAssessmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductBOMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductBOMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductLedger.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductLedger.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductSiteConsumptionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductSiteConsumptionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PurchaseIndentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseIndentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PurchaseQuotationComparisonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseQuotationComparisonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PurchaseQuotationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseQuotationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\QuotationRegisterReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuotationRegisterReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SalarySummaryReportDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarySummaryReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SaleInvoiceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleInvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SaleInvoiceRegisterReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleInvoiceRegisterReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SaleInvoiceSummaryReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleInvoiceSummaryReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SaleReturnRegisterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleReturnRegisterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SINDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SINDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SINRegisterReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SINRegisterReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SiteDeliveryChallanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteDeliveryChallanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SiteLedgerReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteLedgerReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SLTrialBalanceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SLTrialBalanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SORegisterReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SORegisterReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\STNDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STNDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StockLedgerReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockLedgerReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StockSummaryReportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockSummaryReportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\StoreRequisitionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreRequisitionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\STRDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SubLedgerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubLedgerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\WorkOrderDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkOrderDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.WebDesign.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.WebForms.DLL" />
+    <Content Include="bin\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.ComponentModelHost.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.GraphModel.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.TemplateWizardInterface.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.TemplateWizardInterface.xml" />
+    <Content Include="bin\Microsoft.VisualStudio.VSHelp.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Web.WebPages.OAuth.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Portal.dll" />
+    <Content Include="bin\Portal.pdb" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\VSLangProj.dll" />
+    <Content Include="bin\VSLangProj2.dll" />
+    <Content Include="bin\VSLangProj80.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\WebMatrix.Data.dll" />
+    <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="Content\angularcss\angular-ui-notificatio.css" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dashboard-new.css" />
+    <Content Include="Content\dashboard.css" />
+    <Content Include="Content\editor.css" />
+    <Content Include="Content\ESSstyle.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fonts\font-awesome.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts_aw\css\font-awesome.css" />
+    <Content Include="Content\fonts_aw\css\font-awesome.min.css" />
+    <Content Include="Content\fonts_aw\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts_aw\HELP-US-OUT.txt" />
+    <Content Include="Content\fullcalendar.min.css" />
+    <Content Include="Content\fullcalendar.print.min.css" />
+    <Content Include="Content\hover.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui.theme.min.css" />
+    <Content Include="Content\jquery.datetimepicker.min.css" />
+    <Content Include="Content\jquery.timepicker.css" />
+    <Content Include="Content\lightbox.css" />
+    <Content Include="Content\lightbox.min.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\ModuleDashboard.css" />
+    <Content Include="Content\ModuleStyles.css" />
+    <Content Include="Content\nanoscroller.css" />
+    <Content Include="Content\power-tip.css" />
+    <Content Include="Content\redactor.css" />
+    <Content Include="Content\style-1.css" />
+    <Content Include="Content\styles.css" />
+    <Content Include="Content\SuperAdminStyles.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\timeout-dialog.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Images\acc.png" />
+    <Content Include="Images\account.png" />
+    <Content Include="Images\admin.png" />
+    <Content Include="Images\admin1.png" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\avatar1_50.jpg" />
+    <Content Include="Images\avatar2.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg1.jpg" />
+    <Content Include="Images\bg12 %282%29.jpg" />
+    <Content Include="Images\bg1fff.png" />
+    <Content Include="Images\bubble-tail-l-white.png" />
+    <Content Include="Images\bubble-tail.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\crm.png" />
+    <Content Include="Images\crm1.png" />
+    <Content Include="Images\edit-notes.png" />
+    <Content Include="Images\erpacc.png" />
+    <Content Include="Images\erpadmin.png" />
+    <Content Include="Images\erpcrm.png" />
+    <Content Include="Images\erpess.png" />
+    <Content Include="Images\erphr.png" />
+    <Content Include="Images\erpinventory.png" />
+    <Content Include="Images\erpproduction.png" />
+    <Content Include="Images\erppurchase.png" />
+    <Content Include="Images\erpsales.png" />
+    <Content Include="Images\ess.png" />
+    <Content Include="Images\gg.gif" />
+    <Content Include="Images\dummyprofile.png" />
+    <Content Include="Images\hr-new.png" />
+    <Content Include="Images\hr.png" />
+    <Content Include="Images\inventory.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\login_bg.png" />
+    <Content Include="Images\logo-crm.png" />
+    <Content Include="Images\logo-new.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\makeindia.jpg" />
+    <Content Include="Images\menu-tail-left.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\payroll.png" />
+    <Content Include="Images\phone.png" />
+    <Content Include="Images\prev.png" />
+    <Content Include="Images\previous.png" />
+    <Content Include="Images\ProductImages\ProductPic.png" />
+    <Content Include="Images\purchase.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\reminderBulb.gif" />
+    <Content Include="Images\sales.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\stat-down.png" />
+    <Content Include="Images\stat-same.png" />
+    <Content Include="Images\stat-up.png" />
+    <Content Include="Images\store.jpg" />
+    <Content Include="Images\timeout-icon.png" />
+    <Content Include="Images\tri.jpg" />
+    <Content Include="Images\ui-icons_444444_256x240.png" />
+    <Content Include="Images\ui-icons_555555_256x240.png" />
+    <Content Include="Images\ui-icons_777620_256x240.png" />
+    <Content Include="Images\ui-icons_777777_256x240.png" />
+    <Content Include="Images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Images\UserImages\5.jpg" />
+    <Content Include="Images\UserImages\Essprofile.jpg" />
+    <Content Include="Images\UserImages\ProfilePic.png" />
+    <Content Include="Images\victory-image.png" />
+    <Content Include="Image\1.jpg" />
+    <Content Include="Image\head.png" />
+    <Content Include="Image\purchase.png" />
+    <Content Include="Image\red-blabk.png" />
+    <Content Include="Image\roof.png" />
+    <Content Include="Image\sale.png" />
+    <Content Include="Image\tyre-1.png" />
+    <Content Include="Image\tyre-back.png" />
+    <Content Include="Image\tyre.png" />
+    <Content Include="LogFiles\Log_01Apr2017.txt" />
+    <Content Include="LogFiles\Log_03Apr2017.txt" />
+    <Content Include="LogFiles\Log_04Apr2017.txt" />
+    <Content Include="LogFiles\Log_07Apr2017.txt" />
+    <Content Include="LogFiles\Log_08Apr2017.txt" />
+    <Content Include="LogFiles\Log_10Apr2017.txt" />
+    <Content Include="LogFiles\Log_11Apr2017.txt" />
+    <Content Include="LogFiles\Log_12Apr2017.txt" />
+    <Content Include="LogFiles\Log_13Apr2017.txt" />
+    <Content Include="LogFiles\Log_14Apr2017.txt" />
+    <Content Include="LogFiles\Log_17Apr2017.txt" />
+    <Content Include="LogFiles\Log_18Apr2017.txt" />
+    <Content Include="LogFiles\Log_19Apr2017.txt" />
+    <Content Include="LogFiles\Log_20Apr2017.txt" />
+    <Content Include="LogFiles\Log_21Apr2017.txt" />
+    <Content Include="LogFiles\Log_22Apr2017.txt" />
+    <Content Include="LogFiles\Log_24Apr2017.txt" />
+    <Content Include="LogFiles\Log_25Apr2017.txt" />
+    <Content Include="LogFiles\Log_26Apr2017.txt" />
+    <Content Include="LogFiles\Log_29Apr2017.txt" />
+    <Content Include="LogFiles\Log_31Mar2017.txt" />
+    <Content Include="obj\Debug\Portal.dll" />
+    <Content Include="obj\Debug\Portal.pdb" />
+    <Content Include="Scripts\AngularApp\PurchaseApp\PurchaseApp.js" />
+    <Content Include="Scripts\AngularApp\PurchaseApp\PurchaseController\PurchaseCntrl.js" />
+    <Content Include="Scripts\AngularApp\PurchaseApp\PurchaseServices\PurchaseService.js" />
+    <Content Include="Scripts\Customer\PrintCustomerSiteReport.js" />
+    <Content Include="Scripts\DailyExpense\AddDailyExpense.js" />
+    <Content Include="Scripts\DailyExpense\ListDailyExpense.js" />
+    <Content Include="Scripts\CustomerSiteMRN\AddCustomerSiteMRN.js" />
+    <Content Include="Scripts\CustomerSiteMRN\ListCustomerSiteMRN.js" />
+    <Content Include="Scripts\EmployeeAttendance\EmployeeAttendanceForm.js" />
+    <Content Include="Scripts\EmployeeAttendance\PrintEmployeeAttendanceReport.js" />
+    <Content Include="Scripts\EscalationMaster\AddEscalationMaster.js" />
+    <Content Include="Scripts\EscalationMaster\ListEscalationMaster.js" />
+    <Content Include="Scripts\jquery.powertip.js" />
+    <Content Include="Scripts\MasterDashboard\EscalationMatrix.js" />
+    <Content Include="Scripts\MasterDashboard\MasterDashboard.js" />
+    <Content Include="Scripts\notify.min.js" />
+    <Content Include="Scripts\PayHeadGLMapping\AddPayHeadGLMapping.js" />
+    <Content Include="Scripts\PayHeadGLMapping\ListPayHeadGLMapping.js" />
+    <Content Include="Scripts\PayrollMonthlyAdjustment\AddPayrollMonthlyAdjustment.js" />
+    <Content Include="Scripts\PayrollMonthlyAdjustment\ListPayrollMonthlyAdjustment.js" />
+    <Content Include="Scripts\PayrollOtherEarningDeduction\AddPayrollOtherEarningDeduction.js" />
+    <Content Include="Scripts\PayrollOtherEarningDeduction\ListPayrollOtherEarningDeduction.js" />
+    <Content Include="Scripts\PayrollProcessPeriod\AddPayrollProcessPeriod.js" />
+    <Content Include="Scripts\PayrollProcessPeriod\ListPayrollProcessPeriod.js" />
+    <Content Include="Scripts\PayrollProcessPeriod\LockUnlockPayrollProcessPeriod.js" />
+    <Content Include="Scripts\PO\AddApprovalPO.js" />
+    <Content Include="Scripts\PO\AddPO.js" />
+    <Content Include="Scripts\PO\AddRevisedPO.js" />
+    <Content Include="Scripts\PO\ListApprovalPO.js" />
+    <Content Include="Scripts\PO\ListApprovedPOByMDReport.js" />
+    <Content Include="Scripts\PO\ListPOLessThan25K.js" />
+    <Content Include="Scripts\PO\ListPO.js" />
+    <Content Include="Scripts\SalaryReport\SalaryJV.js" />
+    <Content Include="Scripts\SalaryReport\SalarySummaryReport.js" />
+    <Content Include="Scripts\SiteConsumption\ListProductSiteConsumptionReport.js" />
+    <Content Include="Scripts\SiteDeliveryChallan\AddSiteChallan.js" />
+    <Content Include="Scripts\SiteDeliveryChallan\ListSiteChallan.js" />
+    <Content Include="Scripts\EmployeeAttendance\AddEmployeeAttendance.js" />
+    <Content Include="Scripts\EmployeeAttendance\ListEmployeeAttendance.js" />
+    <Content Include="Scripts\Attendance\AddMarkAttendance.js" />
+    <Content Include="Scripts\Attendance\ListEmployeeAttendance.js" />
+    <Content Include="Scripts\CustomMail\CustomEmail.js" />
+    <Content Include="Scripts\Dashboard\CRMTeamDashboard.js" />
+    <Content Include="Scripts\Dashboard\SaleTeamDashboard.js" />
+    <Content Include="Scripts\Dashboard\PurchaseTeamDashboard.js" />
+    <Content Include="Scripts\Manufacturer\AddManufacturer.js" />
+    <Content Include="Scripts\Manufacturer\ListManufacturer.js" />
+    <Content Include="Scripts\SiteProductSerial\AddSiteProductSerial.js" />
+    <Content Include="Scripts\ProductSerial\AddProductSerial.js" />
+    <Content Include="Scripts\SiteProductOpening\AddSiteProductOpeningStock.js" />
+    <Content Include="Scripts\SiteProductOpening\ListSiteProductOpeningStock.js" />
+    <Content Include="Scripts\Project\AddProject.js" />
+    <Content Include="Scripts\Project\ListProject.js" />
+    <Content Include="Scripts\PurchaseQuotation\AddPurchaseQuotation.js" />
+    <Content Include="Scripts\PurchaseQuotation\AddPurchaseRevisedQuotation.js" />
+    <Content Include="Scripts\PurchaseQuotation\QuotationComparison.js" />
+    <Content Include="Scripts\PurchaseQuotation\ListPurchaseQuotation.js" />
+    <Content Include="Scripts\Product\ListProductBOMReport.js" />
+    <Content Include="Scripts\SaleInvoice\GSTR1.js" />
+    <Content Include="Scripts\PurchaseReturn\AddPurchaseReturn.js" />
+    <Content Include="Scripts\PurchaseReturn\ListPurchaseReturn.js" />
+    <Content Include="Scripts\SaleReturn\AddSaleReturn.js" />
+    <Content Include="Scripts\SaleReturn\ListSaleReturn.js" />
+    <Content Include="Scripts\editor.js" />
+    <Content Include="Scripts\EmailTemplate\AddEmail.js" />
+    <Content Include="Scripts\EmailTemplate\ListEmailTemplate.js" />
+    <Content Include="Scripts\EmployeeClearanceProcess\AddEmployeeClearance.js" />
+    <Content Include="Scripts\EmployeeClearanceProcess\AddEmployeeClearanceProcess.js" />
+    <Content Include="Scripts\EmployeeClearanceProcess\ListEmployeeClearance.js" />
+    <Content Include="Scripts\EmployeeClearanceProcess\ListEmployeeClearanceProcess.js" />
+    <Content Include="Scripts\fullcalendar.min.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\PMS_Assessment\AddFinalAssessment.js" />
+    <Content Include="Scripts\PMS_Assessment\AddAppraiserAssessment.js" />
+    <Content Include="Scripts\PMS_Assessment\AddEmployeeSelfAssessment.js" />
+    <Content Include="Scripts\PMS_Assessment\ListFinalAssessment.js" />
+    <Content Include="Scripts\PMS_Assessment\ListAppraiserAssessment.js" />
+    <Content Include="Scripts\PMS_Assessment\ListEmployeeSelfAssessment.js" />
+    <Content Include="Scripts\PMS_EmployeeAppraisalTemplateMapping\ListEmployeeAppraisalTemplateMapping.js" />
+    <Content Include="Scripts\redactor.js" />
+    <Content Include="Scripts\redactor.min.js" />
+    <Content Include="Scripts\Location\AddLocation.js" />
+    <Content Include="Scripts\Location\ListLocation.js" />
+    <Content Include="Scripts\SeparationOrder\AddSeparationOrder.js" />
+    <Content Include="Scripts\SeparationOrder\ListSeparationOrder.js" />
+    <Content Include="Scripts\ExitInterview\AddExitInterview.js" />
+    <Content Include="Scripts\ExitInterview\ListExitInterview.js" />
+    <Content Include="Scripts\EmployeeLeaveDetail\AddEmployeeLeaveDetail.js" />
+    <Content Include="Scripts\EmployeeLeaveDetail\ListEmployeeLeaveDetail.js" />
+    <Content Include="Scripts\jquery.timepicker.js" />
+    <Content Include="Scripts\jquery.timepicker.min.js" />
+    <Content Include="Scripts\PMS_EmployeeAppraisalReview\AddEmployeeAppraisalReview.js" />
+    <Content Include="Scripts\PMS_EmployeeAppraisalReview\ListEmployeeAppraisalReview.js" />
+    <Content Include="Scripts\ClearanceTemplate\AddClearanceTemplate.js" />
+    <Content Include="Scripts\ClearanceTemplate\ListClearanceTemplate.js" />
+    <Content Include="Scripts\SeparationApplication\AddSeparationApplication.js" />
+    <Content Include="Scripts\SeparationApplication\ApproveSeparationApplication..js" />
+    <Content Include="Scripts\SeparationApplication\ListSeparationApplicationApproval.js" />
+    <Content Include="Scripts\SeparationApplication\ListSeparationApplication.js" />
+    <Content Include="Scripts\Shift\AddShift.js" />
+    <Content Include="Scripts\Shift\ListShift.js" />
+    <Content Include="Scripts\PMSGoal\AddGoal.js" />
+    <Content Include="Scripts\PMSGoal\ListGoal.js" />
+    <Content Include="Scripts\PMSGoalCategory\AddGoalCategory.js" />
+    <Content Include="Scripts\PMSGoalCategory\ListGoalCategory.js" />
+    <Content Include="Scripts\Dashboard\ESSDashboard.js" />
+    <Content Include="Scripts\EmployeeClaimApplication\AddEmployeeClaimApplication.js" />
+    <Content Include="Scripts\EmployeeClaimApplication\ApprovalEmployeeClaimApplication.js" />
+    <Content Include="Scripts\EmployeeClaimApplication\ListEmployeeClaimApplication.js" />
+    <Content Include="Scripts\EmployeeClaimApplication\ListEmployeeClaimApplicationApproval.js" />
+    <Content Include="Scripts\EmployeeLeaveApplication\AddEmployeeLeaveApplication.js" />
+    <Content Include="Scripts\EmployeeLeaveApplication\ApproveEmployeeLeaveApplication..js" />
+    <Content Include="Scripts\EmployeeLeaveApplication\ListEmployeeLeaveApplication.js" />
+    <Content Include="Scripts\EmployeeLeaveApplication\ListEmployeeLeaveApplicationApproval.js" />
+    <Content Include="Scripts\Applicant\ShortlistApplicant.js" />
+    <Content Include="Scripts\Applicant\ListShortlistApplicant.js" />
+    <Content Include="Scripts\Appointment\ListAppointment.js" />
+    <Content Include="Scripts\PMS_EmployeeAppraisalTemplateMapping\AddEmployeeAppraisalTemplateMapping.js" />
+    <Content Include="Scripts\PMS_PerformanceCycle\AddPerformanceCycle.js" />
+    <Content Include="Scripts\PMS_PerformanceCycle\ListPerformanceCycle.js" />
+    <Content Include="Scripts\PMS_Section\AddSection.js" />
+    <Content Include="Scripts\PMS_Section\ListSection.js" />
+    <Content Include="Scripts\PMS_AppraisalTemplate\AddAppraisalTemplate.js" />
+    <Content Include="Scripts\PMS_AppraisalTemplate\ListAppraisalTemplate.js" />
+    <Content Include="Scripts\Employee\AddEmployeeProfile.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.navgoco.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\Roaster\UpdateDateWiseShift.js" />
+    <Content Include="Scripts\SeparationCategory\AddSeparationCategory.js" />
+    <Content Include="Scripts\SeparationCategory\ListSeparationCategory.js" />
+    <Content Include="Scripts\SeparationClearList\AddSeparationClearList.js" />
+    <Content Include="Scripts\SeparationClearList\ListSeparationClearList.js" />
+    <Content Include="Scripts\AdvanceType\AddAdvanceType.js" />
+    <Content Include="Scripts\AdvanceType\ListAdvanceType.js" />
+    <Content Include="Scripts\EmployeeTravelApplication\AddEmployeeTravelApplication.js" />
+    <Content Include="Scripts\EmployeeTravelApplication\ApproveEmployeeTravelApplication..js" />
+    <Content Include="Scripts\EmployeeTravelApplication\ListEmployeeTravelApplication.js" />
+    <Content Include="Scripts\EmployeeTravelApplication\ListEmployeeTravelApplicationApproval.js" />
+    <Content Include="Scripts\EmployeeAdvanceApplication\ApproveEmployeeAdvanceApplication..js" />
+    <Content Include="Scripts\EmployeeAdvanceApplication\ListEmployeeAdvanceApplicationApproval.js" />
+    <Content Include="Scripts\EmployeeAssetApplication\ApprovalEmployeeAssetApplication.js" />
+    <Content Include="Scripts\EmployeeAssetApplication\AddEmployeeAssetApplication.js" />
+    <Content Include="Scripts\EmployeeAssetApplication\ListEmployeeAssetApplicationApproval.js" />
+    <Content Include="Scripts\EmployeeAssetApplication\ListEmployeeAssetApplication.js" />
+    <Content Include="Scripts\EmployeeLoanApplication\ApprovalEmployeeLoanApplication.js" />
+    <Content Include="Scripts\EmployeeLoanApplication\AddEmployeeLoanApplication.js" />
+    <Content Include="Scripts\EmployeeLoanApplication\ListEmployeeLoanApplicationApproval.js" />
+    <Content Include="Scripts\EmployeeLoanApplication\ListEmployeeLoanApplication.js" />
+    <Content Include="Scripts\Applicant\AddApplicant.js" />
+    <Content Include="Scripts\Applicant\ListApplicant.js" />
+    <Content Include="Scripts\Appointment\AddAppointment.js" />
+    <Content Include="Scripts\Dashboard\ModuleDashboard.js" />
+    <Content Include="Scripts\Interview\AddInterview.js" />
+    <Content Include="Scripts\Interview\ListInterview.js" />
+    <Content Include="Scripts\JobOpening\AddJobOpening.js" />
+    <Content Include="Scripts\JobOpening\ListJobOpening.js" />
+    <Content Include="Scripts\EmployeeAdvanceApplication\AddEmployeeAdvanceApplication.js" />
+    <Content Include="Scripts\EmployeeAdvanceApplication\ListEmployeeAdvanceApplication.js" />
+    <Content Include="Scripts\Roaster\AddRoaster.js" />
+    <Content Include="Scripts\Roaster\ListRoaster.js" />
+    <Content Include="Scripts\ResumeSource\AddResumeSource.js" />
+    <Content Include="Scripts\ResumeSource\ListResumeSource.js" />
+    <Content Include="Scripts\SINRegister\ListSINRegister.js" />
+    <Content Include="Scripts\SiteConsumption\AddSiteConsumption.js" />
+    <Content Include="Scripts\SiteConsumption\ListSiteConsumption.js" />
+    <Content Include="Scripts\Size\AddSize.js" />
+    <Content Include="Scripts\Size\ListSize.js" />
+    <Content Include="Scripts\SaleReturnRegister\ListSaleReturnRegister.js" />
+    <Content Include="Scripts\PurchaseIndent\AddPurchaseIndent.js" />
+    <Content Include="Scripts\PurchaseIndent\ApprovalPurchaseIndent.js" />
+    <Content Include="Scripts\PurchaseIndent\ListPurchaseIndent.js" />
+    <Content Include="Scripts\PurchaseIndent\ListPurchaseIndentApproval.js" />
+    <Content Include="Scripts\InternalRequisition\AddInternalRequisition.js" />
+    <Content Include="Scripts\InternalRequisition\ListInternalRequisition.js" />
+    <Content Include="Scripts\SiteLedger\PrintSiteLedger.js" />
+    <Content Include="Scripts\StoreRequisition\ApprovalStoreRequisitionUpdate.js" />
+    <Content Include="Scripts\StoreRequisition\ApprovalStoreRequisition.js" />
+    <Content Include="Scripts\StoreRequisition\AddStoreRequisition.js" />
+    <Content Include="Scripts\StoreRequisition\ListApprovedPOCustomerSiteMRNNotDone.js" />
+    <Content Include="Scripts\StoreRequisition\ListApprovedStoreRequisitionsWithoutPO.js" />
+    <Content Include="Scripts\StoreRequisition\ListApprovedPOMRNNotDone.js" />
+    <Content Include="Scripts\StoreRequisition\ListPendingStoreRequisition.js" />
+    <Content Include="Scripts\StoreRequisition\ListPendingStoreRequisitionReport.js" />
+    <Content Include="Scripts\StoreRequisition\ListStoreRequisitionForMRN.js" />
+    <Content Include="Scripts\StoreRequisition\ListStoreRequisitionApprovalUpdate.js" />
+    <Content Include="Scripts\StoreRequisition\ListStoreRequisitionApproval.js" />
+    <Content Include="Scripts\StoreRequisition\ListStoreRequisition.js" />
+    <Content Include="Scripts\StoreRequisition\LogReportStoreRequisition.js" />
+    <Content Include="Scripts\SupervisorDashboard\SupervisorDashboard.js" />
+    <Content Include="Scripts\Thought\AddThought.js" />
+    <Content Include="Scripts\Thought\ListThought.js" />
+    <Content Include="Scripts\SIN\AddSIN.js" />
+    <Content Include="Scripts\SIN\ListSIN.js" />
+    <Content Include="Scripts\timeout-dialog.js" />
+    <Content Include="Scripts\Unit\AddNewUnit.js" />
+    <Content Include="Scripts\Unit\AddUnit.js" />
+    <Content Include="Scripts\Unit\ListUnit.js" />
+    <Content Include="Scripts\VerificationAgency\AddVerificationAgency.js" />
+    <Content Include="Scripts\VerificationAgency\ListVerificationAgency.js" />
+    <Content Include="Scripts\LoanType\AddLoanType.js" />
+    <Content Include="Scripts\LoanType\ListLoanType.js" />
+    <Content Include="Scripts\TravelType\AddTravelType.js" />
+    <Content Include="Scripts\TravelType\ListTravelType.js" />
+    <Content Include="Scripts\HolidayCalender\AddHolidayCalender.js" />
+    <Content Include="Scripts\HolidayCalender\ListHolidayCalender.js" />
+    <Content Include="Scripts\BookPrint\DebitNoteBookPrint.js" />
+    <Content Include="Scripts\BookPrint\CreditNoteBookPrint.js" />
+    <Content Include="Scripts\BookPrint\PurchaseBookPrint.js" />
+    <Content Include="Scripts\BookPrint\SaleBookPrint.js" />
+    <Content Include="Scripts\BookPrint\JournalBookPrint.js" />
+    <Content Include="Scripts\BookPrint\CashBookPrint.js" />
+    <Content Include="Scripts\BookPrint\BankBookPrint.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\CashVoucher\CancelApprovedCashVoucher.js" />
+    <Content Include="Scripts\CashVoucher\ListApprovedCashVoucher.js" />
+    <Content Include="Scripts\Chart.bundle.min.js" />
+    <Content Include="Scripts\ChasisSerialMapping\AddChasisSerialMapping.js" />
+    <Content Include="Scripts\ChasisSerialMapping\ListChasisSerialMapping.js" />
+    <Content Include="Scripts\CTC\AddCTC.js" />
+    <Content Include="Scripts\CTC\ListCTC.js" />
+    <Content Include="Scripts\LeaveType\AddLeaveType.js" />
+    <Content Include="Scripts\LeaveType\ListLeaveType.js" />
+    <Content Include="Scripts\Religion\AddReligion.js" />
+    <Content Include="Scripts\Religion\ListReligion.js" />
+    <Content Include="Scripts\Language\AddLanguage.js" />
+    <Content Include="Scripts\Language\ListLanguage.js" />
+    <Content Include="Scripts\ShiftType\AddShiftType.js" />
+    <Content Include="Scripts\ShiftType\ListShiftType.js" />
+    <Content Include="Scripts\Education\AddEducation.js" />
+    <Content Include="Scripts\Education\ListEducation.js" />
+    <Content Include="Scripts\cleanzone.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\CostCenter\AddCostCenter.js" />
+    <Content Include="Scripts\CostCenter\ListCostCenter.js" />
+    <Content Include="Scripts\CreditNoteVoucher\CancelApprovedCreditNoteVoucher.js" />
+    <Content Include="Scripts\CreditNoteVoucher\AddCreditNoteVoucher.js" />
+    <Content Include="Scripts\CreditNoteVoucher\ListApprovedCreditNoteVoucher.js" />
+    <Content Include="Scripts\CreditNoteVoucher\ListCreditNoteVoucher.js" />
+    <Content Include="Scripts\Dashboard\CRMDashboard.js" />
+    <Content Include="Scripts\Dashboard\AdminDashboard.js" />
+    <Content Include="Scripts\Dashboard\StoreDashboard.js" />
+    <Content Include="Scripts\DebitNoteVoucher\CancelApprovedNoteVoucher.js" />
+    <Content Include="Scripts\DebitNoteVoucher\AddDebitNoteVoucher.js" />
+    <Content Include="Scripts\DebitNoteVoucher\ListApprovedDebitNoteVoucher.js" />
+    <Content Include="Scripts\DebitNoteVoucher\ListDebitNoteVoucher.js" />
+    <Content Include="Scripts\ActivityCalender\AddActivityCalender.js" />
+    <Content Include="Scripts\ActivityCalender\ListActivityCalender.js" />
+    <Content Include="Scripts\GeneralLedgerPrint\GeneralLedgerPrint.js" />
+    <Content Include="Scripts\GLTrialBalancePrint\GLTrialBalancePrint.js" />
+    <Content Include="Scripts\HolidayType\AddHolidayType.js" />
+    <Content Include="Scripts\HolidayType\ListHolidayType.js" />
+    <Content Include="Scripts\AssetType\AddAssetType.js" />
+    <Content Include="Scripts\AssetType\ListAssetType.js" />
+    <Content Include="Scripts\PositionLevel\AddPositionLevel.js" />
+    <Content Include="Scripts\PositionLevel\ListPositionLevel.js" />
+    <Content Include="Scripts\InterviewType\AddInterviewType.js" />
+    <Content Include="Scripts\InterviewType\ListInterviewType.js" />
+    <Content Include="Scripts\Calender\AddCalender.js" />
+    <Content Include="Scripts\Calender\ListCalender.js" />
+    <Content Include="Scripts\PositionType\AddPositionType.js" />
+    <Content Include="Scripts\PositionType\ListPositionType.js" />
+    <Content Include="Scripts\ClaimType\AddClaimType.js" />
+    <Content Include="Scripts\ClaimType\ListClaimType.js" />
+    <Content Include="Scripts\PurchaseVoucher\AddPurchaseVoucher.js" />
+    <Content Include="Scripts\ResourceRequisition\ApproveResourceRequisition.js" />
+    <Content Include="Scripts\ResourceRequisition\ListResourceRequisitionApproval.js" />
+    <Content Include="Scripts\SaleVoucher\AddSaleVoucher.js" />
+    <Content Include="Scripts\JournalVoucher\CancelApprovedJournalVoucher.js" />
+    <Content Include="Scripts\JournalVoucher\ListApprovedJournalVoucher.js" />
+    <Content Include="Scripts\lightbox.js" />
+    <Content Include="Scripts\lightbox.min.js" />
+    <Content Include="Scripts\PLStatementPrint\BalanceSheetPrint.js" />
+    <Content Include="Scripts\PLStatementPrint\PLStatementPrint.js" />
+    <Content Include="Scripts\ProductGLMapping\AddProductGLMapping.js" />
+    <Content Include="Scripts\ProductGLMapping\ListProductGLMapping.js" />
+    <Content Include="Scripts\ResourceRequisition\AddResourceRequisition.js" />
+    <Content Include="Scripts\ResourceRequisition\CancelResourceRequisition.js" />
+    <Content Include="Scripts\ResourceRequisition\ListResourceRequisition.js" />
+    <Content Include="Scripts\SLDetail\AddSLDetail.js" />
+    <Content Include="Scripts\SLDetail\ListSLDetail.js" />
+    <Content Include="Scripts\SLTrialBalancePrint\SLTrialBalancePrint.js" />
+    <Content Include="Scripts\SL\AddSL.js" />
+    <Content Include="Scripts\SL\ListSL.js" />
+    <Content Include="Scripts\GL\AddGL.js" />
+    <Content Include="Scripts\GL\ListGL.js" />
+    <Content Include="Scripts\PI\CancelPI.js" />
+    <Content Include="Scripts\SaleInvoice\CancelSaleInvoice.js" />
+    <Content Include="Scripts\SubLedgerPrint\SubLedgerPrint.js" />
+    <Content Include="Scripts\AdditionalTax\AddTax.js" />
+    <Content Include="Scripts\AdditionalTax\ListAdditionalTax.js" />
+    <Content Include="Scripts\TBDrillDown\SLWiseTBDrillDown.js" />
+    <Content Include="Scripts\TBDrillDown\GLWiseTBDrillDown.js" />
+    <Content Include="Scripts\TBDrillDown\SubGroupTBDrillDown.js" />
+    <Content Include="Scripts\TBDrillDown\MainGroupTBDrillDown.js" />
+    <Content Include="Scripts\TBDrillDown\TBDrillDown.js" />
+    <Content Include="Scripts\VendorForm\AddVendorForm.js" />
+    <Content Include="Scripts\VendorForm\ListVendorForm.js" />
+    <Content Include="Scripts\UserEmailSetting\AddUserEmailSetting.js" />
+    <Content Include="Scripts\UserEmailSetting\ListUserEmailSetting.js" />
+    <Content Include="Scripts\Home\ChangePassword.js" />
+    <Content Include="Scripts\PurchaseSummary\ListPurchaseSummary.js" />
+    <Content Include="Scripts\SaleInvoiceSummary\ListSaleInvoiceSummary.js" />
+    <Content Include="Scripts\VendorPaymentRegister\ListVendorPaymentRegister.js" />
+    <Content Include="Scripts\CustomerPaymentRegister\ListCustomerPaymentRegister.js" />
+    <Content Include="Scripts\CustomerFromRegister\ListCustomerFormRegister.js" />
+    <Content Include="Scripts\CustomerForm\AddCustomerForm.js" />
+    <Content Include="Scripts\CustomerForm\ListCustomerForm.js" />
+    <Content Include="Scripts\Dashboard\PayrollDashboard.js" />
+    <Content Include="Scripts\Dashboard\InventoryDashboard.js" />
+    <Content Include="Scripts\Dashboard\PurchaseDashboard.js" />
+    <Content Include="Scripts\Dashboard\AccountDashboard.js" />
+    <Content Include="Scripts\DeliveryChallan\AddChallan.js" />
+    <Content Include="Scripts\DeliveryChallan\ListChallan.js" />
+    <Content Include="Scripts\STRRegister\ListSTRRegister.js" />
+    <Content Include="Scripts\STNRegister\ListSTNRegister.js" />
+    <Content Include="Scripts\MRNRegister\ListMRNRegister.js" />
+    <Content Include="Scripts\PurchaseInvoiceRegister\ListPurchaseInvoiceRegister.js" />
+    <Content Include="Scripts\PORegister\ListPORegister.js" />
+    <Content Include="Scripts\SaleInvoiceRegister\ListSaleInvoiceRegister.js" />
+    <Content Include="Scripts\DeliveryChallanRegister\ListDeliveryChallanRegister.js" />
+    <Content Include="Scripts\SORegister\ListSORegister.js" />
+    <Content Include="Scripts\QuotationRegister\ListQuotationRegister.js" />
+    <Content Include="Scripts\Quotation\AddRevisedQuotation.js" />
+    <Content Include="Scripts\MRN\AddMRN.js" />
+    <Content Include="Scripts\MRN\ListMRN.js" />
+    <Content Include="Scripts\STN\AddSTN.js" />
+    <Content Include="Scripts\STN\ListSTN.js" />
+    <Content Include="Scripts\STR\AddSTR.js" />
+    <Content Include="Scripts\STR\ListSTR.js" />
+    <Content Include="Scripts\StockLedger\PrintStockLedger.js" />
+    <Content Include="Scripts\VendorPayment\AddVendorPayment.js" />
+    <Content Include="Scripts\VendorPayment\ListVendorPayment.js" />
+    <Content Include="Scripts\Company\AddCompanyBranch.js" />
+    <Content Include="Scripts\Company\ListCompanyBranch.js" />
+    <Content Include="Scripts\DocumentType\AddDocumentType.js" />
+    <Content Include="Scripts\DocumentType\ListDocumentType.js" />
+    <Content Include="Scripts\CustomerPayment\AddCustomerPayment.js" />
+    <Content Include="Scripts\CustomerPayment\ListCustomerPayment.js" />
+    <Content Include="Scripts\FollowUpActivityType\AddFollowUpActivityType.js" />
+    <Content Include="Scripts\FollowUpActivityType\ListFollowUpActivityType.js" />
+    <Content Include="Scripts\FormType\AddFormType.js" />
+    <Content Include="Scripts\FormType\ListFormType.js" />
+    <Content Include="Scripts\Schedule\AddSchedule.js" />
+    <Content Include="Scripts\Schedule\ListSchedule.js" />
+    <Content Include="Scripts\SOSettings\AddSOSetting.js" />
+    <Content Include="Scripts\SOSettings\ListSOSetting.js" />
+    <Content Include="Scripts\PI\AddPI.js" />
+    <Content Include="Scripts\PI\ListPI.js" />
+    <Content Include="Scripts\ProductTaxMapping\AddProductTaxMapping.js" />
+    <Content Include="Scripts\ProductTaxMapping\ListProductTaxMapping.js" />
+    <Content Include="Scripts\SaleInvoice\AddSaleInvoice.js" />
+    <Content Include="Scripts\SaleInvoice\ListSaIeInvoice.js" />
+    <Content Include="Scripts\SO\AddSO.js" />
+    <Content Include="Scripts\SO\ListSO.js" />
+    <Content Include="Scripts\Quotation\ListQuotation.js" />
+    <Content Include="Scripts\TermTemplate\AddTermTemplate.js" />
+    <Content Include="Scripts\TermTemplate\ListTermTemplate.js" />
+    <Content Include="Scripts\GLSubGroup\AddGLSubGroup.js" />
+    <Content Include="Scripts\GLSubGroup\ListGLSubGroup.js" />
+    <Content Include="Scripts\GLMainGroup\AddGLMainGroup.js" />
+    <Content Include="Scripts\GLMainGroup\ListGLMainGroup.js" />
+    <Content Include="Scripts\QuotationSettings\AddQuotationSetting.js" />
+    <Content Include="Scripts\QuotationSettings\ListQuotationSetting.js" />
+    <Content Include="Scripts\Quotation\AddQuotation.js" />
+    <Content Include="Scripts\Vendor\AddVendor.js" />
+    <Content Include="Scripts\Vendor\ListVendor.js" />
+    <Content Include="Scripts\Customer\AddCustomer.js" />
+    <Content Include="Scripts\Customer\ListCustomer.js" />
+    <Content Include="Scripts\Dashboard\SaleDashboard.js" />
+    <Content Include="Scripts\EmployeeStateMapping\EmployeeStateMapping.js" />
+    <Content Include="Scripts\Employee\AddEmployee.js" />
+    <Content Include="Scripts\jquery.datetimepicker.full.js" />
+    <Content Include="Scripts\jquery.datetimepicker.full.min.js" />
+    <Content Include="Scripts\jquery.datetimepicker.min.js" />
+    <Content Include="Scripts\Book\AddBook.js" />
+    <Content Include="Scripts\Book\ListBook.js" />
+    <Content Include="Scripts\CustomerType\AddCustomerType.js" />
+    <Content Include="Scripts\CustomerType\ListCustomerType.js" />
+    <Content Include="Scripts\Tax\AddTax.js" />
+    <Content Include="Scripts\Tax\ListTax.js" />
+    <Content Include="Scripts\Employee\ListEmployee.js" />
+    <Content Include="Scripts\Lead\AddLead.js" />
+    <Content Include="Scripts\Lead\ListLead.js" />
+    <Content Include="Scripts\Designation\AddDesignation.js" />
+    <Content Include="Scripts\Designation\ListDesignation.js" />
+    <Content Include="Scripts\City\AddCity.js" />
+    <Content Include="Scripts\City\ListCity.js" />
+    <Content Include="Scripts\UOM\AddUOM.js" />
+    <Content Include="Scripts\UOM\ListUOM.js" />
+    <Content Include="Scripts\Department\AddDepartment.js" />
+    <Content Include="Scripts\Department\ListDepartment.js" />
+    <Content Include="Scripts\PaymentMode\AddPaymentMode.js" />
+    <Content Include="Scripts\PaymentMode\ListPaymentMode.js" />
+    <Content Include="Scripts\ProductSubGroup\AddProductSubGroup.js" />
+    <Content Include="Scripts\ProductSubGroup\ListProductSubGroup.js" />
+    <Content Include="Scripts\ProductMainGroup\AddProductMainGroup.js" />
+    <Content Include="Scripts\ProductMainGroup\ListProductMainGroup.js" />
+    <Content Include="Scripts\PaymentTerm\AddPaymentTerm.js" />
+    <Content Include="Scripts\PaymentTerm\ListPaymentTerm.js" />
+    <Content Include="Scripts\ProductType\AddProductType.js" />
+    <Content Include="Scripts\ProductType\ListProductType.js" />
+    <Content Include="Scripts\Country\AddCountry.js" />
+    <Content Include="Scripts\Country\ListCountry.js" />
+    <Content Include="Scripts\Company\ListCompany.js" />
+    <Content Include="Scripts\Company\AddCompany.js" />
+    <Content Include="Scripts\FinYear\AddFinYear.js" />
+    <Content Include="Scripts\FinYear\ListFinYear.js" />
+    <Content Include="Scripts\Home\Login.js" />
+    <Content Include="Scripts\jquery-1.10.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.nanoscroller.min.js" />
+    <Content Include="Scripts\jquery.tablesorter.js" />
+    <Content Include="Scripts\LeadSource\AddLeadSource.js" />
+    <Content Include="Scripts\LeadSource\ListLeadSource.js" />
+    <Content Include="Scripts\LeadStatus\AddLeadStatus.js" />
+    <Content Include="Scripts\LeadStatus\ListLeadStatus.js" />
+    <Content Include="Scripts\paging.js" />
+    <Content Include="Scripts\Product\AddProductBOM.js" />
+    <Content Include="Scripts\Product\AddProductOpeningStock.js" />
+    <Content Include="Scripts\Product\AddProduct.js" />
+    <Content Include="Scripts\Product\ListProductBOM.js" />
+    <Content Include="Scripts\Product\ListProductOpeningStock.js" />
+    <Content Include="Scripts\Product\ListProduct.js" />
+    <Content Include="Scripts\Role\AddRoleUIMapping.js" />
+    <Content Include="Scripts\Role\AddRole.js" />
+    <Content Include="Scripts\Role\ListRole.js" />
+    <Content Include="Scripts\Services\AddServices.js" />
+    <Content Include="Scripts\Services\ListServices.js" />
+    <Content Include="Scripts\SLType\AddSLType.js" />
+    <Content Include="Scripts\SLType\ListSLType.js" />
+    <Content Include="Scripts\State\AddState.js" />
+    <Content Include="Scripts\State\ListState.js" />
+    <Content Include="Scripts\User\AddUser.js" />
+    <Content Include="Scripts\User\AddPrimaryUser.js" />
+    <Content Include="Scripts\User\ListUser.js" />
+    <Content Include="Scripts\User\ListPrimaryUser.js" />
+    <Content Include="Scripts\CashVoucher\AddCashVoucher.js" />
+    <Content Include="Scripts\CashVoucher\ListCashVoucher.js" />
+    <Content Include="Scripts\JournalVoucher\AddJournalVoucher.js" />
+    <Content Include="Scripts\JournalVoucher\ListJournalVoucher.js" />
+    <Content Include="Scripts\Voucher\CancelApprovedBankVoucher.js" />
+    <Content Include="Scripts\Voucher\AddBankVoucher.js" />
+    <Content Include="Scripts\Voucher\ListApprovedBankVoucher.js" />
+    <Content Include="Scripts\Voucher\ListBankVoucher.js" />
+    <Content Include="Scripts\Fabrication\AddFabrication.js" />
+    <Content Include="Scripts\Fabrication\ListFabrication.js" />
+    <Content Include="Scripts\WorkOrder\AddWorkOrder.js" />
+    <Content Include="Scripts\WorkOrder\ListWorkOrder.js" />
+    <Content Include="Views\PMS_AppraisalTemplate\GetAppraisalTemplateGoalList.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\Login12.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\de\" />
+    <Folder Include="bin\es\" />
+    <Folder Include="bin\fr\" />
+    <Folder Include="bin\it\" />
+    <Folder Include="bin\ja\" />
+    <Folder Include="bin\ko\" />
+    <Folder Include="bin\pt\" />
+    <Folder Include="bin\ru\" />
+    <Folder Include="bin\zh-Hans\" />
+    <Folder Include="bin\zh-Hant\" />
+    <Folder Include="Images\CashVoucherDocument\" />
+    <Folder Include="Images\CompanyLogo\" />
+    <Folder Include="Images\CreditNoteVoucherDocument\" />
+    <Folder Include="Images\DCDocument\" />
+    <Folder Include="Images\DebitNoteVoucherDocument\" />
+    <Folder Include="Images\EmployeeImages\" />
+    <Folder Include="Images\JournalVoucherDocument\" />
+    <Folder Include="Images\MailAttachmentDocument\" />
+    <Folder Include="Images\MRNDocument\" />
+    <Folder Include="Images\PODocument\" />
+    <Folder Include="Images\QuotationDocument\" />
+    <Folder Include="Images\REVISEDPODocument\" />
+    <Folder Include="Images\RevisedQuotationDocument\" />
+    <Folder Include="Images\SIDocument\" />
+    <Folder Include="Images\SINDocument\" />
+    <Folder Include="Images\SODocument\" />
+    <Folder Include="Images\STNDocument\" />
+    <Folder Include="Images\STRDocument\" />
+    <Folder Include="Images\VoucherDocument\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Jquery_3.1.1.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_SuperAdminLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Company\AddEditCompany.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Company\SuperAdminDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\AccessDenied.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Company\ListCompany.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Company\GetCompanyList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Country\AddEditCountry.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Country\ListCountry.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Country\GetCountryList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\AddEditPrimaryUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\ListPrimaryUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\GetPrimaryUserList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\FinYear\AddEditFinYear.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\FinYear\ListFinYear.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\FinYear\GetFinYearList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\State\AddEditState.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\State\GetStateList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\State\ListState.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Role\AddEditRole.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Role\GetRoleList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Role\ListRole.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LeadStatus\AddEditLeadStatus.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LeadStatus\GetLeadStatusList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LeadStatus\ListLeadStatus.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LeadSource\AddEditLeadSource.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LeadSource\GetLeadSourceList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LeadSource\ListLeadSource.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\ModuleDashboard123.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\AdminDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\AddEditUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\ListUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\GetUserList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Role\AddEditRoleUIMapping.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Role\GetRoleUIMapping.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductType\AddEditProductType.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductType\GetProductTypeList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductType\ListProductType.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_CRMLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\CRMDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_SaleLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_PurchaseLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_InventoryLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_AccountLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_HRLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_PayrollLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\AccountDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\HRDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\InventoryDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\PayrollDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\PurchaseDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\SaleDashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PaymentTerm\AddEditPaymentTerm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PaymentTerm\GetPaymentTermList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PaymentTerm\ListPaymentTerm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Department\AddEditDepartment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Department\GetDepartmentList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Department\ListDepartment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\AddEditProduct.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\ListProduct.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\GetProductList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductMainGroup\AddEditProductMainGroup.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductMainGroup\GetProductMainGroupList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductMainGroup\ListProductMainGroup.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductSubGroup\AddEditProductSubGroup.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductSubGroup\GetProductSubGroupList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductSubGroup\ListProductSubGroup.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UOM\AddEditUOM.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UOM\GetUOMList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UOM\ListUOM.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Designation\AddEditDesignation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Designation\GetDesignationList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Designation\ListDesignation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Lead\AddEditLead.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductOpeningStock\AddEditProductOpening.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductOpeningStock\ListProductOpening.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductOpeningStock\GetProductOpeningList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductBOM\AddEditProductBOM.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductBOM\ListProductBOM.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductBOM\GetAssemblyList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProductBOM\GetAssemblyBOMList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PaymentMode\AddEditPaymentMode.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PaymentMode\GetPaymentModeList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PaymentMode\ListPaymentMode.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SLType\AddEditSLType.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SLType\GetSLTypeList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SLType\ListSLType.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Services\AddEditServices.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Services\GetServicesList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Services\ListServices.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Lead\GetLeadList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Lead\ListLead.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Employee\AddEditEmployee.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Portal.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Content\fonts_aw\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts_aw\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts_aw\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts_aw\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts_aw\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts_aw\less\animated.less" />
+    <Content Include="Content\fonts_aw\less\bordered-pulled.less" />
+    <Content Include="Content\fonts_aw\less\core.less" />
+    <Content Include="Content\fonts_aw\less\fixed-width.less" />
+    <Content Include="Content\fonts_aw\less\font-awesome.less" />
+    <Content Include="Content\fonts_aw\less\icons.less" />
+    <Content Include="Content\fonts_aw\less\larger.less" />
+    <Content Include="Content\fonts_aw\less\list.less" />
+    <Content Include="Content\fonts_aw\less\mixins.less" />
+    <Content Include="Content\fonts_aw\less\path.less" />
+    <Content Include="Content\fonts_aw\less\rotated-flipped.less" />
+    <Content Include="Content\fonts_aw\less\screen-reader.less" />
+    <Content Include="Content\fonts_aw\less\stacked.less" />
+    <Content Include="Content\fonts_aw\less\variables.less" />
+    <Content Include="Content\fonts_aw\scss\font-awesome.scss" />
+    <Content Include="Content\fonts_aw\scss\_animated.scss" />
+    <Content Include="Content\fonts_aw\scss\_bordered-pulled.scss" />
+    <Content Include="Content\fonts_aw\scss\_core.scss" />
+    <Content Include="Content\fonts_aw\scss\_fixed-width.scss" />
+    <Content Include="Content\fonts_aw\scss\_icons.scss" />
+    <Content Include="Content\fonts_aw\scss\_larger.scss" />
+    <Content Include="Content\fonts_aw\scss\_list.scss" />
+    <Content Include="Content\fonts_aw\scss\_mixins.scss" />
+    <Content Include="Content\fonts_aw\scss\_path.scss" />
+    <Content Include="Content\fonts_aw\scss\_rotated-flipped.scss" />
+    <Content Include="Content\fonts_aw\scss\_screen-reader.scss" />
+    <Content Include="Content\fonts_aw\scss\_stacked.scss" />
+    <Content Include="Content\fonts_aw\scss\_variables.scss" />
+    <Content Include="Content\SampleUpload\Lead_Sample.xlsx" />
+    <Content Include="Content\SampleUpload\Department.xlsx" />
+    <Content Include="Content\SampleUpload\Designation.xlsx" />
+    <Content Include="Content\SampleUpload\ProductSubGroup.xlsx" />
+    <Content Include="Content\SampleUpload\Product.xlsx" />
+    <Content Include="Content\SampleUpload\Vendor_Sample.xlsx" />
+    <Content Include="Content\SampleUpload\CustomerBranch_Sample.xlsx" />
+    <Content Include="Content\SampleUpload\GL_Import.xlsx" />
+    <Content Include="Content\SampleUpload\GLSub_Impot.xlsx" />
+    <Content Include="Content\SampleUpload\ProductBOM.xlsx" />
+    <Content Include="Content\SampleUpload\ProductOpeningStock.xlsx" />
+    <Content Include="Content\SampleUpload\ProductMainGroup_Sample.xlsx" />
+    <Content Include="Content\SampleUpload\GLDetail.xlsx" />
+    <Content Include="Content\SampleUpload\SLDetail.xlsx" />
+    <Content Include="Content\SampleUpload\SaleInvoiceProductSerialDetail.xlsx" />
+    <Content Include="Content\SampleUpload\Customer.xls" />
+    <Content Include="Content\SampleUpload\CustomerBranch_Sample.xls" />
+    <Content Include="Content\SampleUpload\Department.xls" />
+    <Content Include="Content\SampleUpload\Designation.xls" />
+    <Content Include="Content\SampleUpload\GLDetail.xls" />
+    <Content Include="Content\SampleUpload\GLSub_Impot.xls" />
+    <Content Include="Content\SampleUpload\GL_Import.xls" />
+    <Content Include="Content\SampleUpload\Lead_Sample.xls" />
+    <Content Include="Content\SampleUpload\product.xls" />
+    <Content Include="Content\SampleUpload\ProductBOM.xls" />
+    <Content Include="Content\SampleUpload\ProductMainGroup_Sample.xls" />
+    <Content Include="Content\SampleUpload\ProductOpeningStock.xls" />
+    <Content Include="Content\SampleUpload\ProductSubGroup.xls" />
+    <Content Include="Content\SampleUpload\SaleInvoiceProductSerialDetail.xls" />
+    <Content Include="Content\SampleUpload\SLDetail.xls" />
+    <Content Include="Content\SampleUpload\Vendor_Sample.xls" />
+    <Content Include="Content\Uploads\Designation.xlsx" />
+    <Content Include="Content\Uploads\InvoiceProductSerialDetail.xlsx" />
+    <Content Include="Content\Uploads\ProductBOM.xlsx" />
+    <Content Include="Content\Uploads\SaleInvoiceProductSerialDetail.xlsx" />
+    <Content Include="Content\SampleUpload\Employee_Sample.xls" />
+    <Content Include="Content\SampleUpload\GLImport_Sample.xls" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <None Include="Properties\PublishProfiles\DotNetHub ERP.pubxml" />
+    <None Include="Properties\PublishProfiles\MMPortal_PUBLISH.pubxml" />
+    <None Include="Properties\PublishProfiles\Mohseen ERP.pubxml" />
+    <None Include="Properties\PublishProfiles\Portal.pubxml" />
+    <Content Include="Views\EmployeeStateMap\AddEditEmpStateMapping.cshtml" />
+    <Content Include="Views\EmployeeStateMap\GetStateList.cshtml" />
+    <Content Include="Views\Tax\AddEditTax.cshtml" />
+    <Content Include="Views\Tax\GetTaxList.cshtml" />
+    <Content Include="Views\Tax\ListTax.cshtml" />
+    <Content Include="Views\Employee\ListEmployee.cshtml" />
+    <Content Include="Views\Employee\GetEmployeeList.cshtml" />
+    <Content Include="Views\Book\AddEditBook.cshtml" />
+    <Content Include="Views\Book\GetBookList.cshtml" />
+    <Content Include="Views\Book\ListBook.cshtml" />
+    <Content Include="Views\Customer\AddEditCustomer.cshtml" />
+    <Content Include="Views\CustomerType\AddEditCustomerType.cshtml" />
+    <Content Include="Views\CustomerType\GetCustomerTypeList.cshtml" />
+    <Content Include="Views\CustomerType\ListCustomerType.cshtml" />
+    <Content Include="Views\Customer\ListCustomer.cshtml" />
+    <Content Include="Views\Customer\GetCustomerList.cshtml" />
+    <Content Include="Views\Lead\GetLeadFollowUpList.cshtml" />
+    <Content Include="Views\Vendor\AddEditVendor.cshtml" />
+    <Content Include="Views\Vendor\GetVendorList.cshtml" />
+    <Content Include="Views\Vendor\ListVendor.cshtml" />
+    <Content Include="Views\GLMainGroup\AddEditGLMainGroup.cshtml" />
+    <Content Include="Views\GLMainGroup\GetGLMainGroupList.cshtml" />
+    <Content Include="Views\GLMainGroup\ListGLMainGroup.cshtml" />
+    <Content Include="Views\Customer\GetCustomerBranchList.cshtml" />
+    <Content Include="Views\Customer\GetCustomerProductList.cshtml" />
+    <Content Include="Views\GLSubGroup\AddEditGLSubGroup.cshtml" />
+    <Content Include="Views\GLSubGroup\GetGLSubGroupList.cshtml" />
+    <Content Include="Views\GLSubGroup\ListGLSubGroup.cshtml" />
+    <Content Include="Views\QuotationSettings\AddEditQuotationSetting.cshtml" />
+    <Content Include="Views\QuotationSettings\GetQuotationSettingList.cshtml" />
+    <Content Include="Views\QuotationSettings\ListQuotationSetting.cshtml" />
+    <Content Include="Views\TermsTemplate\AddEditTermTemplate.cshtml" />
+    <Content Include="Views\TermsTemplate\GetTermTemplateDetailList.cshtml" />
+    <Content Include="Views\TermsTemplate\ListTermTemplate.cshtml" />
+    <Content Include="Views\TermsTemplate\GetTermTemplateList.cshtml" />
+    <Content Include="Views\Quotation\AddEditQuotation.cshtml" />
+    <Content Include="Views\Quotation\GetQuotationProductList.cshtml" />
+    <Content Include="Views\PO\AddEditPO.cshtml" />
+    <Content Include="Views\PO\GetPOProductList.cshtml" />
+    <Content Include="Views\Quotation\GetQuotationTaxList.cshtml" />
+    <Content Include="Views\Quotation\GetQuotationTermList.cshtml" />
+    <Content Include="Views\Quotation\ListQuotation.cshtml" />
+    <Content Include="Views\Quotation\GetQuotationList.cshtml" />
+    <Content Include="Views\SO\AddEditSO.cshtml" />
+    <Content Include="Views\SO\GetSOList.cshtml" />
+    <Content Include="Views\SO\GetSOProductList.cshtml" />
+    <Content Include="Views\SO\GetSOTaxList.cshtml" />
+    <Content Include="Views\SO\GetSOTermList.cshtml" />
+    <Content Include="Views\SO\ListSO.cshtml" />
+    <Content Include="Views\SaleInvoice\AddEditSaleInvoice.cshtml" />
+    <Content Include="Views\SaleInvoice\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\SaleInvoice\GetSaleInvoiceProductList.cshtml" />
+    <Content Include="Views\SaleInvoice\GetSaleInvoiceTaxList.cshtml" />
+    <Content Include="Views\SaleInvoice\GetSaleInvoiceTermList.cshtml" />
+    <Content Include="Views\SaleInvoice\ListSaleInvoice.cshtml" />
+    <Content Include="Views\PO\GetPOTermList.cshtml" />
+    <Content Include="Views\PO\GetPOTaxList.cshtml" />
+    <Content Include="Views\PO\ListPO.cshtml" />
+    <Content Include="Views\PO\GetPOList.cshtml" />
+    <Content Include="Views\PurchaseInvoice\AddEditPI.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPIList.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPITaxList.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPITermList.cshtml" />
+    <Content Include="Views\PurchaseInvoice\ListPI.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPIProductList.cshtml" />
+    <Content Include="Reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\BankVoucherDataSet.xsc">
+      <DependentUpon>BankVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ApprovedPODataSet.xsc">
+      <DependentUpon>ApprovedPODataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ApprovedPOCustomerSiteMRNNotDoneDataSet.xsc">
+      <DependentUpon>ApprovedPOCustomerSiteMRNNotDoneDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ApprovedPOCustomerSiteMRNNotDoneDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApprovedPOCustomerSiteMRNNotDoneDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ApprovedPOCustomerSiteMRNNotDoneDataSet.xss">
+      <DependentUpon>ApprovedPOCustomerSiteMRNNotDoneDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ApprovedPODataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApprovedPODataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ApprovedPODataSet.xss">
+      <DependentUpon>ApprovedPODataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ApprovedPOMRNNotDoneDataSet.xsc">
+      <DependentUpon>ApprovedPOMRNNotDoneDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ApprovedPOMRNNotDoneDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApprovedPOMRNNotDoneDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ApprovedPOMRNNotDoneDataSet.xss">
+      <DependentUpon>ApprovedPOMRNNotDoneDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ApprovedStoreRequisitionsWithoutPODataSet.xsc">
+      <DependentUpon>ApprovedStoreRequisitionsWithoutPODataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ApprovedStoreRequisitionsWithoutPODataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApprovedStoreRequisitionsWithoutPODataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ApprovedStoreRequisitionsWithoutPODataSet.xss">
+      <DependentUpon>ApprovedStoreRequisitionsWithoutPODataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\BankVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\BankVoucherDataSet.xss">
+      <DependentUpon>BankVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\BookPrintDataSet.xsc">
+      <DependentUpon>BookPrintDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\BankVoucherReportsDataSet.xsc">
+      <DependentUpon>BankVoucherReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\BankVoucherReportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankVoucherReportsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\BankVoucherReportsDataSet.xss">
+      <DependentUpon>BankVoucherReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\BookPrintDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookPrintDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\BookPrintDataSet.xss">
+      <DependentUpon>BookPrintDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\CashVoucherDataSet.xsc">
+      <DependentUpon>CashVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\CashVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CashVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\CashVoucherDataSet.xss">
+      <DependentUpon>CashVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\CreditNoteVoucherDataSet.xsc">
+      <DependentUpon>CreditNoteVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\CashVoucherReportDataSet.xsc">
+      <DependentUpon>CashVoucherReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\CashVoucherReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CashVoucherReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\CashVoucherReportDataSet.xss">
+      <DependentUpon>CashVoucherReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\CreditNoteVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditNoteVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\CreditNoteVoucherDataSet.xss">
+      <DependentUpon>CreditNoteVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\CustomerFormRegisterReportsDataSet.xsc">
+      <DependentUpon>CustomerFormRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\CustomerFormRegisterReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerFormRegisterReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\CustomerFormRegisterReportsDataSet.xss">
+      <DependentUpon>CustomerFormRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\CustomerSiteWiseReportDataSet.xsc">
+      <DependentUpon>CustomerSiteWiseReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\CustomerSiteWiseReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerSiteWiseReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\CustomerSiteWiseReportDataSet.xss">
+      <DependentUpon>CustomerSiteWiseReportDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DailyExpensesReportDataSet.xsc">
+      <DependentUpon>DailyExpensesReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DailyExpensesReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyExpensesReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DailyExpensesReportDataSet.xss">
+      <DependentUpon>DailyExpensesReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\SOSettings\AddEditSOSetting.cshtml" />
+    <Content Include="Views\SOSettings\GetSOSettingList.cshtml" />
+    <Content Include="Views\SOSettings\ListSOSetting.cshtml" />
+    <Content Include="Views\CustomerPayment\AddEditCustomerPayment.cshtml" />
+    <Content Include="Views\SO\GetQuotationList.cshtml" />
+    <Content Include="Views\ProductTaxMapping\AddEditProductTaxMapping.cshtml" />
+    <Content Include="Views\ProductTaxMapping\GetProductTaxMappingList.cshtml" />
+    <Content Include="Views\ProductTaxMapping\ListProductTaxMapping.cshtml" />
+    <Content Include="Views\CustomerPayment\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\CustomerPayment\GetCustomerPaymentList.cshtml" />
+    <Content Include="Views\CustomerPayment\ListCustomerPayment.cshtml" />
+    <Content Include="Reports\PODataSet.xsc">
+      <DependentUpon>PODataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PIDateSet.xsc">
+      <DependentUpon>PIDateSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\MRNDataSet.xsc">
+      <DependentUpon>MRNDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DeliveryChallanDataSet.xsc">
+      <DependentUpon>DeliveryChallanDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DebitNoteVoucherDataSet.xsc">
+      <DependentUpon>DebitNoteVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DebitNoteVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DebitNoteVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DebitNoteVoucherDataSet.xss">
+      <DependentUpon>DebitNoteVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DebitNoteVoucherReportsDataSet.xsc">
+      <DependentUpon>DebitNoteVoucherReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DebitNoteVoucherReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DebitNoteVoucherReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DebitNoteVoucherReportsDataSet.xss">
+      <DependentUpon>DebitNoteVoucherReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DeliveryChallanDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeliveryChallanDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DeliveryChallanDataSet.xss">
+      <DependentUpon>DeliveryChallanDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\JournalVoucherDataSet.xsc">
+      <DependentUpon>JournalVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\GeneralLedgerDataSet.xsc">
+      <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DeliveryChallanRegisterReportsDataSet.xsc">
+      <DependentUpon>DeliveryChallanRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DeliveryChallanRegisterReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeliveryChallanRegisterReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DeliveryChallanRegisterReportsDataSet.xss">
+      <DependentUpon>DeliveryChallanRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\EmployeeAttendanceReportDataSet.xsc">
+      <DependentUpon>EmployeeAttendanceReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\EmployeeAttendanceReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeAttendanceReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\EmployeeAttendanceReportDataSet.xss">
+      <DependentUpon>EmployeeAttendanceReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\GeneralLedgerDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GeneralLedgerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\GeneralLedgerDataSet.xss">
+      <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\GLTrialBalanceDataSet.xsc">
+      <DependentUpon>GLTrialBalanceDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\GLTrialBalanceDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GLTrialBalanceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\GLTrialBalanceDataSet.xss">
+      <DependentUpon>GLTrialBalanceDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\GSTR1DataSet.xsc">
+      <DependentUpon>GSTR1DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\GSTR1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSTR1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\GSTR1DataSet.xss">
+      <DependentUpon>GSTR1DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\JournalVoucherDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JournalVoucherDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\JournalVoucherDataSet.xss">
+      <DependentUpon>JournalVoucherDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\JournalVoucherReportsDataSet.xsc">
+      <DependentUpon>JournalVoucherReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\JournalVoucherReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JournalVoucherReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\JournalVoucherReportsDataSet.xss">
+      <DependentUpon>JournalVoucherReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\LeadReportDataSet.xsc">
+      <DependentUpon>LeadReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\LeadReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeadReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\LeadReportDataSet.xss">
+      <DependentUpon>LeadReportDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\LogReportNewStoreRequisitionDetailDataSet.xsc">
+      <DependentUpon>LogReportNewStoreRequisitionDetailDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\LogReportNewStoreRequisitionDetailDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogReportNewStoreRequisitionDetailDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\LogReportNewStoreRequisitionDetailDataSet.xss">
+      <DependentUpon>LogReportNewStoreRequisitionDetailDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\MRNDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MRNDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\MRNDataSet.xss">
+      <DependentUpon>MRNDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PendingStoreRequisitionsReportDataSet.xsc">
+      <DependentUpon>PendingStoreRequisitionsReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PendingStoreRequisitionsReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PendingStoreRequisitionsReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PendingStoreRequisitionsReportDataSet.xss">
+      <DependentUpon>PendingStoreRequisitionsReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PIDateSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIDateSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\PIDateSet.xss">
+      <DependentUpon>PIDateSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PLStatementDataSet.xsc">
+      <DependentUpon>PLStatementDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PLStatementDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PLStatementDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PLStatementDataSet.xss">
+      <DependentUpon>PLStatementDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PMSEmployeeAssessmentDataSet.xsc">
+      <DependentUpon>PMSEmployeeAssessmentDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PMSEmployeeAssessmentDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSEmployeeAssessmentDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PMSEmployeeAssessmentDataSet.xss">
+      <DependentUpon>PMSEmployeeAssessmentDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PODataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PODataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PODataSet.xss">
+      <DependentUpon>PODataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\SaleInvoice\GetSaleOrderList.cshtml" />
+    <Content Include="Reports\SODataSet.xsc">
+      <DependentUpon>SODataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SaleInvoiceDataSet.xsc">
+      <DependentUpon>SaleInvoiceDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ProductLedger.xsc">
+      <DependentUpon>ProductLedger.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ProductBOMDataSet.xsc">
+      <DependentUpon>ProductBOMDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ProductBOMDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductBOMDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ProductBOMDataSet.xss">
+      <DependentUpon>ProductBOMDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ProductLedger.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductLedger.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ProductLedger.xss">
+      <DependentUpon>ProductLedger.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\QuotationRegisterReportsDataSet.xsc">
+      <DependentUpon>QuotationRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PurchaseQuotationComparisonDataSet.xsc">
+      <DependentUpon>PurchaseQuotationComparisonDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PurchaseIndentDataSet.xsc">
+      <DependentUpon>PurchaseIndentDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ProductSiteConsumptionDataSet.xsc">
+      <DependentUpon>ProductSiteConsumptionDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ProductSiteConsumptionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductSiteConsumptionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ProductSiteConsumptionDataSet.xss">
+      <DependentUpon>ProductSiteConsumptionDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PurchaseIndentDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseIndentDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PurchaseIndentDataSet.xss">
+      <DependentUpon>PurchaseIndentDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PurchaseQuotationComparisonDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseQuotationComparisonDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PurchaseQuotationComparisonDataSet.xss">
+      <DependentUpon>PurchaseQuotationComparisonDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\PurchaseQuotationDataSet.xsc">
+      <DependentUpon>PurchaseQuotationDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\PurchaseQuotationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseQuotationDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\PurchaseQuotationDataSet.xss">
+      <DependentUpon>PurchaseQuotationDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\QuotationRegisterReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuotationRegisterReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\QuotationRegisterReportsDataSet.xss">
+      <DependentUpon>QuotationRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SalarySummaryReportDataSet.xsc">
+      <DependentUpon>SalarySummaryReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SalarySummaryReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalarySummaryReportDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\SalarySummaryReportDataSet.xss">
+      <DependentUpon>SalarySummaryReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SaleInvoiceDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaleInvoiceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SaleInvoiceDataSet.xss">
+      <DependentUpon>SaleInvoiceDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SLTrialBalanceDataSet.xsc">
+      <DependentUpon>SLTrialBalanceDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SaleInvoiceRegisterReportsDataSet.xsc">
+      <DependentUpon>SaleInvoiceRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SaleInvoiceRegisterReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaleInvoiceRegisterReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SaleInvoiceRegisterReportsDataSet.xss">
+      <DependentUpon>SaleInvoiceRegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SINDataSet.xsc">
+      <DependentUpon>SINDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SaleInvoiceSummaryReportsDataSet.xsc">
+      <DependentUpon>SaleInvoiceSummaryReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SaleInvoiceSummaryReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaleInvoiceSummaryReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SaleInvoiceSummaryReportsDataSet.xss">
+      <DependentUpon>SaleInvoiceSummaryReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SaleReturnRegisterDataSet.xsc">
+      <DependentUpon>SaleReturnRegisterDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SaleReturnRegisterDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SaleReturnRegisterDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SaleReturnRegisterDataSet.xss">
+      <DependentUpon>SaleReturnRegisterDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SINDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SINDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SINDataSet.xss">
+      <DependentUpon>SINDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SINRegisterReportDataSet.xsc">
+      <DependentUpon>SINRegisterReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SINRegisterReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SINRegisterReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SINRegisterReportDataSet.xss">
+      <DependentUpon>SINRegisterReportDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SiteLedgerReportsDataSet.xsc">
+      <DependentUpon>SiteLedgerReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SiteDeliveryChallanDataSet.xsc">
+      <DependentUpon>SiteDeliveryChallanDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SiteDeliveryChallanDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SiteDeliveryChallanDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SiteDeliveryChallanDataSet.xss">
+      <DependentUpon>SiteDeliveryChallanDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SiteLedgerReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SiteLedgerReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SiteLedgerReportsDataSet.xss">
+      <DependentUpon>SiteLedgerReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SLTrialBalanceDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SLTrialBalanceDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SLTrialBalanceDataSet.xss">
+      <DependentUpon>SLTrialBalanceDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SODataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SODataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SODataSet.xss">
+      <DependentUpon>SODataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\VendorPayment\AddEditVendorPayment.cshtml" />
+    <Content Include="Views\VendorPayment\GetVendorPaymentList.cshtml" />
+    <Content Include="Views\VendorPayment\GetPIList.cshtml" />
+    <Content Include="Views\VendorPayment\ListVendorPayment.cshtml" />
+    <Content Include="Views\DeliveryChallan\AddEditDeliveryChallan.cshtml" />
+    <Content Include="Views\DeliveryChallan\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\DeliveryChallan\GetChallanList.cshtml" />
+    <Content Include="Views\DeliveryChallan\GetChallanProductList.cshtml" />
+    <Content Include="Views\DeliveryChallan\GetChallanTaxList.cshtml" />
+    <Content Include="Views\DeliveryChallan\GetChallanTermList.cshtml" />
+    <Content Include="Views\DeliveryChallan\ListChallan.cshtml" />
+    <Content Include="Views\Quotation\AddRevisedQuotation.cshtml" />
+    <Content Include="Views\MRN\AddEditMRN.cshtml" />
+    <Content Include="Views\MRN\GetMRNProductList.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPurchaseOrderList.cshtml" />
+    <Content Include="Views\PO\AddRevisedPO.cshtml" />
+    <Content Include="Views\MRN\GetPurchaseInvoiceList.cshtml" />
+    <Content Include="Views\MRN\GetMRNList.cshtml" />
+    <Content Include="Views\MRN\ListMRN.cshtml" />
+    <Content Include="Views\FollowUpActivityType\AddEditFollowUpActivityType.cshtml" />
+    <Content Include="Views\FollowUpActivityType\ListFollowUpActivityType.cshtml" />
+    <Content Include="Views\FollowUpActivityType\GetFollowUpActivityTypeList.cshtml" />
+    <Content Include="Views\Schedule\AddEditSchedule.cshtml" />
+    <Content Include="Views\Schedule\GetScheduleList.cshtml" />
+    <Content Include="Views\Schedule\ListSchedule.cshtml" />
+    <Content Include="Views\CompanyBranch\AddEditCompanyBranch.cshtml" />
+    <Content Include="Views\CompanyBranch\GetCompanyBranchList.cshtml" />
+    <Content Include="Views\CompanyBranch\ListCompanyBranch.cshtml" />
+    <Content Include="Views\CompanyBranch\SuperAdminDashboard.cshtml" />
+    <Content Include="Views\FormType\AddEditFormType.cshtml" />
+    <Content Include="Views\FormType\GetFormTypeList.cshtml" />
+    <Content Include="Views\FormType\ListFormType.cshtml" />
+    <Content Include="Views\STN\AddEditSTN.cshtml" />
+    <Content Include="Views\STN\GetSTNProductList.cshtml" />
+    <Content Include="Views\STN\GetSTNList.cshtml" />
+    <Content Include="Views\STN\ListSTN.cshtml" />
+    <Content Include="Views\STR\AddEditSTR.cshtml" />
+    <Content Include="Views\STR\GetSTRProductList.cshtml" />
+    <Content Include="Views\STR\GetSTNList.cshtml" />
+    <Content Include="Views\STR\ListSTR.cshtml" />
+    <Content Include="Views\STR\GetSTRList.cshtml" />
+    <Content Include="Views\CustomerForm\AddEditCustomerForm.cshtml" />
+    <Content Include="Views\CustomerForm\GetCustomerFormList.cshtml" />
+    <Content Include="Views\CustomerForm\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\CustomerForm\ListCustomerForm.cshtml" />
+    <Content Include="Views\QuotationRegister\ListQuotationRegister.cshtml" />
+    <Content Include="Views\QuotationRegister\GetQuotationRegisterList.cshtml" />
+    <Content Include="Views\PORegister\GetPORegisterList.cshtml" />
+    <Content Include="Views\PORegister\ListPORegister.cshtml" />
+    <Content Include="Views\SORegister\GetSORegisterList.cshtml" />
+    <Content Include="Views\SORegister\ListSORegister.cshtml" />
+    <Content Include="Views\DocumentType\AddEditDocumentType.cshtml" />
+    <Content Include="Views\DocumentType\GetDocumentTypeList.cshtml" />
+    <Content Include="Views\DocumentType\ListDocumentType.cshtml" />
+    <Content Include="Views\SaleInvoiceRegister\GetSaleInvoiceRegisterList.cshtml" />
+    <Content Include="Views\SaleInvoiceRegister\ListSaleInvoiceRegister.cshtml" />
+    <Content Include="Views\MRNRegister\GetMRNRegisterList.cshtml" />
+    <Content Include="Views\MRNRegister\ListMRNRegister.cshtml" />
+    <Content Include="Views\PurchaseInvoiceRegister\GetPurchaseInvoiceRegisterList.cshtml" />
+    <Content Include="Views\PurchaseInvoiceRegister\ListPurchaseInvoiceRegister.cshtml" />
+    <Content Include="Views\DeliveryChallanRegister\GetDeliveryChallanRegisterList.cshtml" />
+    <Content Include="Views\DeliveryChallanRegister\ListDeliveryChallanRegister.cshtml" />
+    <Content Include="Views\StockLedger\PrintStockLedger.cshtml" />
+    <Content Include="Views\STNRegister\GetSTNRegisterList.cshtml" />
+    <Content Include="Views\STNRegister\ListSTNRegister.cshtml" />
+    <Content Include="Views\STRRegister\GetSTRRegisterList.cshtml" />
+    <Content Include="Views\STRRegister\ListSTRRegister.cshtml" />
+    <Content Include="Reports\STNDataSet.xsc">
+      <DependentUpon>STNDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\SORegisterReportsDataSet.xsc">
+      <DependentUpon>SORegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SORegisterReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SORegisterReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SORegisterReportsDataSet.xss">
+      <DependentUpon>SORegisterReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\STNDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STNDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\STNDataSet.xss">
+      <DependentUpon>STNDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\STRDataSet.xsc">
+      <DependentUpon>STRDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\StockSummaryReportsDataSet.xsc">
+      <DependentUpon>StockSummaryReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\StockLedgerReportDataSet.xsc">
+      <DependentUpon>StockLedgerReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\StockLedgerReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockLedgerReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\StockLedgerReportDataSet.xss">
+      <DependentUpon>StockLedgerReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\StockSummaryReportsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockSummaryReportsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\StockSummaryReportsDataSet.xss">
+      <DependentUpon>StockSummaryReportsDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\StoreRequisitionDataSet.xsc">
+      <DependentUpon>StoreRequisitionDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\StoreRequisitionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StoreRequisitionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\StoreRequisitionDataSet.xss">
+      <DependentUpon>StoreRequisitionDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\STRDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STRDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\STRDataSet.xss">
+      <DependentUpon>STRDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\CustomerFormRegister\ListCFormRegister.cshtml" />
+    <Content Include="Views\CustomerFormRegister\GetCustomerFormRegisterList.cshtml" />
+    <Content Include="Views\CustomerPaymentRegister\ListCustomerPaymentRegister.cshtml" />
+    <Content Include="Views\CustomerPaymentRegister\GetCustomerPaymentRegisterList.cshtml" />
+    <Content Include="Views\VendorPaymentRegister\GetVendorPaymentRegisterList.cshtml" />
+    <Content Include="Views\VendorPaymentRegister\ListVendorPaymentRegister.cshtml" />
+    <Content Include="Views\UserEmailSetting\AddEditUserEmailSetting.cshtml" />
+    <Content Include="Views\UserEmailSetting\GetUserEmailSettingList.cshtml" />
+    <Content Include="Views\UserEmailSetting\ListUserEmailSetting.cshtml" />
+    <Content Include="Views\GL\AddEditGL.cshtml" />
+    <Content Include="Views\VendorForm\AddEditVendorForm.cshtml" />
+    <Content Include="Views\VendorForm\GetVendorFormList.cshtml" />
+    <Content Include="Views\VendorForm\ListVendorForm.cshtml" />
+    <Content Include="Views\Home\ChangePassword.cshtml" />
+    <Content Include="Views\Voucher\AddEditBankVoucher.cshtml" />
+    <Content Include="Views\PurchaseSummary\ListPurchaseSummary.cshtml" />
+    <Content Include="Views\PurchaseSummary\GetPurchaseSummaryList.cshtml" />
+    <Content Include="Views\GL\GetGLList.cshtml" />
+    <Content Include="Views\GL\ListGL.cshtml" />
+    <Content Include="Views\Vendor\GetVendorProductList.cshtml" />
+    <Content Include="Views\Voucher\GetBankVoucherEntryList.cshtml" />
+    <Content Include="Views\SaleInvoice\CancelSaleInvoice.cshtml" />
+    <Content Include="Views\PurchaseInvoice\CancelPI.cshtml" />
+    <Content Include="Views\CostCenter\AddEditCostCenter.cshtml" />
+    <Content Include="Views\CostCenter\GetCostCenterList.cshtml" />
+    <Content Include="Views\CostCenter\ListCostCenter.cshtml" />
+    <Content Include="Views\SL\AddEditSL.cshtml" />
+    <Content Include="Views\SL\GetSLList.cshtml" />
+    <Content Include="Views\SL\ListSL.cshtml" />
+    <Content Include="Views\SLDetail\AddEditSLDetail.cshtml" />
+    <Content Include="Views\SLDetail\GetSLDetailList.cshtml" />
+    <Content Include="Views\Voucher\ListBankVoucher.cshtml" />
+    <Content Include="Views\Voucher\GetBankVoucherList.cshtml" />
+    <Content Include="Views\BookPrint\BankBookPrint.cshtml" />
+    <Content Include="Views\CashVoucher\AddEditCashVoucher.cshtml" />
+    <Content Include="Views\CashVoucher\GetCashVoucherEntryList.cshtml" />
+    <Content Include="Views\CashVoucher\GetCashVoucherList.cshtml" />
+    <Content Include="Views\CashVoucher\ListCashVoucher.cshtml" />
+    <Content Include="Views\JournalVoucher\AddEditJournalVoucher.cshtml" />
+    <Content Include="Views\JournalVoucher\GetJournalVoucherEntryList.cshtml" />
+    <Content Include="Views\JournalVoucher\GetJournalVoucherList.cshtml" />
+    <Content Include="Views\JournalVoucher\ListApprovedJournalVoucher.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\AddEditDebitNoteVoucher.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\GetDebitNoteVoucherEntryList.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\GetDebitNoteVoucherList.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\ListDebitNoteVoucher.cshtml" />
+    <Content Include="Views\BookPrint\JournalBookPrint.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\AddEditCreditNoteVoucher.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\GetCreditNoteVoucherEntryList.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\GetCreditNoteVoucherList.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\ListCreditNoteVoucher.cshtml" />
+    <Content Include="Views\BookPrint\CashBookPrint.cshtml" />
+    <Content Include="Views\BookPrint\SaleBookPrint.cshtml" />
+    <Content Include="Views\BookPrint\PurchaseBookPrint.cshtml" />
+    <Content Include="Views\Voucher\CancelApprovedBankVoucher.cshtml" />
+    <Content Include="Views\CashVoucher\CancelApprovedCashVoucher.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\CancelApprovedCreditNoteVoucher.cshtml" />
+    <Content Include="Views\BookPrint\CreditNoteBookPrint.cshtml" />
+    <Content Include="Views\BookPrint\DebitNoteBookPrint.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\CancelApprovedDebitNoteVoucher.cshtml" />
+    <Content Include="Views\JournalVoucher\CancelApprovedJournalVoucher.cshtml" />
+    <Content Include="Views\ProductGLMapping\AddEditProductGLMapping.cshtml" />
+    <Content Include="Views\ProductGLMapping\GetProductGLMappingList.cshtml" />
+    <Content Include="Views\ProductGLMapping\ListProductGLMapping.cshtml" />
+    <Content Include="Views\GeneralLedgerPrint\GeneralLedgerPrint.cshtml" />
+    <Content Include="Views\User\GetDashboardUser.cshtml" />
+    <Content Include="Views\SubLedgerPrint\SubLedgerPrint.cshtml" />
+    <Content Include="Reports\SubLedgerDataSet.xsc">
+      <DependentUpon>SubLedgerDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\SubLedgerDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubLedgerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\SubLedgerDataSet.xss">
+      <DependentUpon>SubLedgerDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\GLTrialBalancePrint\GLTrialBalancePrint.cshtml" />
+    <Content Include="Views\SLTrialBalancePrint\SLTrialBalancePrint.cshtml" />
+    <Content Include="Views\PLStatementPrint\PLStatementPrint.cshtml" />
+    <Content Include="Views\PLStatementPrint\BalanceSheetPrint.cshtml" />
+    <Content Include="Views\TBDrillDown\TBDrillDown.cshtml" />
+    <Content Include="Views\Voucher\ListApprovedBankVoucher.cshtml" />
+    <Content Include="Views\Voucher\GetApprovedBankVoucherList.cshtml" />
+    <Content Include="Views\CashVoucher\GetApprovedCashVoucherList.cshtml" />
+    <Content Include="Views\CashVoucher\ListApprovedCashVoucher.cshtml" />
+    <Content Include="Views\JournalVoucher\GetApprovedJournalVoucherList.cshtml" />
+    <Content Include="Views\JournalVoucher\ListJournalVoucher.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\GetApprovedDebitNoteVoucherList.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\ListApprovedDebitNoteVoucher.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\GetApprovedCreditNoteVoucherList.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\ListApprovedCreditNoteVoucher.cshtml" />
+    <Content Include="Views\TBDrillDown\MainGroupWiseTBDrillDown.cshtml" />
+    <Content Include="Views\TBDrillDown\SubGroupWiseTBDrillDown.cshtml" />
+    <Content Include="Views\TBDrillDown\GLWiseTBDrillDown.cshtml" />
+    <Content Include="Views\TBDrillDown\SLWiseTBDrillDown.cshtml" />
+    <Content Include="Views\Voucher\GetPIList.cshtml" />
+    <Content Include="Views\Voucher\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\Dashboard\GetBookBalanceList.cshtml" />
+    <Content Include="Views\Dashboard\GetMonthWiseBankCashTransactionSummary.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPIMRNProductList.cshtml" />
+    <Content Include="Views\Dashboard\GetQuatationCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetSOCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetSICountList.cshtml" />
+    <Content Include="Views\UploadUtility\ImportLead.cshtml" />
+    <Content Include="Views\UploadUtility\ImportGLMainGroup.cshtml" />
+    <Content Include="Views\UploadUtility\ImportGLSubGroup.cshtml" />
+    <Content Include="Views\Dashboard\GetPOCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetPICountList.cshtml" />
+    <Content Include="Views\UploadUtility\ImportSL.cshtml" />
+    <Content Include="Views\UploadUtility\ImportCustomer.cshtml" />
+    <Content Include="Views\UploadUtility\ImportEmployee.cshtml" />
+    <Content Include="Views\UploadUtility\ImportDepartment.cshtml" />
+    <Content Include="Views\UploadUtility\ImportDesignation.cshtml" />
+    <Content Include="Views\UploadUtility\ImportProductSubGroup.cshtml" />
+    <Content Include="Views\UploadUtility\ImportProduct.cshtml" />
+    <Content Include="Views\UploadUtility\ImportVendor.cshtml" />
+    <Content Include="Views\UploadUtility\ImportCustomerBranch.cshtml" />
+    <Content Include="Views\AdditionalTax\AddEditAdditionalTax.cshtml" />
+    <Content Include="Views\AdditionalTax\GetAdditionalTaxList.cshtml" />
+    <Content Include="Views\AdditionalTax\ListAdditionalTax.cshtml" />
+    <Content Include="Views\UploadUtility\ImportGL.cshtml" />
+    <Content Include="Views\Dashboard\GetLeadStatusCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetLeadSourceCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetLeadFollowUpCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetReorderPointProductCountList.cshtml" />
+    <Content Include="Views\Home\Login1223.cshtml" />
+    <Content Include="Views\Customer\GetCustomerFollowUpList.cshtml" />
+    <Content Include="Views\Dashboard\GetDateWiseLeadConversionCountList.cshtml" />
+    <Content Include="Views\UploadUtility\ImportProductBOM.cshtml" />
+    <Content Include="Views\UploadUtility\ImportProductOpeningStock.cshtml" />
+    <Content Include="Views\UploadUtility\ImportProductMainGroup.cshtml" />
+    <Content Include="Views\UploadUtility\ImportGLDetail.cshtml" />
+    <Content Include="Views\UploadUtility\ImportSLDetail.cshtml" />
+    <Content Include="Views\TBDrillDown\GLLedgerDrillDown.cshtml" />
+    <Content Include="Views\TBDrillDown\SLLedgerDrillDown.cshtml" />
+    <Content Include="Views\PO\GetPOSupportingDocumentList.cshtml" />
+    <Content Include="Views\PurchaseInvoice\GetPISupportingDocumentList.cshtml" />
+    <Content Include="Views\SaleVoucher\AddEditSaleVoucher.cshtml" />
+    <Content Include="Views\SaleVoucher\GetSaleVoucherEntryList.cshtml" />
+    <Content Include="Views\PurchaseVoucher\AddEditPurchaseVoucher.cshtml" />
+    <Content Include="Views\PurchaseVoucher\GetPurchaseVoucherEntryList.cshtml" />
+    <Content Include="Views\Dashboard\ModuleDashboard1.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\ResourceRequisition\AddEditResourceRequisition.cshtml" />
+    <Content Include="Views\ResourceRequisition\GetSkillList.cshtml" />
+    <Content Include="Views\ResourceRequisition\ListResourceRequisition.cshtml" />
+    <Content Include="Views\ResourceRequisition\GetInterviewList.cshtml" />
+    <Content Include="Views\PositionType\AddEditPositionType.cshtml" />
+    <Content Include="Views\PositionType\GetPositionTypeList.cshtml" />
+    <Content Include="Views\PositionType\ListPositionType.cshtml" />
+    <Content Include="Views\PositionLevel\AddEditPositionLevel.cshtml" />
+    <Content Include="Views\PositionLevel\GetPositionLevelList.cshtml" />
+    <Content Include="Views\PositionLevel\ListPositionLevel.cshtml" />
+    <Content Include="Views\InterviewType\AddEditInterviewType.cshtml" />
+    <Content Include="Views\InterviewType\GetInterviewTypeList.cshtml" />
+    <Content Include="Views\InterviewType\ListInterviewType.cshtml" />
+    <Content Include="Views\HolidayCalender\AddEditHolidayCalender.cshtml" />
+    <Content Include="Views\HolidayCalender\GetHolidayCalenderList.cshtml" />
+    <Content Include="Views\HolidayCalender\ListHolidayCalender.cshtml" />
+    <Content Include="Views\TravelType\AddEditTravelType.cshtml" />
+    <Content Include="Views\TravelType\GetTravelTypeList.cshtml" />
+    <Content Include="Views\TravelType\ListTravelType.cshtml" />
+    <Content Include="Views\AdvanceType\AddEditAdvanceType.cshtml" />
+    <Content Include="Views\AdvanceType\GetAdvanceTypeList.cshtml" />
+    <Content Include="Views\AdvanceType\ListAdvanceType.cshtml" />
+    <Content Include="Views\LoanType\AddEditLoanType.cshtml" />
+    <Content Include="Views\LoanType\GetLoanTypeList.cshtml" />
+    <Content Include="Views\LoanType\ListLoanType.cshtml" />
+    <Content Include="Views\VerificationAgency\AddEditVerificationAgency.cshtml" />
+    <Content Include="Views\VerificationAgency\GetVerificationAgencyList.cshtml" />
+    <Content Include="Views\VerificationAgency\ListVerificationAgency.cshtml" />
+    <Content Include="Views\ResumeSource\AddEditResumeSource.cshtml" />
+    <Content Include="Views\ResumeSource\GetResumeSourceList.cshtml" />
+    <Content Include="Views\ResumeSource\ListResumeSource.cshtml" />
+    <Content Include="Views\Roaster\AddEditRoaster.cshtml" />
+    <Content Include="Views\Roaster\GetRoasterList.cshtml" />
+    <Content Include="Views\Roaster\ListRoaster.cshtml" />
+    <Content Include="Views\SeparationClearList\AddEditSeparationClearList.cshtml" />
+    <Content Include="Views\SeparationClearList\GetSeparationClearList.cshtml" />
+    <Content Include="Views\SeparationClearList\ListSeparationClearList.cshtml" />
+    <Content Include="Views\Applicant\AddEditApplicant.cshtml" />
+    <Content Include="Views\Applicant\GetApplicantEducationList.cshtml" />
+    <Content Include="Views\Applicant\GetApplicantPrevEmployerList.cshtml" />
+    <Content Include="Views\Applicant\GetApplicantProjectList.cshtml" />
+    <Content Include="Views\Applicant\GetJobOpeningList.cshtml" />
+    <Content Include="Views\Applicant\ListApplicant.cshtml" />
+    <Content Include="Views\Applicant\GetApplicantList.cshtml" />
+    <Content Include="Views\Appointment\AddEditAppointment.cshtml" />
+    <Content Include="Views\Applicant\ListShortlistApplicant.cshtml" />
+    <Content Include="Views\Applicant\GetShortlistApplicantList.cshtml" />
+    <Content Include="Views\Applicant\ShortlistApplicant.cshtml" />
+    <Content Include="Views\Appointment\GetInterviewList.cshtml" />
+    <Content Include="Views\Appointment\ListAppointment.cshtml" />
+    <Content Include="Views\Appointment\GetAppointmentList.cshtml" />
+    <Content Include="Views\Attendance\MarkAttendance.cshtml" />
+    <Content Include="Views\Attendance\ListEmployeeMarkAttendance.cshtml" />
+    <Content Include="Views\Attendance\GetEmployeeMarkAttendanceList.cshtml" />
+    <Content Include="Views\EmployeeAttendance\GetEmployeeAttendanceList.cshtml" />
+    <Content Include="Views\EmployeeAttendance\ListEmployeeAttendance.cshtml" />
+    <Content Include="Reports\WorkOrderDataSet.xsc">
+      <DependentUpon>WorkOrderDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\WorkOrderDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkOrderDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\WorkOrderDataSet.xss">
+      <DependentUpon>WorkOrderDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\Calender\AddEditCalender.cshtml" />
+    <Content Include="Views\Calender\GetCalenderList.cshtml" />
+    <Content Include="Views\Calender\ListCalender.cshtml" />
+    <Content Include="Views\ActivityCalender\AddEditActivityCalender.cshtml" />
+    <Content Include="Views\ActivityCalender\GetActivityCalenderList.cshtml" />
+    <Content Include="Views\ActivityCalender\ListActivityCalender.cshtml" />
+    <Content Include="Views\HolidayType\AddEditHolidayType.cshtml" />
+    <Content Include="Views\HolidayType\GetHolidayTypeList.cshtml" />
+    <Content Include="Views\HolidayType\ListHolidayType.cshtml" />
+    <Content Include="Views\AssetType\AddEditAssetType.cshtml" />
+    <Content Include="Views\AssetType\GetAssetTypeList.cshtml" />
+    <Content Include="Views\AssetType\ListAssetType.cshtml" />
+    <Content Include="Views\MRN\GetMRNSupportingDocumentList.cshtml" />
+    <Content Include="Views\Quotation\GetQuotationSupportingDocumentList.cshtml" />
+    <Content Include="Views\SO\GetSOSupportingDocumentList.cshtml" />
+    <Content Include="Views\DeliveryChallan\GetDeliveryChallanSupportingDocumentList.cshtml" />
+    <Content Include="Views\SaleInvoice\GetSISupportingDocumentList.cshtml" />
+    <Content Include="Views\STN\GetSTNSupportingDocumentList.cshtml" />
+    <Content Include="Views\STR\GetSTRSupportingDocumentList.cshtml" />
+    <Content Include="Views\Voucher\GetVoucherSupportingDocumentList.cshtml" />
+    <Content Include="Views\CashVoucher\GetCashVoucherSupportingDocumentList.cshtml" />
+    <Content Include="Views\JournalVoucher\GetJournalVoucherSupportingDocumentList.cshtml" />
+    <Content Include="Views\CreditNoteVoucher\GetCreditNoteVoucherSupportingDocumentList.cshtml" />
+    <Content Include="Views\DebitNoteVoucher\GetDebitNoteVoucherSupportingDocumentList.cshtml" />
+    <Content Include="Views\SaleInvoice\GetSaleInvoiceProductSerialDetailList.cshtml" />
+    <Content Include="Views\ClaimType\AddEditClaimType.cshtml" />
+    <Content Include="Views\ClaimType\GetClaimTypeList.cshtml" />
+    <Content Include="Views\ClaimType\ListClaimType.cshtml" />
+    <Content Include="Views\Education\AddEditEducation.cshtml" />
+    <Content Include="Views\Education\GetEducationList.cshtml" />
+    <Content Include="Views\Education\ListEducationType.cshtml" />
+    <Content Include="Views\ShiftType\AddEditShiftType.cshtml" />
+    <Content Include="Views\ShiftType\GetShiftTypeList.cshtml" />
+    <Content Include="Views\ShiftType\ListShiftType.cshtml" />
+    <Content Include="Views\Language\AddEditLanguage.cshtml" />
+    <Content Include="Views\Language\GetLanguageList.cshtml" />
+    <Content Include="Views\Language\ListLanguage.cshtml" />
+    <Content Include="Views\Religion\AddEditReligion.cshtml" />
+    <Content Include="Views\Religion\GetReligionList.cshtml" />
+    <Content Include="Views\Religion\ListReligion.cshtml" />
+    <Content Include="Views\LeaveType\AddEditLeaveType.cshtml" />
+    <Content Include="Views\LeaveType\GetLeaveTypeList.cshtml" />
+    <Content Include="Views\LeaveType\ListLeaveType.cshtml" />
+    <Content Include="Views\CTCType\AddEditCTC.cshtml" />
+    <Content Include="Views\CTCType\GetCTCList.cshtml" />
+    <Content Include="Views\CTCType\ListCTC.cshtml" />
+    <Content Include="Views\HRLeaveType\AddEditHRLeaveType.cshtml" />
+    <Content Include="Views\HRLeaveType\GetProductHRLeaveType.cshtml" />
+    <Content Include="Views\HRLeaveType\ListHRLeaveType.cshtml" />
+    <Content Include="Views\ChasisSerialMapping\AddEditChasisSerialMapping.cshtml" />
+    <Content Include="Views\ChasisSerialMapping\GetChasisSerialList.cshtml" />
+    <Content Include="Views\ChasisSerialMapping\ListChasisSerial.cshtml" />
+    <Content Include="Views\ChasisSerialMapping\AddEditChasisSerialMapping.cshtml" />
+    <Content Include="Views\ChasisSerialMapping\GetChasisSerialList.cshtml" />
+    <Content Include="Views\ChasisSerialMapping\ListChasisSerial.cshtml" />
+    <Content Include="Views\JobOpening\AddEditJobOpening.cshtml" />
+    <Content Include="Views\JobOpening\GetJobOpeningList.cshtml" />
+    <Content Include="Views\JobOpening\ListJobOpening.cshtml" />
+    <Content Include="Views\Shared\_StoreLayout.cshtml" />
+    <Content Include="Views\ResourceRequisition\ApproveResourceRequisition.cshtml" />
+    <Content Include="Views\ResourceRequisition\GetResourceRequisitionApprovalList.cshtml" />
+    <Content Include="Views\ResourceRequisition\GetResourceRequisitionList.cshtml" />
+    <Content Include="Views\ResourceRequisition\ListResourceRequisitionApproval.cshtml" />
+    <Content Include="Views\Dashboard\StoreDashboard.cshtml" />
+    <Content Include="Views\EmployeeAdvanceApp\AddEditEmployeeAdvanceApp.cshtml" />
+    <Content Include="Views\EmployeeAdvanceApp\ListEmployeeAdvanceApp.cshtml" />
+    <Content Include="Views\EmployeeAdvanceApp\GetEmployeeAdvanceAppList.cshtml" />
+    <Content Include="Views\EmployeeAdvanceApp\GetEmployeeAdvanceAppApprovalList.cshtml" />
+    <Content Include="Views\EmployeeAdvanceApp\ApproveEmployeeAdvanceApp.cshtml" />
+    <Content Include="Views\EmployeeAdvanceApp\ListEmployeeAdvanceAppApproval.cshtml" />
+    <Content Include="Views\EmployeeTravelApp\AddEditEmployeeTravelApp.cshtml" />
+    <Content Include="Views\EmployeeTravelApp\ApproveEmployeeTravelApp.cshtml" />
+    <Content Include="Views\EmployeeTravelApp\GetEmployeeTravelAppApprovalList.cshtml" />
+    <Content Include="Views\EmployeeTravelApp\GetEmployeeTravelAppList.cshtml" />
+    <Content Include="Views\EmployeeTravelApp\ListEmployeeTravelApp.cshtml" />
+    <Content Include="Views\EmployeeTravelApp\ListEmployeeTravelAppApproval.cshtml" />
+    <Content Include="Views\SeparationCategory\AddEditSeparationCategory.cshtml" />
+    <Content Include="Views\SeparationCategory\GetSeparationCategory.cshtml" />
+    <Content Include="Views\SeparationCategory\ListSeparationCategory.cshtml" />
+    <Content Include="Views\SaleInvoiceSummary\GetSaleInvoiceSummaryList.cshtml" />
+    <Content Include="Views\SaleInvoiceSummary\ListSaleInvoiceSummary.cshtml" />
+    <Content Include="Views\EmployeeLoanApplication\AddEditEmployeeLoanApplication.cshtml" />
+    <Content Include="Views\EmployeeLoanApplication\GetEmployeeLoanApplicationList.cshtml" />
+    <Content Include="Views\EmployeeLoanApplication\ListEmployeeLoanApplication.cshtml" />
+    <Content Include="Views\EmployeeAssetApplication\AddEditEmployeeAssetApplication.cshtml" />
+    <Content Include="Views\EmployeeAssetApplication\GetEmployeeAssetApplicationList.cshtml" />
+    <Content Include="Views\EmployeeAssetApplication\ListEmployeeAssetApplication.cshtml" />
+    <Content Include="Views\EmployeeLoanApplication\GetEmployeeLoanApplicationApprovalList.cshtml" />
+    <Content Include="Views\EmployeeLoanApplication\ListEmployeeLoanApplicationApproval.cshtml" />
+    <Content Include="Views\EmployeeLoanApplication\ApprovalEmployeeLoanApplication.cshtml" />
+    <Content Include="Views\EmployeeAssetApplication\ApprovalRejectedEmployeeAssetApplication.cshtml" />
+    <Content Include="Views\EmployeeAssetApplication\GetEmployeeAssetApplicationApprovalList.cshtml" />
+    <Content Include="Views\EmployeeAssetApplication\ListEmployeeAssetApplicationApproval.cshtml" />
+    <Content Include="Views\ResourceRequisition\GetResourceRequisitionList.cshtml" />
+    <Content Include="Views\JobOpening\GetResourceRequisitionList.cshtml" />
+    <Content Include="Views\Dashboard\ModuleDashboard.cshtml" />
+    <Content Include="Views\Interview\AddEditInterview.cshtml" />
+    <Content Include="Views\Interview\ListInterview.cshtml" />
+    <Content Include="Views\Interview\GetInterviewList.cshtml" />
+    <Content Include="Views\EmployeeClaimApplication\AddEditEmployeeClaimApplication.cshtml" />
+    <Content Include="Views\EmployeeClaimApplication\ApprovalRejectedEmployeeClaimApplication.cshtml" />
+    <Content Include="Views\EmployeeClaimApplication\GetEmployeeClaimApplicationApprovalList.cshtml" />
+    <Content Include="Views\EmployeeClaimApplication\GetEmployeeClaimApplicationList.cshtml" />
+    <Content Include="Views\EmployeeClaimApplication\ListEmployeeClaimApplication.cshtml" />
+    <Content Include="Views\EmployeeClaimApplication\ListEmployeeClaimApplicationApproval.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\AddEditEmployeeLeaveApplication.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\ApproveEmployeeLeaveApplication.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\GetEmployeeLeaveApplicationApprovalList.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\GetEmployeeLeaveApplicationList.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\ListEmployeeLeaveApplication.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\ListEmployeeLeaveApplicationApproval.cshtml" />
+    <Content Include="Views\PMS_Section\AddEditSection.cshtml" />
+    <Content Include="Views\PMS_Section\GetSectionList.cshtml" />
+    <Content Include="Views\PMS_Section\ListSection.cshtml" />
+    <Content Include="Views\PMS_PerformanceCycle\AddEditPerformanceCycle.cshtml" />
+    <Content Include="Views\PMS_PerformanceCycle\GetPerformanceCycleList.cshtml" />
+    <Content Include="Views\PMS_PerformanceCycle\ListPerformanceCycle.cshtml" />
+    <Content Include="Views\PMSGoalCategory\AddEditGoalCategory.cshtml" />
+    <Content Include="Views\PMSGoalCategory\GetGoalCategoryList.cshtml" />
+    <Content Include="Views\PMSGoalCategory\ListGoalCategoryType.cshtml" />
+    <Content Include="Views\Employee\GetShortlistApplicantList.cshtml" />
+    <Content Include="Views\PMSGoal\AddEditGoal.cshtml" />
+    <Content Include="Views\PMSGoal\GetGoalList.cshtml" />
+    <Content Include="Views\PMSGoal\ListGoal.cshtml" />
+    <Content Include="Views\PMS_AppraisalTemplate\AddEditAppraisalTemplate.cshtml" />
+    <Content Include="Views\PMS_AppraisalTemplate\GetTemplateGoalList.cshtml" />
+    <Content Include="Views\PMS_AppraisalTemplate\ListAppraisalTemplate.cshtml" />
+    <Content Include="Views\PMS_AppraisalTemplate\GetAppraisalTemplateLists.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalTemplateMapping\AddEditEmployeeAppraisalTemplateMapping.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalTemplateMapping\GetAppraisalTemplateDetailList.cshtml" />
+    <Content Include="Views\Roaster\GetRoasterWeekList.cshtml" />
+    <Content Include="Views\Shift\AddEditShift.cshtml" />
+    <Content Include="Views\Shift\GetShiftList.cshtml" />
+    <Content Include="Views\Shift\ListShift.cshtml" />
+    <Content Include="Views\Roaster\UpdateDateWiseShift.cshtml" />
+    <Content Include="Views\Roaster\GetRosterLinkedEmployeeList.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalReview\AddEditEmployeeAppraisalReview.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalReview\GetEmployeeAppraisalReviewList.cshtml" />
+    <Content Include="Views\SeparationApplication\AddEditSeparationApplication.cshtml" />
+    <Content Include="Views\SeparationApplication\ApproveSeparationApplication.cshtml" />
+    <Content Include="Views\SeparationApplication\GetSeparationApplicationApprovalList.cshtml" />
+    <Content Include="Views\SeparationApplication\GetSeparationApplicationList.cshtml" />
+    <Content Include="Views\SeparationApplication\ListSeparationApplication.cshtml" />
+    <Content Include="Views\SeparationApplication\ListSeparationApplicationApproval.cshtml" />
+    <Content Include="Views\ExitInterview\AddEditExitInterview.cshtml" />
+    <Content Include="Views\ExitInterview\ListExitInterview.cshtml" />
+    <Content Include="Views\ExitInterview\GetExitInterviewList.cshtml" />
+    <Content Include="Views\ClearanceTemplate\AddEditClearanceTemplate.cshtml" />
+    <Content Include="Views\ClearanceTemplate\GetClearanceTemplateDetailList.cshtml" />
+    <Content Include="Views\ClearanceTemplate\GetClearanceTemplateLists.cshtml" />
+    <Content Include="Views\ClearanceTemplate\ListClearanceTemplate.cshtml" />
+    <Content Include="Views\SeparationOrder\AddEditSeparationOrder.cshtml" />
+    <Content Include="Views\SeparationOrder\GetSeparationOrderList.cshtml" />
+    <Content Include="Views\SeparationOrder\ListSeparationOrder.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalTemplateMapping\GetAppraisalTemplateGoalDetailList.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalTemplateMapping\GetEmployeeGoalList.cshtml" />
+    <Content Include="Views\Interview\GetApplicantList.cshtml" />
+    <Content Include="Views\Dashboard\EssDashboard.cshtml" />
+    <Content Include="Views\Employee\AddEditEmployeeProfile.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeRoasterList.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout122 - Copy.cshtml" />
+    <Content Include="Views\EmployeeLeaveDetail\AddEditEmployeeLeaveDetail.cshtml" />
+    <Content Include="Views\EmployeeLeaveDetail\ListEmployeeLeaveDetail.cshtml" />
+    <Content Include="Views\EmployeeLeaveDetail\GetEmployeeLeaveDetailList.cshtml" />
+    <Content Include="Views\Product\GetProductReorderQuantityList.cshtml" />
+    <Content Include="Views\Product\ListProductReorderQuantity.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\AddEditEmployeeClearanceProcess.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetEmplClearanceProcessList.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetAppraisalTemplateLists.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetClearanceProcessList.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\ListAppraisalTemplate.cshtml" />
+    <Content Include="Views\PayrollProcessPeriod\AddEditPayrollProcessPeriod.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalTemplateMapping\ListEmployeeAppraisalTeamplateMapping.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalTemplateMapping\GetEmployeeAppraisalTemplateMappingList.cshtml" />
+    <Content Include="Views\PMS_Assessment\ListEmployeeSelfAssessment.cshtml" />
+    <Content Include="Views\PMS_Assessment\GetEmployeeSelfAssessmentList.cshtml" />
+    <Content Include="Views\PMS_Assessment\AddEditEmployeeSelfAssessment.cshtml" />
+    <Content Include="Views\PMS_Assessment\GetEmployeeSelfAssessmentGoalList.cshtml" />
+    <Content Include="Views\PMS_Assessment\ListAppraiserAssessment.cshtml" />
+    <Content Include="Views\PMS_Assessment\GetAppraiserAssessmentList.cshtml" />
+    <Content Include="Views\PMS_Assessment\AddEditAppraiserAssessment.cshtml" />
+    <Content Include="Views\PMS_Assessment\GetAppraiserAssessmentGoalList.cshtml" />
+    <Content Include="Views\PMS_Assessment\ListFinalAssessment.cshtml" />
+    <Content Include="Views\PMS_Assessment\GetFinalAssessmentList.cshtml" />
+    <Content Include="Views\PMS_Assessment\AddEditFinalAssessment.cshtml" />
+    <Content Include="Views\PMS_Assessment\GetFinalAssessmentGoalList.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalReview\GetFinalAssessmentList.cshtml" />
+    <Content Include="Views\PMS_EmployeeAppraisalReview\ListEmployeeAppraisalReview.cshtml" />
+    <Content Include="Views\SIN\AddEditSIN.cshtml" />
+    <Content Include="Views\SIN\GetSINList.cshtml" />
+    <Content Include="Views\SIN\GetSINProductList.cshtml" />
+    <Content Include="Views\SIN\GetSINSupportingDocumentList.cshtml" />
+    <Content Include="Views\SIN\ListSIN.cshtml" />
+    <Content Include="Views\EmailTemplate\AddEditEmailTemplate.cshtml" />
+    <Content Include="Views\EmailTemplate\GetEmailTemplateList.cshtml" />
+    <Content Include="Views\EmailTemplate\ListEmailTemplate.cshtml" />
+    <Content Include="Views\Thought\AddEditThought.cshtml" />
+    <Content Include="Views\Thought\ListThought.cshtml" />
+    <Content Include="Views\Thought\GetThoughtList.cshtml" />
+    <Content Include="Views\Dashboard\GetDashboardThoughtList.cshtml" />
+    <Content Include="Views\Location\AddEditLocation.cshtml" />
+    <Content Include="Views\Location\GetLocationList.cshtml" />
+    <Content Include="Views\Location\ListLocation.cshtml" />
+    <Content Include="Views\Home\SetSession.cshtml" />
+    <Content Include="Views\Dashboard\CRMTeamDashboard.cshtml" />
+    <Content Include="Views\Dashboard\GetTodayNewCustomerList.cshtml" />
+    <Content Include="Views\Dashboard\GetLeadFollowUpReminderDueDateCountList.cshtml" />
+    <Content Include="Views\Dashboard\SaleTeamDashboard.cshtml" />
+    <Content Include="Views\Dashboard\PurchaseTeamDashboard.cshtml" />
+    <Content Include="Views\Dashboard\GetLeadFollowUpReminderDueDateList.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\ListEmployeeClearanceProcess.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetEmployeeClearanceProcessList.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetEmployeeClearanceProcesses.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\ListEmployeeClearance.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetEmployeeClearanceList.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\AddEditEmployeeClearance.cshtml" />
+    <Content Include="Views\EmployeeClearanceProcess\GetEmployeeClearances.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeAdvanceApplicationList.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeLeaveApplicationList.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeAssetApplicationList.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeClaimApplicationList.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeLoanApplicationList.cshtml" />
+    <Content Include="Views\Dashboard\GetESSEmployeeTravelApplicationList.cshtml" />
+    <Content Include="Views\CustomMail\GetMailSupportingDocumentList.cshtml" />
+    <Content Include="Views\CustomMail\SendCustomMail.cshtml" />
+    <Content Include="Views\SaleReturn\AddEditSaleReturn.cshtml" />
+    <Content Include="Views\SaleReturn\GetSaleReturnList.cshtml" />
+    <Content Include="Views\SaleReturn\GetSaleReturnProductList.cshtml" />
+    <Content Include="Views\SaleReturn\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\SaleReturn\ListSaleReturn.cshtml" />
+    <Content Include="Views\Dashboard\GetInOutProductQuantityCountList.cshtml" />
+    <Content Include="Views\Dashboard\GetSINProductQuantityCountList.cshtml" />
+    <Content Include="Views\SINRegister\GetSINRegisterList.cshtml" />
+    <Content Include="Views\SINRegister\ListSINRegister.cshtml" />
+    <Content Include="Views\SaleInvoice\ListGSTR1B2B.cshtml" />
+    <Content Include="Views\Dashboard\GetAdminDashboardUsersList.cshtml" />
+    <Content Include="Views\Dashboard\GetAdminDashboardRolesList.cshtml" />
+    <Content Include="Views\PurchaseReturn\AddEditPurchaseReturn.cshtml" />
+    <Content Include="Views\PurchaseReturn\GetPurchaseInvoiceList.cshtml" />
+    <Content Include="Views\PurchaseReturn\GetPurchaseReturnList.cshtml" />
+    <Content Include="Views\PurchaseReturn\GetPurchaseReturnProductList.cshtml" />
+    <Content Include="Views\PurchaseReturn\ListPurchaseReturn.cshtml" />
+    <Content Include="Views\Manufacturer\AddEditManufacturer.cshtml" />
+    <Content Include="Views\Manufacturer\GetManufacturerList.cshtml" />
+    <Content Include="Views\Manufacturer\ListManufacturer.cshtml" />
+    <Content Include="Views\Size\AddEditSize.cshtml" />
+    <Content Include="Views\Size\GetSizeList.cshtml" />
+    <Content Include="Views\Size\ListSize.cshtml" />
+    <Content Include="Views\ProductSerial\AddEditProductSerial.cshtml" />
+    <Content Include="Views\UploadUtility\ImportManufacturer.cshtml" />
+    <Content Include="Views\UploadUtility\ImportSize.cshtml" />
+    <Content Include="Views\SaleReturnRegister\GetSaleReturnRegisterList.cshtml" />
+    <Content Include="Views\SaleReturnRegister\ListSaleReturnRegister.cshtml" />
+    <Content Include="Views\WorkOrder\AddEditWorkOrder.cshtml" />
+    <Content Include="Views\WorkOrder\GetWorkOrderProductList.cshtml" />
+    <Content Include="Views\WorkOrder\GetWorkOrderList.cshtml" />
+    <Content Include="Views\WorkOrder\ListWorkOrder.cshtml" />
+    <Content Include="Views\StoreRequisition\AddEditStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionProductList.cshtml" />
+    <Content Include="Views\StoreRequisition\ListStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\GetRequisitionWorkOrderList.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionList.cshtml" />
+    <Content Include="Views\StoreRequisition\ListApprovedStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\ApprovalStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionApprovalList.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionProductApprovalList.cshtml" />
+    <Content Include="Views\StoreRequisition\GetWorkOrderBOMProductList.cshtml" />
+    <Content Include="Views\EmployeeAttendance\AddEditEmployeeAttendance.cshtml" />
+    <Content Include="Views\StockLedger\GetStockLedgerList.cshtml" />
+    <Content Include="Views\StockLedger\StockLedgerDrilDown.cshtml" />
+    <Content Include="Views\StockLedger\GetStockLedgerDrilDownList.cshtml" />
+    <Content Include="Views\ProductBOM\ListProductBOMReport.cshtml" />
+    <Content Include="Views\PurchaseQuotation\AddEditPurchaseQuotation.cshtml" />
+    <Content Include="Views\PurchaseQuotation\GetPurchaseQuotationProductList.cshtml" />
+    <Content Include="Views\PurchaseQuotation\ListPurchaseQuotation.cshtml" />
+    <Content Include="Views\PurchaseQuotation\GetPurchaseQuotationList.cshtml" />
+    <Content Include="Views\PurchaseIndent\AddEditPurchaseIndent.cshtml" />
+    <Content Include="Views\PurchaseIndent\ApprovalPurchaseIndent.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetPurchaseIndentApprovalList.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetPurchaseIndentList.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetPurchaseIndentProductApprovalList.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetPurchaseIndentProductList.cshtml" />
+    <Content Include="Views\PurchaseIndent\ListPurchaseIndent.cshtml" />
+    <Content Include="Views\Fabrication\AddEditFabrication.cshtml" />
+    <Content Include="Views\Fabrication\GetFabricationProductList.cshtml" />
+    <Content Include="Views\Fabrication\GetFabricationList.cshtml" />
+    <Content Include="Views\Fabrication\ListFabrication.cshtml" />
+    <Content Include="Views\PurchaseIndent\ListApprovedPurchaseIndent.cshtml" />
+    <Content Include="Views\PurchaseQuotation\GetPurchaseIndentProductList.cshtml" />
+    <Content Include="Views\PurchaseQuotation\GetPurchaseIndentList.cshtml" />
+    <Content Include="Views\PurchaseQuotation\QuotationComparison.cshtml" />
+    <Content Include="Views\SIN\GetStoreRequisitionList.cshtml" />
+    <Content Include="Views\SIN\GetStoreRequisitionProductList.cshtml" />
+    <Content Include="Views\InternalRequisition\AddEditInternalRequisition.cshtml" />
+    <Content Include="Views\InternalRequisition\GetInternalRequisitionList.cshtml" />
+    <Content Include="Views\InternalRequisition\GetInternalRequisitionProductList.cshtml" />
+    <Content Include="Views\InternalRequisition\ListInternalRequisition.cshtml" />
+    <Content Include="Views\Fabrication\GetFabricationWorkOrderList.cshtml" />
+    <Content Include="Views\Fabrication\GetWorkOrderBOMProductList.cshtml" />
+    <Content Include="Views\Fabrication\GetWorkOrderProductList.cshtml" />
+    <Content Include="Views\PO\GetPurchaseQuotationList.cshtml" />
+    <Content Include="Views\PO\GetPurchaseQuotationProductList.cshtml" />
+    <Content Include="Views\PO\ApprovalPO.cshtml" />
+    <Content Include="Views\PO\ListApprovedPO.cshtml" />
+    <Content Include="Views\PO\GetApprovedPOList.cshtml" />
+    <Content Include="Views\PO\GetPOProductApprovalList.cshtml" />
+    <Content Include="Views\StoreRequisition\ListApprovedUpdateStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionApprovalUpdateList.cshtml" />
+    <Content Include="Views\StoreRequisition\ApprovalStoreRequisitionUpdate.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionUpdateProductList.cshtml" />
+    <Content Include="Views\Project\AddEditProject.cshtml" />
+    <Content Include="Views\Project\GetProjectList.cshtml" />
+    <Content Include="Views\Project\ListProject.cshtml" />
+    <Content Include="Views\SiteConsumption\AddEditSiteConsumption.cshtml" />
+    <Content Include="Views\SiteConsumption\GetSiteConsumptionProductList.cshtml" />
+    <Content Include="Views\SiteConsumption\ListSiteConsumption.cshtml" />
+    <Content Include="Views\SiteConsumption\GetSiteConsumptionList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\AddEditCustomerSiteMRN.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetCustomerSiteMRNList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetCustomerSiteMRNSupportingDocumentList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetPurchaseInvoiceList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\ListCustomerSiteMRN.cshtml" />
+    <Content Include="Views\SiteProductOpeningStock\AddEditSiteProductOpening.cshtml" />
+    <Content Include="Views\SiteProductOpeningStock\GetSiteProductOpeningList.cshtml" />
+    <Content Include="Views\SiteProductOpeningStock\ListSiteProductOpening.cshtml" />
+    <Content Include="Views\SiteProductSerial\AddEditSiteProductSerial.cshtml" />
+    <Content Include="Views\SiteLedger\SitePrintStockLedger.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\AddEditSiteDeliveryChallan.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSiteChallanList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSiteChallanProductList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSiteChallanTaxList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSiteChallanTermList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSiteDeliveryChallanSupportingDocumentList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSaleInvoiceList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\ListSiteChallan.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSINList.cshtml" />
+    <Content Include="Views\SiteDeliveryChallan\GetSINProductList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetStoreRequisitionList.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetStoreRequisitionProductList.cshtml" />
+    <Content Include="Views\Quotation\GetPurchaseIndentProductList.cshtml" />
+    <Content Include="Views\SiteConsumption\ListProductSiteConsumptionReport.cshtml" />
+    <Content Include="Views\PayrollProcessPeriod\GetPayrollProcessPeriodList.cshtml" />
+    <Content Include="Views\PayrollProcessPeriod\ListPayrollProcessPeriod.cshtml" />
+    <Content Include="Views\PayrollProcessPeriod\LockUnlockPayrollProcessPeriod.cshtml" />
+    <Content Include="Views\PayHeadGLMapping\AddEditPayHeadGLMapping.cshtml" />
+    <Content Include="Views\PayHeadGLMapping\GetPayHeadGLMappingList.cshtml" />
+    <Content Include="Views\PayHeadGLMapping\ListPayHeadGLMapping.cshtml" />
+    <Content Include="Views\PayrollMonthlyAdjustment\AddEditPayrollMonthlyAdjustment.cshtml" />
+    <Content Include="Views\PayrollMonthlyAdjustment\GetPayrollMonthlyAdjustmentList.cshtml" />
+    <Content Include="Views\PayrollMonthlyAdjustment\ListPayrollMonthlyAdjustment.cshtml" />
+    <Content Include="Views\PayrollOtherEarningDeduction\AddEditPayrollOtherEarningDeduction.cshtml" />
+    <Content Include="Views\PayrollOtherEarningDeduction\GetPayrollOtherEarningDeductionList.cshtml" />
+    <Content Include="Views\PayrollOtherEarningDeduction\ListPayrollOtherEarningDeduction.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetStoreRequisitionList.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetStoreRequisitionProductList.cshtml" />
+    <Content Include="Views\Shared\_VendorPartial.cshtml" />
+    <Content Include="Views\Shared\_CustomerPartial.cshtml" />
+    <Content Include="Views\CustomerSiteMRN\GetLocalCustomerSiteMRNList.cshtml" />
+    <Content Include="Views\PO\GetPurchaseIndentProductList.cshtml" />
+    <Content Include="Views\PO\GetPurchaseIndentList.cshtml" />
+    <Content Include="Views\MasterDashboard\MDDashboard.cshtml" />
+    <Content Include="Views\Shared\_PartyBranchPartial.cshtml" />
+    <Content Include="Views\Shared\_ConsigneePartial.cshtml" />
+    <Content Include="Views\StoreRequisition\LogReportStoreRequisition.cshtml" />
+    <Content Include="Views\Shared\_ConsigneeBranchPartial.cshtml" />
+    <Content Include="Views\MasterDashboard\GetEscalatedMatrix.cshtml" />
+    <Content Include="Views\PurchaseIndent\ListPurchaseIndentEscalation.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetPurchaseIndentEscalationList.cshtml" />
+    <Content Include="Views\StoreRequisition\ListStoreRequisitionEscalation.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionEscalationList.cshtml" />
+    <Content Include="Views\PO\ListPOEscalation.cshtml" />
+    <Content Include="Views\PO\GetPOEscalationList.cshtml" />
+    <Content Include="Views\PO\ListPOLessThan25KEscalation.cshtml" />
+    <Content Include="Views\PO\GetPOLessThan25KEscalationList.cshtml" />
+    <Content Include="Views\PO\ListPOLessThan25K.cshtml" />
+    <Content Include="Views\PO\GetPOLessThan25KList.cshtml" />
+    <Content Include="Views\EscalationMaster\AddEditEscalationMaster.cshtml" />
+    <Content Include="Views\EscalationMaster\GetEscalationMasterList.cshtml" />
+    <Content Include="Views\EscalationMaster\ListEscalationMaster.cshtml" />
+    <Content Include="Views\StoreRequisition\ListStoreRequisitionForMRN.cshtml" />
+    <Content Include="Views\StoreRequisition\GetStoreRequisitionListForMRN.cshtml" />
+    <Content Include="Views\StoreRequisition\ListPendingStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\GetPendingStoreRequisitionList.cshtml" />
+    <Content Include="Views\PurchaseIndent\ListPurchaseIndentForQuotationEscalation.cshtml" />
+    <Content Include="Views\PurchaseIndent\GetPurchaseIndentForQuotationEscalationList.cshtml" />
+    <Content Include="Views\MRN\GetPOListForMRN.cshtml" />
+    <Content Include="Views\MRN\GetPOProductListForMRN.cshtml" />
+    <Content Include="Views\SalaryReport\SalaryJV.cshtml" />
+    <Content Include="Views\SalaryReport\SalarySummaryReport.cshtml" />
+    <Content Include="Views\DailyExpenses\AddEditDailyExpenses.cshtml" />
+    <Content Include="Views\DailyExpenses\GetDailyExpensesList.cshtml" />
+    <Content Include="Views\DailyExpenses\ListDailyExpenses.cshtml" />
+    <Content Include="Views\Shared\_ProductPartial.cshtml" />
+    <Content Include="Views\Dashboard\GetDashboardPendingStoreRequisition.cshtml" />
+    <Content Include="Views\Customer\PrintCustomerSiteReport.cshtml" />
+    <Content Include="Views\StoreRequisition\ListPendingStoreRequisitionReport.cshtml" />
+    <Content Include="Views\PO\ListApprovedPOByMD.cshtml" />
+    <Content Include="Views\StoreRequisition\ListApprovedPOMRNNotDone.cshtml" />
+    <Content Include="Views\StoreRequisition\ListApprovedStoreRequisitionsWithoutPO.cshtml" />
+    <Content Include="Views\MasterDashboard\GetDashboardApprovedRequisitionListWithoutPO.cshtml" />
+    <Content Include="Views\MasterDashboard\GetDashboardRecommendationPOList.cshtml" />
+    <Content Include="Views\Dashboard\GetDashboardRecommendationPOList.cshtml" />
+    <Content Include="Views\Dashboard\GetDashboardRejectedStoreRequisition.cshtml" />
+    <Content Include="Views\StoreRequisition\ListApprovedPOCustomerSiteMRNNotDone.cshtml" />
+    <Content Include="Views\Dashboard\GetPOPendingForMDApprovals.cshtml" />
+    <Content Include="Views\Dashboard\GetPORejectedByMD.cshtml" />
+    <Content Include="Views\EmployeeAttendance\PrintEmployeeAttendanceReport.cshtml" />
+    <Content Include="Views\SupervisorDashboard\SupervisorDashboard.cshtml" />
+    <Content Include="Views\SupervisorDashboard\GetSupervisorDashboardRejectedStoreRequisition.cshtml" />
+    <Content Include="Views\SupervisorDashboard\GetSupervisorDashboardPendingStoreRequisition.cshtml" />
+    <Content Include="Views\EmployeeAttendance\EmployeeAttendanceForm.cshtml" />
+    <Content Include="Views\EmployeeAttendance\GetEmployeeAttendanceFormList.cshtml" />
+    <Content Include="Views\EmployeeAttendance\GetTempEmployeeAttendanceFormList.cshtml" />
+    <Content Include="Views\EmployeeLeaveApplication\GetEmployeeLeaveBalanceList.cshtml" />
+    <Content Include="Views\Unit\ListUnit.cshtml" />
+    <Content Include="Views\Unit\AddEditUnit.cshtml" />
+    <Content Include="Views\Unit\GetUnitList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\City\ListCity.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\City\AddEditCity.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\City\GetCityList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RDLC\ApprovedPOCustomerSiteMRNNotDoneReport.rdlc" />
+    <EmbeddedResource Include="RDLC\ApprovedStoreRequisitionsWithoutPOReport.rdlc" />
+    <EmbeddedResource Include="RDLC\ApprovedPOMRNNotDoneReport.rdlc" />
+    <EmbeddedResource Include="RDLC\BankVoucherReports.rdlc" />
+    <EmbeddedResource Include="RDLC\CashVoucherReports.rdlc" />
+    <EmbeddedResource Include="RDLC\ApprovedPOReport.rdlc" />
+    <EmbeddedResource Include="RDLC\EmployeeAttendanceReport.rdlc" />
+    <EmbeddedResource Include="RDLC\DailyExpensesReport.rdlc" />
+    <EmbeddedResource Include="RDLC\PendingStoreRequisitionReport.rdlc" />
+    <EmbeddedResource Include="RDLC\LogStoreRequisitionReport.rdlc" />
+    <EmbeddedResource Include="RDLC\CustomerSiteWiseReport.rdlc" />
+    <EmbeddedResource Include="RDLC\ProductSiteConsumptionDetailReports.rdlc" />
+    <EmbeddedResource Include="RDLC\ProductSiteConsumptionReports.rdlc" />
+    <EmbeddedResource Include="RDLC\SalaryJVReport.rdlc" />
+    <EmbeddedResource Include="RDLC\SalarySlipReport.rdlc" />
+    <EmbeddedResource Include="RDLC\SalarySummaryReport.rdlc" />
+    <EmbeddedResource Include="RDLC\SiteChallanPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\CustomerFormRegisterReports.rdlc" />
+    <EmbeddedResource Include="RDLC\DebitNoteBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\CreditNoteBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\CreditNoteVoucherPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\DebitNoteVoucherReports.rdlc" />
+    <EmbeddedResource Include="RDLC\DeliveryChallanRegisterReports.rdlc" />
+    <EmbeddedResource Include="RDLC\GeneralLedgerWoFyPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\GetPurchaseQuotationComparison.rdlc" />
+    <EmbeddedResource Include="RDLC\GLTrialBalance2ColumnPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\BalanceSheetPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\GSTR1_B2BPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\GSTR1_B2CLPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\GSTR1_CDNURPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\GSTR1_CDNRPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\GSTR1_B2CSPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\JournalVoucherReports.rdlc" />
+    <EmbeddedResource Include="RDLC\LeadReport.rdlc" />
+    <EmbeddedResource Include="RDLC\PIPrintOld.rdlc" />
+    <EmbeddedResource Include="RDLC\PLStatementPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\PMS_EmployeeAssessmentPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\PurchaseIndentReport.rdlc" />
+    <EmbeddedResource Include="RDLC\PurchaseQuotationReport.rdlc" />
+    <EmbeddedResource Include="RDLC\SiteLedger.rdlc" />
+    <EmbeddedResource Include="RDLC\StoreRequisitionReport.rdlc" />
+    <EmbeddedResource Include="RDLC\WorkOrderReport.rdlc" />
+    <EmbeddedResource Include="RDLC\POPrintOld.rdlc" />
+    <EmbeddedResource Include="RDLC\PurchaseBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\QuotationPrintWoGST.rdlc" />
+    <EmbeddedResource Include="RDLC\QuotationRegisterReports.rdlc" />
+    <EmbeddedResource Include="RDLC\SaleBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\JournalBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\CashBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\DebitNoteVoucherPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\JournalVoucherPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\CashVoucherPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\BankBookPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\BankVoucherPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\ChallanPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\SaleInvoicePrint.rdlc" />
+    <EmbeddedResource Include="RDLC\SaleInvoiceRegisterReports.rdlc" />
+    <EmbeddedResource Include="RDLC\SaleInvoiceSummaryReports.rdlc" />
+    <EmbeddedResource Include="RDLC\SaleReturnRegisterReports.rdlc" />
+    <EmbeddedResource Include="RDLC\SINRegisterReport.rdlc" />
+    <EmbeddedResource Include="RDLC\SLTrialBalancePrint.rdlc" />
+    <EmbeddedResource Include="RDLC\SOPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\SORegisterReports.rdlc" />
+    <EmbeddedResource Include="RDLC\SINPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\ProductBOMReports.rdlc" />
+    <EmbeddedResource Include="RDLC\StockLedgerCompanyWise.rdlc" />
+    <EmbeddedResource Include="RDLC\StockLedgerReports.rdlc" />
+    <EmbeddedResource Include="RDLC\StockSummaryReports.rdlc" />
+    <EmbeddedResource Include="RDLC\STRPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\STNPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\MRNPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\PIPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\POPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\QuotationPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\SaleInvoicePrint12.rdlc" />
+    <EmbeddedResource Include="RDLC\SOPrintOld.rdlc" />
+    <EmbeddedResource Include="RDLC\StockSummary.rdlc" />
+    <EmbeddedResource Include="RDLC\StockLedger.rdlc" />
+    <EmbeddedResource Include="RDLC\SubLedgerWoFyAllGLPrint.rdlc" />
+    <EmbeddedResource Include="RDLC\SubLedgerWoFySingleGLPrint.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Portal.Common\MMPortal.Common.csproj">
+      <Project>{7e75e996-ddde-4f91-9db3-60a4b683e994}</Project>
+      <Name>MMPortal.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Portal.Core\MMPortal.Core.csproj">
+      <Project>{7ea6cd80-9e08-4e4d-a0a0-1a9629d1470e}</Project>
+      <Name>MMPortal.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Portal.DAL\MMPortal.DAL.csproj">
+      <Project>{8e7d26a8-c628-40b3-b7f6-2788242b3bd3}</Project>
+      <Name>MMPortal.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:22001/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

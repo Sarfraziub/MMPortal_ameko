@@ -1,0 +1,51 @@
+﻿@model List<Portal.Core.ViewModel.StoreRequisitionViewModel>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="padding:10px;">
+        <table class="table int-product" id="tblReorderProductCountList" style="margin-top:10px;">
+            <thead style="border-top-left-radius:15px;">
+                <tr style="border:none;">
+                    <th style="background:#4f75c6; color:#fff;" colspan="8">Approved Requisitions Without PO</th> 
+                </tr>
+                <tr style="background:#D0DDEC; border:1px solid #ccc;">
+                    <th style="text-align:center">Requisition No.</th>                 
+                    <th style="text-align:center">Requisition Date</th> 
+                    <th style="text-align:center">Requisition Type</th> 
+                </tr>
+               
+            </thead>
+            <tbody style="border:1px solid #ccc;">
+                @foreach (var item in Model)
+                {
+                <tr class="success">
+                    <td align="center">@item.RequisitionNo</td>
+                    <td align="center">@item.RequisitionDate</td>
+                    <td align="center">@item.RequisitionType</td>
+                   
+                </tr>
+                }
+                <tr>
+        <td colspan="8" align="center" style="background:#bfdfff;">
+            <a target="_blank" href="@Url.Content("~/StoreRequisition/ListApprovedStoreRequisition?reqtype=WPO&reqstatus=Approved")">View All Approved Requisitions Without PO</a>
+        </td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Approved Requisitions Not Found !!!</h3>
+}
+@*<script>
+    $(document).ready(function () {
+        $('#tblReorderProductCountList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>*@

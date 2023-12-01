@@ -1,0 +1,248 @@
+10:37:43 AM
+Source : Portal.Controllers.CustomerController
+Method Name : AddEditCustomerMaster
+Error Line No : 285
+Exception Type : System.MissingMethodException
+Details: Method not found: 'Portal.Common.ResponseOut Portal.DAL.DBInterface.AddEditCustomerMaster(Portal.DAL.Customer)'.
+--------------------------------------------------------------------------------------------------------------------------------
+
+10:37:50 AM
+Source : Portal.Controllers.CustomerController
+Method Name : AddEditCustomerMaster
+Error Line No : 285
+Exception Type : System.MissingMethodException
+Details: Method not found: 'Portal.Common.ResponseOut Portal.DAL.DBInterface.AddEditCustomerMaster(Portal.DAL.Customer)'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:37:59 AM
+Source : Portal.Controllers.CustomerController
+Method Name : AddEditCustomerMaster
+Error Line No : 285
+Exception Type : System.MissingMethodException
+Details: Method not found: 'Portal.Common.ResponseOut Portal.DAL.DBInterface.AddEditCustomerMaster(Portal.DAL.Customer)'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:38:03 AM
+Source : Portal.Controllers.CustomerController
+Method Name : AddEditCustomerMaster
+Error Line No : 285
+Exception Type : System.MissingMethodException
+Details: Method not found: 'Portal.Common.ResponseOut Portal.DAL.DBInterface.AddEditCustomerMaster(Portal.DAL.Customer)'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:39:11 AM
+Source : Portal.Controllers.CustomerController
+Method Name : AddEditCustomerMaster
+Error Line No : 285
+Exception Type : System.MissingMethodException
+Details: Method not found: 'Portal.Common.ResponseOut Portal.DAL.DBInterface.AddEditCustomerMaster(Portal.DAL.Customer)'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:59:25 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:59:25 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:02:24 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:02:24 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:03:01 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:03:01 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:04:44 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:04:44 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:05:33 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:05:33 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:08:35 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:08:35 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:14:32 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:14:32 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:14:42 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:14:42 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:20:54 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:20:54 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:49 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:49 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:54 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:54 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:26:04 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:26:04 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:32:27 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningList
+Error Line No : 60
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:32:27 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningList
+Error Line No : 95
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+

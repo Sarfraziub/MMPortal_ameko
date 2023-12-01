@@ -1,0 +1,76 @@
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.dll.config
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Common.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Core.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.DAL.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\EnvDTE.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\EnvDTE80.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\stdole.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.VSHelp.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\VSLangProj.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\VSLangProj80.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.GraphModel.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.MSXML.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\VSLangProj2.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Common.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Core.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.DAL.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Release\MMPortal.csprojResolveAssemblyReference.cache
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Release\RdlCompile.cache
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Release\RdlCompile.compiled
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Release\Portal.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Release\Portal.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.dll.config
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Common.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Core.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.DAL.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\EnvDTE.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\EnvDTE80.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\stdole.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.MSXML.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Common.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Core.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.DAL.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.DAL.dll.config
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Release\MMPortal.csprojResolveAssemblyReference.cache
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Release\MMPortal.csproj.CoreCompileInputs.cache
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Release\MMPortal.csproj.CopyComplete
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Release\Portal.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Release\Portal.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.dll.config
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Common.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Core.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.DAL.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\EnvDTE.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\EnvDTE80.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\stdole.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.MSXML.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Common.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Core.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.DAL.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.DAL.dll.config
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\RdlCompile.cache
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\RdlCompile.compiled
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\MMPortal.csproj.CoreCompileInputs.cache
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\MMPortal.csproj.CopyComplete
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\Portal.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\Portal.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Release\MMPortal.csprojAssemblyReference.cache

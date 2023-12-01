@@ -1,0 +1,75 @@
+﻿@model List<Portal.Core.ViewModel.SLDetailViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table sldetail-list" id="tblGLList">
+            <thead>
+                <tr>
+                <tr>
+                    <th>SL Id</th>
+                    <th>SL Code</th>
+                    <th>SL Head</th>
+                    <th>Opening Balance Debit</th>
+                    <th>Opening Balance Credit</th>
+                    
+                    <th>Select <input type="checkbox" id="checkAll" name="checkAll" onclick="CheckAll(this)" /> </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td>@item.SLId
+                            <input id="hdnSLDetailId" type="hidden" value="@item.SLDetailId" />
+                            
+                            <input id="hdnSLId" type="hidden" value="@item.SLId" />
+
+                        </td>
+                        <td>@item.SLCode
+                            <input id="hdnSLCode" type="hidden" value="@item.SLCode" />
+                        </td>
+                        <td>@item.SLHead
+                            <input id="hdnSLHead" type="hidden" value="@item.SLHead" />
+                        </td>
+
+                        <td><input type="text" id="txtOpeningBalanceDebit" name="txtOpeningBalanceDebit" onkeyup="getCheckBalanceCredit(this)" value="@item.OpeningBalanceDebit" class="form-control input-number numeric-only right-text" /></td>
+                        <td><input type="text" id="txtOpeningBalanceCredit" name="txtOpeningBalanceCredit"   onkeyup="getCheckBalanceDebit(this)" value="@item.OpeningBalanceCredit" class="form-control input-number numeric-only right-text" /></td>
+                        <td align="center">
+                            @if(item.SLDetailStatus==true)
+                            {
+                            <input type="checkbox" id="checkstatus" class="checkstatus" checked="checked" />
+                            }
+                            else
+                            {
+                            <input type="checkbox" id="checkstatus" class="checkstatus" />
+                            }
+                        </td>
+                        @*<td class="btn btn-success table_btn" style="width:30px; margin:0px auto;">
+                            <a style="color:white" class="fa fa-eye" aria-hidden="true" href="~/SL/AddEditSL?SLId=@item.SLId&AccessMode=3"></a>
+                        </td>
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:white" class="fa fa-pencil-square-o" href="~/SL/AddEditSL?SLId=@item.SLId&AccessMode=2"></a>
+                        </td>*@ 
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+@*<script>
+    $(document).ready(function () {
+        $('#tblGLList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>*@

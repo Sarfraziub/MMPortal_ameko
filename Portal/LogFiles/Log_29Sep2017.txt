@@ -1,0 +1,280 @@
+11:40:43 AM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+--------------------------------------------------------------------------------------------------------------------------------
+
+11:40:43 AM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:43:22 AM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:43:22 AM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:07:11 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:07:11 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:07:34 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:07:34 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:09:20 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:09:20 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:13:37 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:13:37 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:30:33 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetCustomerSiteMRNList
+Error Line No : 17362
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:30:33 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNList
+Error Line No : 159
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:30:33 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNList
+Error Line No : 107
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:30:40 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetCustomerSiteMRNList
+Error Line No : 17362
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:30:40 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNList
+Error Line No : 159
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:30:40 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNList
+Error Line No : 107
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:31:39 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetCustomerSiteMRNList
+Error Line No : 17362
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:31:39 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNList
+Error Line No : 159
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:31:39 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNList
+Error Line No : 107
+Exception Type : System.Data.SqlClient.SqlException
+Details: @@IsLocal is not a parameter for procedure proc_GetCustomerSiteMRNs.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:07:49 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:07:49 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:08:01 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:08:01 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:09:02 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.ArgumentException
+Details: Column 'VendorId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:09:02 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.ArgumentException
+Details: Column 'VendorId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:10:36 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.ArgumentException
+Details: Column 'VendorId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:10:36 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.ArgumentException
+Details: Column 'VendorId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:12:21 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:12:21 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:12:28 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.ArgumentException
+Details: Column 'IsLocal' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:12:29 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.ArgumentException
+Details: Column 'IsLocal' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:13:08 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 206
+Exception Type : System.ArgumentException
+Details: Column 'IsLocal' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:13:08 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.ArgumentException
+Details: Column 'IsLocal' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+

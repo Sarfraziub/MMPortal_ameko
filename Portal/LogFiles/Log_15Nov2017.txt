@@ -1,0 +1,114 @@
+10:43:36 AM
+Source : Portal.DAL.DBInterface
+Method Name : GetFoodAndTeaExpensesByTimeType
+Error Line No : 8229
+Exception Type : System.NotSupportedException
+Details: LINQ to Entities does not recognize the method 'System.Decimal ToDecimal(System.Object)' method, and this method cannot be translated into a store expression.
+--------------------------------------------------------------------------------------------------------------------------------
+
+10:43:36 AM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetFoodAndTeaExpensesByTimeType
+Error Line No : 229
+Exception Type : System.NotSupportedException
+Details: LINQ to Entities does not recognize the method 'System.Decimal ToDecimal(System.Object)' method, and this method cannot be translated into a store expression.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:05 AM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetFoodAndTeaExpensesByTimeType
+Error Line No : 163
+Exception Type : System.NotSupportedException
+Details: LINQ to Entities does not recognize the method 'System.Decimal ToDecimal(System.Object)' method, and this method cannot be translated into a store expression.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:25 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18637
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:25 AM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:25 AM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:29 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18637
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:29 AM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:29 AM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:21:42 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18637
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:21:42 AM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:21:53 AM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:54:32 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetBranchLocationList(Int32)' in 'Portal.Controllers.StoreRequisitionController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:24:47 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetBranchLocationList(Int32)' in 'Portal.Controllers.StoreRequisitionController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

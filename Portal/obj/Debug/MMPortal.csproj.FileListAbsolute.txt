@@ -1,0 +1,270 @@
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.dll.config
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.pdb
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.Common.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.Core.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\EnvDTE.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\EnvDTE80.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\stdole.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\VSLangProj.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\VSLangProj80.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Microsoft.MSXML.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\VSLangProj2.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.Common.pdb
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Portal.Core.pdb
+D:\RUPAK WORK AREA\MMPortal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\RUPAK WORK AREA\MMPortal\Portal\obj\Debug\MMPortal.csprojResolveAssemblyReference.cache
+D:\RUPAK WORK AREA\MMPortal\Portal\obj\Debug\RdlCompile.cache
+D:\RUPAK WORK AREA\MMPortal\Portal\obj\Debug\RdlCompile.compiled
+D:\RUPAK WORK AREA\MMPortal\Portal\obj\Debug\Portal.dll
+D:\RUPAK WORK AREA\MMPortal\Portal\obj\Debug\Portal.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Debug\RdlCompile.cache
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Debug\RdlCompile.compiled
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.dll.config
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Common.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Core.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.DAL.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\EnvDTE.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\EnvDTE80.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\stdole.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.VSHelp.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\VSLangProj.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\VSLangProj80.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.GraphModel.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.MSXML.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\VSLangProj2.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Common.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.Core.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Portal.DAL.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Debug\Portal.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Debug\Portal.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal\obj\Debug\MMPortal.csprojResolveAssemblyReference.cache
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.dll.config
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.Common.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.Core.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.DAL.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.Common.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.Core.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.DAL.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\obj\Debug\MMPortal.csprojResolveAssemblyReference.cache
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\obj\Debug\Portal.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\obj\Debug\Portal.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\EnvDTE.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\EnvDTE80.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\stdole.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Microsoft.MSXML.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\bin\Portal.DAL.dll.config
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.dll.config
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.pdb
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.Common.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.Core.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.DAL.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\EnvDTE.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\EnvDTE80.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\stdole.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Microsoft.MSXML.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.Common.pdb
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.Core.pdb
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.DAL.pdb
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\bin\Portal.DAL.dll.config
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\obj\Debug\MMPortal.csprojResolveAssemblyReference.cache
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\obj\Debug\Portal.dll
+E:\My Projects\DNHUB\Dot Net Hub ERP\Portal\obj\Debug\Portal.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.dll.config
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Common.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Core.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.DAL.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\EnvDTE.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\EnvDTE80.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\stdole.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Microsoft.MSXML.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Common.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.Core.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.DAL.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\bin\Portal.DAL.dll.config
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Debug\MMPortal.csprojResolveAssemblyReference.cache
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Debug\Portal.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal\obj\Debug\Portal.pdb
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.dll.config
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.pdb
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.Common.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.Core.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.DAL.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\EnvDTE.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\EnvDTE80.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\stdole.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.VSHelp.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.ProjectAggregator.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Data.Services.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\VSLangProj.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Data.Core.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\VSLangProj80.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.GraphModel.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.MSXML.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\VSLangProj2.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.Common.pdb
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.Core.pdb
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.DAL.pdb
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Portal.DAL.dll.config
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\obj\Debug\MMPortal.csprojAssemblyReference.cache
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\obj\Debug\Portal.dll
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\obj\Debug\Portal.pdb
+F:\Rupak Rajput\Downloads\Angular Videos\Portal\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.dll.config
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.Common.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.Core.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.DAL.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\EnvDTE.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\EnvDTE80.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\stdole.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Microsoft.MSXML.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.Common.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.Core.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.DAL.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\bin\Portal.DAL.dll.config
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\MMPortal.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\RdlCompile.cache
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\RdlCompile.compiled
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\Portal.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal\obj\Debug\Portal.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.dll.config
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Common.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Core.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.DAL.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\EnvDTE.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\EnvDTE80.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\stdole.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Microsoft.MSXML.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Common.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.Core.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.DAL.pdb
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\bin\Portal.DAL.dll.config
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\MMPortal.csprojAssemblyReference.cache
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\RdlCompile.cache
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\RdlCompile.compiled
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\Portal.dll
+D:\Final Backup From Old Laptop\Disc Drive E\Clients 2021 Personal\Mohseen ERP\ERP_Source_Code\Portal\obj\Debug\Portal.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.AssemblyReference.cache
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.dll.config
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.Common.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.Core.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\EnvDTE.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\EnvDTE80.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\stdole.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.Common.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.Core.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.DAL.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.DAL.dll.config
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\obj\Debug\Portal.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\obj\Debug\Portal.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal\bin\Portal.DAL.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.dll.config
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.Common.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.Core.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.DAL.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\EnvDTE.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\EnvDTE80.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\stdole.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.Common.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.Core.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.DAL.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\bin\Portal.DAL.dll.config
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.AssemblyReference.cache
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\obj\Debug\Portal.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal\obj\Debug\Portal.pdb
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.dll.config
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.pdb
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.Common.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.Core.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.DAL.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\EnvDTE.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\EnvDTE80.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\stdole.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.Common.pdb
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.Core.pdb
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.DAL.pdb
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\bin\Portal.DAL.dll.config
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\obj\Debug\MMPortal.csproj.AssemblyReference.cache
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\obj\Debug\MMPortal.csproj.CoreCompileInputs.cache
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\obj\Debug\MMPortal.csproj.CopyComplete
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\obj\Debug\Portal.dll
+D:\Development\Freelancing\Fiverr\Ameko\MMPortal_github\Portal\obj\Debug\Portal.pdb

@@ -1,0 +1,270 @@
+10:34:47 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionApprovelList
+Error Line No : 686
+Exception Type : System.ArgumentException
+Details: Column 'CustomerSite' does not belong to table .
+--------------------------------------------------------------------------------------------------------------------------------
+
+10:34:47 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 837
+Exception Type : System.ArgumentException
+Details: Column 'CustomerSite' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:35:25 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionApprovelList
+Error Line No : 686
+Exception Type : System.ArgumentException
+Details: Column 'CustomerSite' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:35:25 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 837
+Exception Type : System.ArgumentException
+Details: Column 'CustomerSite' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:36:59 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionApprovelList
+Error Line No : 686
+Exception Type : System.ArgumentException
+Details: Column 'CustomerSite' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:36:59 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 837
+Exception Type : System.ArgumentException
+Details: Column 'CustomerSite' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:28 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeLeaveBalanceDetailsList
+Error Line No : 2458
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:28 PM
+Source : Portal.Core.EmployeeLeaveDetailBL
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 134
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:28 PM
+Source : Portal.Controllers.EmployeeLeaveApplicationController
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 162
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:31 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeLeaveBalanceDetailsList
+Error Line No : 2458
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:31 PM
+Source : Portal.Core.EmployeeLeaveDetailBL
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 134
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:31 PM
+Source : Portal.Controllers.EmployeeLeaveApplicationController
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 162
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:37 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeLeaveBalanceDetailsList
+Error Line No : 2458
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:37 PM
+Source : Portal.Core.EmployeeLeaveDetailBL
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 134
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:37 PM
+Source : Portal.Controllers.EmployeeLeaveApplicationController
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 162
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:24:16 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeLeaveBalanceDetailsList
+Error Line No : 2458
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:24:16 PM
+Source : Portal.Core.EmployeeLeaveDetailBL
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 134
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:24:25 PM
+Source : Portal.Controllers.EmployeeLeaveApplicationController
+Method Name : GetEmployeeLeaveBalanceList
+Error Line No : 162
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'LeaveOpeningBalance'.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:42:00 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetBranchLocationList(Int32)' in 'Portal.Controllers.StoreRequisitionController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:27 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:27 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:39 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:39 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:42 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:43 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:44 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:45 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCompanyBranchDetails(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:45 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:51 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:14:51 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:19:46 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:19:56 PM
+Source : Portal.Controllers.SOController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetCustomerBranchList(Int32)' in 'Portal.Controllers.SOController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,59 @@
+﻿@model List<Portal.Core.ViewModel.ProductBOMViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblAssemblyList">
+            <thead>
+                <tr>
+                    <th style="text-align:center">Assembly Name</th>
+                    <th style="text-align:center">Assembly Code</th>
+                    <th style="text-align:center">Short Desc</th>
+                    <th style="text-align:center">Assembly Type</th>
+                    <th colspan="2" align="center"></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td>@item.AssemblyName</td>
+                        <td>@item.AssemblyCode</td>
+                        <td>@item.AssemblyShortDesc</td>
+                        <td>@item.AssemblyType</td>
+                        <td align="center" class="btn-success btn " style="margin:0px auto;">
+                            <a style="color:white"  class="fa fa-list" aria-hidden="true" title="View Assembly BOM List" onclick="GetAssemblyBOMList(this)" id="View_@item.AssemblyId"></a>
+                        </td>
+                        <td align="center" class="btn-success btn" style="margin:0px auto;">
+                            <a style="color:white" class="fa fa-files-o" aria-hidden="true" title="Copy Assembly BOM List" onclick="CopyAssemblyBOMList(this)" id="Copy_@item.AssemblyId"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" width="100%" height="auto">
+                            <div style="display:none;" id="divAssemblyBOM_@item.AssemblyId">
+
+                            </div>
+                        </td>
+                    </tr>
+                }
+              
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblAssemblyList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>

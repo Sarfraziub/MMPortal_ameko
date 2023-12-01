@@ -1,0 +1,58 @@
+﻿@model List<Portal.Core.ViewModel.BookBalanceViewModel>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="padding:10px;">
+        <table class="table" id="tblBookBalanceList" style="margin-top:10px;">
+            <thead style="border-top-left-radius:15px;">
+                <tr style="background-color:#ff6a00;width:100%;">
+                    <th colspan="2" style="color:#fff" >Book(s) Balances as at @DateTime.Now.ToString("dd-MMM-yyyy")</th>
+                   
+                </tr>
+                <tr style="background:#D0DDEC; border:1px solid #ccc;">
+                    <th>Book Name</th>
+                    <th>Balance (In Rs.)</th>
+                </tr>
+            </thead>
+            <tbody style="border:1px solid #ccc;">
+                @foreach (var item in Model)
+                {
+                <tr class="success">
+                    <td>@item.BookName</td>
+                    <td>@item.BookBalance</td>
+                </tr>
+                }
+            </tbody>
+            <tfoot style="border:1px solid #ccc;">
+                <tr class="active">
+                    <th>Total Balance</th>
+                    <th>@Model.Sum(x=>x.BookBalance)</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Book Balance(s) not updated</h3>
+}
+ <script>
+var barChartData =
+    {
+        labels: [@Html.Raw(ViewBag.BookList)],
+        //labels: ['HDFC BANK LTD','Indusind Bank','allav Agarwal','Cash in Hand'],
+        datasets: [{
+            label: 'Book(s) Balances',
+            backgroundColor: [
+                "#f990a7",
+                "#aad2ed",
+                "#9966FF",
+                "#99e5e5",
+                "#f7bd83",
+            ],
+            borderWidth: 2,
+            data: [@ViewBag.BalanceList]
+        }]
+    };
+    
+</script> 

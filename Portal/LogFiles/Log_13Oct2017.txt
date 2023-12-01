@@ -1,0 +1,704 @@
+10:44:03 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 168
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+--------------------------------------------------------------------------------------------------------------------------------
+
+10:44:03 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:05 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 168
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:05 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:08 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 168
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:08 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:13 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 168
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:13 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:15 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 168
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:15 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:17 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 168
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:44:17 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'Count_Head' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:34 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:34 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:37 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:37 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:40 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:40 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:41 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:41 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:44 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:44 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:47 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:47 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:50 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:50 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:53 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:53 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:56 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:56 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:59 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:47:59 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:02 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:03 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:03 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:03 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:03 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:04 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:04 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:04 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:04 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:05 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:05 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:05 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:05 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:08 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:08 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:11 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:11 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:14 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:14 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:17 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:17 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:20 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:20 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:23 AM
+Source : Portal.Core.PurchaseDashboardBL
+Method Name : GetPendingPOCountList
+Error Line No : 164
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+10:49:23 AM
+Source : Portal.Controllers.DashboardController
+Method Name : GetPendingPOCountList
+Error Line No : 364
+Exception Type : System.ArgumentException
+Details: Column 'TotalPendingPOCount' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+

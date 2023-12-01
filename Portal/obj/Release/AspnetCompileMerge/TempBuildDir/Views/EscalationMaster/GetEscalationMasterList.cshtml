@@ -1,0 +1,61 @@
+﻿@model List<Portal.Core.ViewModel.EscalationMasterViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table
+    {
+        background-color:white;
+        margin-left:1px;
+        margin-right:30px
+
+    }
+      .table th {
+    background: rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;
+    color:#fff;
+}
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div>
+        <table class="table table-bordered" id="tblEscalationMasterList">
+            <thead>
+                <tr>
+                    <th colspan="2"><center>Action</center></th>
+                    <th><center>Process Type</center></th>
+                    <th><center>Escalation Days</center></th> 
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {    
+                    <tr class="success">
+                        <td class="teal text" style="width:30px; margin:0px auto;">
+                            <a style="color:darkblue" class="fa fa-eye" aria-hidden="true" href="~/EscalationMaster/AddEditEscalationMaster?EscalationId=@item.EscalationId&AccessMode=3"></a>
+                        </td>
+                        <td class="teal text" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:darkgreen" class="fa fa-pencil-square-o" href="~/EscalationMaster/AddEditEscalationMaster?EscalationId=@item.EscalationId&AccessMode=2"></a>
+                        </td>
+                        <td align="center">@item.ProcessType</td>
+                        <td align="center">@item.EscalationDays</td>                      
+                    </tr>
+                   
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblEscalationMasterList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>

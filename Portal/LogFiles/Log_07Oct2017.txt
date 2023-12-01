@@ -1,0 +1,80 @@
+18:27:23 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+--------------------------------------------------------------------------------------------------------------------------------
+
+18:27:49 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+18:29:11 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+18:32:18 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+18:37:01 PM
+Source : Portal.Controllers.POController
+Method Name : GetPurchaseIndentList
+Error Line No : 855
+Exception Type : System.FormatException
+Details: String was not recognized as a valid DateTime.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:37:25 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+18:38:01 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:08 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:44 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(94): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+19:02:52 PM
+Source : Portal.Controllers.POController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\PO\GetPurchaseIndentProductList.cshtml(212): error CS1061: 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' does not contain a definition for 'CGST_Perc' and no extension method 'CGST_Perc' accepting a first argument of type 'Portal.Core.ViewModel.PurchaseIndentProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+

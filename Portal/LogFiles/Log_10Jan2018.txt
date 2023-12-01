@@ -1,0 +1,72 @@
+17:34:09 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetSalaryJVReport
+Error Line No : 4497
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetSalaryJVReport'.
+--------------------------------------------------------------------------------------------------------------------------------
+
+17:34:09 PM
+Source : Portal.Core.PayrollProcessPeriodBL
+Method Name : GetSalaryJVReport
+Error Line No : 223
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetSalaryJVReport'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:34:14 PM
+Source : Portal.Controllers.SalaryReportController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetSalaryJVReport'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:35:00 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 4824
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:35:00 PM
+Source : Portal.Core.PayrollMonthlyAdjustmentBL
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 84
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:35:00 PM
+Source : Portal.Controllers.PayrollMonthlyAdjustmentController
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 99
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:39:24 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 4824
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:39:24 PM
+Source : Portal.Core.PayrollMonthlyAdjustmentBL
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 84
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:39:25 PM
+Source : Portal.Controllers.PayrollMonthlyAdjustmentController
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 99
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+

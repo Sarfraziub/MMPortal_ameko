@@ -1,0 +1,3 @@
+ProductName,ProductCode,ProductShortDesc,ProductFullDesc,ProductTypeName,ProductMainGroupName,ProductSubGroupName,AssemblyType,UOMName,ReOrderQty,Size,Length,Manufacturer,CGST_Perc,SGST_Perc,IGST_Perc,HSN_Code
+"6"" hing ",P001200,"6"" hing ","6"" hing ",Consumable,Hardware,Hardware,RC,Per,0,,,,9,9,18,
+"5"" Hing ",P01201,"5"" Hing ","5"" Hing ",Consumable,Hardware,Hardware,RC,Per,0,,,,9,9,18,

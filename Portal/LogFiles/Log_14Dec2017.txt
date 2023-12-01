@@ -1,0 +1,770 @@
+11:18:12 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 82
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+--------------------------------------------------------------------------------------------------------------------------------
+
+11:18:12 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:14 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 82
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:14 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:16 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 82
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:16 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:49 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 82
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:49 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.ArgumentException
+Details: Column 'IN_TIME' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:57:57 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Temporary'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:57:57 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Temporary'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:57:57 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Temporary'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:08 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:08 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:08 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:12 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:12 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:12 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:18 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:18 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:18 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:19 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:19 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:19 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:20 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:20 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:20 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:23 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:23 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:23 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:24 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:24 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:24 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:28 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2051' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:28 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2051' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:28 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2051' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:31 AM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:31 AM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:31 AM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: The multi-part identifier "DPRT.DepartmentId" could not be bound.
+The multi-part identifier "DSG.DesignationId" could not be bound.
+
+	insert into #Temp(EmployeeId,EmployeeName,AttendanceDate,InTime,OutTime,AttendanceStatus,PresentAbsent) 
+	select distinct E.EmployeeId,E.FirstName,ISNULL(EA.AttendanceDate,'2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='IN'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select HREA.TrnDateTime from HR_EmployeeAttendance HREA where HREA.InOut='OUT'
+	and HREA.EmployeeId=EA.EmployeeId and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	(select top 1 HREA.AttendanceStatus from HR_EmployeeAttendance HREA where HREA.EmployeeId=EA.EmployeeId
+	and ISNULL(HREA.AttendanceDate,'2017-12-14')='2017-12-14'),
+	ISNULL(EA.PresentAbsent,'') PresentAbsent
+	from Employee E 
+	left join HR_EmployeeAttendance EA on E.EmployeeId = EA.EmployeeId
+	and EA.AttendanceDate='2017-12-14'  
+	where 1=1 and E.EmploymentType = 'Regular'  and DPRT.DepartmentId = '8'  and DSG.DesignationId = '2050' 
+---------------------------------------------------------------------------------------------------------------------------
+
+16:22:50 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:28:06 PM
+Source : Portal.Controllers.SupervisorDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+

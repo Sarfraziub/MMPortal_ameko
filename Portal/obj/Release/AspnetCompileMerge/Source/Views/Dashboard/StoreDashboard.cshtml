@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Store Dashboard";
+    Layout = "~/Views/Shared/_StoreLayout.cshtml";
+}
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<div id="wrapper">
+    <div id="page-content-wrapper" style="padding-top:5px !important;">
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row top-head">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6" style="margin-top: 5px;margin-bottom:5px">
+                        <b><label for="ddlFinYear" class="col-sm-4" style="margin-top: 5px;color:#fff">Financial Year</label></b>
+                        <div class="col-sm-8">
+                            <select id="ddlFinYear" name="ddlFinYear" onchange="SetFinancialYearSession()" tabindex="1" class="form-control"></select>
+                            <input type="hidden" id="hdnCurrentFinyearId" value="@ViewData["currentFinyearId"]" />
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" id="DivQuatationCount">
+
+                    </div>
+                    <div class="col-md-4" id="DivSOCount">
+
+                    </div>
+                    <div class="col-md-4" id="DivSICount">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="padding:10px" id="divQuatationCountChart">
+                        <canvas id="barcanvasQuatation" height="200" width="200"></canvas>
+                    </div>
+                    <div class="col-md-4" style="padding:10px" id="divSOCountChart">
+                        <canvas id="barcanvasSaleOrder" height="200" width="200"></canvas>
+                    </div>
+                    <div class="col-md-4" style="padding:10px" id="divSICountChart">
+                        <canvas id="barcanvasSI" height="200" width="200"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--end body content -->
+    </div>
+</div>
+<script src="~/Scripts/Chart.bundle.min.js"></script>
+<script src="~/Scripts/Dashboard/StoreDashboard.js"></script>
+
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+
+</script>

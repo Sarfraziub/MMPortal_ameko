@@ -1,0 +1,32 @@
+11:41:56 AM
+Source : Portal.Core.SINBL
+Method Name : GetSINStoreRequisitionProductList
+Error Line No : 346
+Exception Type : System.ArgumentException
+Details: Column 'IndentedQuantity' does not belong to table .
+--------------------------------------------------------------------------------------------------------------------------------
+
+11:41:56 AM
+Source : Portal.Controllers.SINController
+Method Name : GetStoreRequisitionProductList
+Error Line No : 367
+Exception Type : System.ArgumentException
+Details: Column 'IndentedQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:42:26 AM
+Source : Portal.Core.SINBL
+Method Name : GetSINStoreRequisitionProductList
+Error Line No : 346
+Exception Type : System.ArgumentException
+Details: Column 'IndentedQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:42:26 AM
+Source : Portal.Controllers.SINController
+Method Name : GetStoreRequisitionProductList
+Error Line No : 367
+Exception Type : System.ArgumentException
+Details: Column 'IndentedQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+

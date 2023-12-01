@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ApprovedStoreRequisitionsWithoutPODataSet" targetNamespace="http://tempuri.org/ApprovedStoreRequisitionsWithoutPODataSet.xsd" xmlns:mstns="http://tempuri.org/ApprovedStoreRequisitionsWithoutPODataSet.xsd" xmlns="http://tempuri.org/ApprovedStoreRequisitionsWithoutPODataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ApprovedStoreRequisitionsWithoutPODataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ApprovedStoreRequisitionsWithoutPODataSet" msprop:Generator_UserDSName="ApprovedStoreRequisitionsWithoutPODataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ApprovedStoreRequisitionsWithoutPODataSet" msprop:Generator_TableClassName="ApprovedStoreRequisitionsWithoutPODataSetDataTable" msprop:Generator_TableVarName="tableApprovedStoreRequisitionsWithoutPODataSet" msprop:Generator_TablePropName="_ApprovedStoreRequisitionsWithoutPODataSet" msprop:Generator_RowDeletingName="ApprovedStoreRequisitionsWithoutPODataSetRowDeleting" msprop:Generator_RowChangingName="ApprovedStoreRequisitionsWithoutPODataSetRowChanging" msprop:Generator_RowEvHandlerName="ApprovedStoreRequisitionsWithoutPODataSetRowChangeEventHandler" msprop:Generator_RowDeletedName="ApprovedStoreRequisitionsWithoutPODataSetRowDeleted" msprop:Generator_UserTableName="ApprovedStoreRequisitionsWithoutPODataSet" msprop:Generator_RowChangedName="ApprovedStoreRequisitionsWithoutPODataSetRowChanged" msprop:Generator_RowEvArgName="ApprovedStoreRequisitionsWithoutPODataSetRowChangeEvent" msprop:Generator_RowClassName="ApprovedStoreRequisitionsWithoutPODataSetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RequisitionId" msprop:Generator_ColumnVarNameInTable="columnRequisitionId" msprop:Generator_ColumnPropNameInRow="RequisitionId" msprop:Generator_ColumnPropNameInTable="RequisitionIdColumn" msprop:Generator_UserColumnName="RequisitionId" type="xs:string" minOccurs="0" />
+              <xs:element name="RequisitionNo" msprop:Generator_ColumnVarNameInTable="columnRequisitionNo" msprop:Generator_ColumnPropNameInRow="RequisitionNo" msprop:Generator_ColumnPropNameInTable="RequisitionNoColumn" msprop:Generator_UserColumnName="RequisitionNo" type="xs:string" minOccurs="0" />
+              <xs:element name="RequisitionDate" msprop:Generator_ColumnVarNameInTable="columnRequisitionDate" msprop:Generator_ColumnPropNameInRow="RequisitionDate" msprop:Generator_ColumnPropNameInTable="RequisitionDateColumn" msprop:Generator_UserColumnName="RequisitionDate" type="xs:string" minOccurs="0" />
+              <xs:element name="RequisitionType" msprop:Generator_ColumnVarNameInTable="columnRequisitionType" msprop:Generator_ColumnPropNameInRow="RequisitionType" msprop:Generator_ColumnPropNameInTable="RequisitionTypeColumn" msprop:Generator_UserColumnName="RequisitionType" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerId" msprop:Generator_ColumnVarNameInTable="columnCustomerId" msprop:Generator_ColumnPropNameInRow="CustomerId" msprop:Generator_ColumnPropNameInTable="CustomerIdColumn" msprop:Generator_UserColumnName="CustomerId" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="RequisitionStatus" msprop:Generator_ColumnVarNameInTable="columnRequisitionStatus" msprop:Generator_ColumnPropNameInRow="RequisitionStatus" msprop:Generator_ColumnPropNameInTable="RequisitionStatusColumn" msprop:Generator_UserColumnName="RequisitionStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovalStatus" msprop:Generator_ColumnVarNameInTable="columnApprovalStatus" msprop:Generator_ColumnPropNameInRow="ApprovalStatus" msprop:Generator_ColumnPropNameInTable="ApprovalStatusColumn" msprop:Generator_UserColumnName="ApprovalStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedByName" msprop:Generator_ColumnVarNameInTable="columnCreatedByName" msprop:Generator_ColumnPropNameInRow="CreatedByName" msprop:Generator_ColumnPropNameInTable="CreatedByNameColumn" msprop:Generator_UserColumnName="CreatedByName" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedByName" msprop:Generator_ColumnVarNameInTable="columnModifiedByName" msprop:Generator_ColumnPropNameInRow="ModifiedByName" msprop:Generator_ColumnPropNameInTable="ModifiedByNameColumn" msprop:Generator_UserColumnName="ModifiedByName" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedDate" msprop:Generator_ColumnVarNameInTable="columnModifiedDate" msprop:Generator_ColumnPropNameInRow="ModifiedDate" msprop:Generator_ColumnPropNameInTable="ModifiedDateColumn" msprop:Generator_UserColumnName="ModifiedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerSite" msprop:Generator_ColumnVarNameInTable="columnCustomerSite" msprop:Generator_ColumnPropNameInRow="CustomerSite" msprop:Generator_ColumnPropNameInTable="CustomerSiteColumn" msprop:Generator_UserColumnName="CustomerSite" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovedDate" msprop:Generator_ColumnVarNameInTable="columnApprovedDate" msprop:Generator_ColumnPropNameInRow="ApprovedDate" msprop:Generator_ColumnPropNameInTable="ApprovedDateColumn" msprop:Generator_UserColumnName="ApprovedDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

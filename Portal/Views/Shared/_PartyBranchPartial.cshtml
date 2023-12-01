@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Add New Shipping Address</title>
+    <style>
+        .Mandatory {
+            color: red;
+            font-weight: bold;
+        }
+
+
+        fieldset.scheduler-border {
+            border: 1px groove #ddd !important;
+            padding: 0 1.4em 1.4em 1.4em !important;
+            margin: 0 0 1.5em 0 !important;
+            -webkit-box-shadow: 0px 0px 0px 0px #000;
+            box-shadow: 0px 0px 0px 0px #000;
+        }
+
+        legend {
+            display: block;
+            width: 37%;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: inherit;
+            color: #333;
+            border: 0;
+            border-bottom: 0px solid #e5e5e5;
+        }
+    </style>
+</head>
+
+<body class="sidebar-condensed" id="body">
+
+    <section>
+        <form action="#" id="frmAddEditCustomer" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+            <div class="">
+                
+                <div id="tabs">
+                    <div id="tabs-2">
+                        <div class="col-md-12 ftop">
+                            <div class="form-group col-md-6">
+                                <label for="txtPopUpPartyName" class="col-sm-4 control-label">Party Name&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" id="txtPopUpPartyName" name="txtPopUpPartyName" tabindex="100" placeholder="Enter Party Name" type="text" maxlength="100" />
+                                    <input id="hdnPopUpCustomerId" type="hidden" value="0" />
+                                    <input id="hdnBranchSequenceNo" type="hidden" value="0" />
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="txtPopUpBPartyCode" class="col-sm-4 control-label">Party Code</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control alpha-space-only" id="txtPopUpBPartyCode" name="txtPopUpBPartyCode" tabindex="101" placeholder="Enter Party Code" type="text" maxlength="100" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group col-md-6">
+                                <label for="txtPopUpBranchName" class="col-sm-4 control-label">Branch Name&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" id="txtPopUpBranchName" name="txtPopUpBranchName" tabindex="102" placeholder="Enter Branch Name" type="text" maxlength="100" />
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="txtPopUpBContactPersonName" class="col-sm-4 control-label">Contact Person Name</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control alpha-space-only" id="txtPopUpBContactPersonName" name="txtPopUpBContactPersonName" tabindex="103" placeholder="Enter Contact Person Name" type="text" maxlength="100" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group col-md-6">
+                                <label for="txtPopUpBMobileNo" class="col-sm-4 control-label">Mobile No.</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control  input-number numeric-only" id="txtPopUpBMobileNo" name="txtPopUpBMobileNo" tabindex="104" placeholder="Enter Mobile No." type="text" maxlength="10" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group col-md-6 ">
+                                <label for="ddlPopUpBCountry" class="col-sm-4 control-label">Country&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <select id="ddlPopUpBCountry" name="ddlPopUpBCountry" onchange="BindBranchStateList(0)" tabindex="105" class="form-control"></select>
+                                </div>
+                            </div>
+                            <div class="form-group  col-md-6 ">
+                                <label for="ddlPopUpBState" class="col-sm-4 control-label">State&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <select id="ddlPopUpBState" name="ddlPopUpBState" tabindex="106" class="form-control"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group  col-md-6">
+                                <label for="txtPopUpBCity" class="col-sm-4 control-label">City&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <input class="form-control alpha-space-only" id="txtPopUpBCity" name="txtPopUpBCity" tabindex="107" placeholder="Enter City" type="text" maxlength="50" />
+                                </div>
+                            </div>
+                            <div class="form-group  col-md-6">
+                                <label for="txtPopUpBAddress" class="col-sm-4 control-label">Address&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" id="txtPopUpBAddress" name="txtPopUpBAddress" tabindex="108" rows="4" cols="50" placeholder="Enter Address" maxlength="250"> </textarea>
+                                    @*<input class="form-control" id="txtBAddress" name="txtBAddress" tabindex="8" placeholder="Enter Address" type="text" maxlength="250" />*@
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group  col-md-6 " style="top: -52px;">
+                                <label for="txtPopUpBGSTNo" class="col-sm-4 control-label">GST No.</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control alpha-numeric-only" id="txtPopUpBGSTNo" name="txtPopUpBGSTNo" tabindex="109" placeholder="Enter GST No." type="text" maxlength="15" />
+                                </div>
+                            </div>
+                            <div class="form-group  col-md-6 ">
+                               
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-12 col-md-12 ftop">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <center>
+                                    <input class="btn btn-success" value="Save" alt="Save Branch" tabindex="110" id="btnSaveBranch" onclick="SaveBranchDataPopUp(1)" type="button" border="0" style="margin-top: -70px;">
+                                </center>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script>
+    $(".alpha-only").on("input", function () {
+        var regexp = /[^a-zA-Z]/g;
+        if ($(this).val().match(regexp)) {
+            $(this).val($(this).val().replace(regexp, ''));
+        }
+    });
+    $(".alpha-space-only").on("input", function () {
+        var regexp = /[^a-zA-Z\s]+$/g;
+        if ($(this).val().match(regexp)) {
+            $(this).val($(this).val().replace(regexp, ''));
+        }
+    });
+    $(".numeric-only").on("input", function () {
+        var regexp = /\D/g;
+        if ($(this).val().match(regexp)) {
+            $(this).val($(this).val().replace(regexp, ''));
+        }
+    });
+    $(".alpha-numeric-only").on("input", function () {
+        var regexp = /[^a-zA-Z0-9]/g;
+        if ($(this).val().match(regexp)) {
+            $(this).val($(this).val().replace(regexp, ''));
+        }
+    });
+
+    $(document).ready(function () {
+        BindBranchCountryList();
+    });
+
+    function BindBranchCountryList() {
+        $.ajax({
+            type: "GET",
+            url: "../Company/GetCountryList",
+            data: "{}",
+            dataType: "json",
+            asnc: false,
+            success: function (data) {
+                $("#ddlPopUpBCountry").append($("<option></option>").val(0).html("-Select Country-"));
+                $.each(data, function (i, item) {
+
+                    $("#ddlPopUpBCountry").append($("<option></option>").val(item.CountryId).html(item.CountryName));
+                });
+            },
+            error: function (Result) {
+                $("#ddlPopUpBCountry").append($("<option></option>").val(0).html("-Select Country-"));
+            }
+        });
+    }
+
+    function BindBranchPrimaryStateList(stateId) {
+        var countryId = $("#ddlPopUpBCountry option:selected").val();
+        $("#ddlPopUpBState").val(0);
+        $("#ddlPopUpBState").html("");
+        if (countryId != undefined && countryId != "" && countryId != "0") {
+            var data = { countryId: countryId };
+            $.ajax({
+                type: "GET",
+                url: "../Company/GetStateList",
+                data: data,
+                asnc: false,
+                dataType: "json",
+                success: function (data) {
+                    $("#ddlPopUpBState").append($("<option></option>").val(0).html("-Select State-"));
+                    $.each(data, function (i, item) {
+                        $("#ddlPopUpBState").append($("<option></option>").val(item.StateId).html(item.StateName));
+                    });
+                    $("#ddlPopUpBState").val(stateId);
+                },
+                error: function (Result) {
+                    $("#ddlPopUpBState").append($("<option></option>").val(0).html("-Select State-"));
+                }
+            });
+        }
+        else {
+
+            $("#ddlPopUpBState").append($("<option></option>").val(0).html("-Select State-"));
+        }
+
+    }
+
+    function checkDecPopUp(el) {
+        var ex = /^[0-9]+\.?[0-9]*$/;
+        if (ex.test(el.value) == false) {
+            el.value = el.value.substring(0, el.value.length - 1);
+        }
+
+    }
+
+    //Save Customer Branch Data------------
+
+    function SaveBranchDataPopUp() {
+        var hdnCustomerId = $("#hdnCustomerId");
+        var txtPopUpBranchName = $("#txtPopUpBranchName");
+        var txtPopUpBContactPersonName = $("#txtPopUpBContactPersonName");
+        var txtPopUpBMobileNo = $("#txtPopUpBMobileNo");
+        var txtPopUpBAddress = $("#txtPopUpBAddress");
+        var ddlPopUpBCountry = $("#ddlPopUpBCountry");
+        var ddlPopUpBState = $("#ddlPopUpBState");
+        var txtPopUpBGSTNo = $("#txtPopUpBGSTNo");
+        var txtPopUpBCity = $("#txtPopUpBCity");
+
+        if (hdnCustomerId.val() == "" || hdnCustomerId.val()=="0") {
+            alert("Please Enter Customer Name");
+            $("#AddNewCustomerBranch").modal("hide");
+            $("#txtCustomerName").focus();
+            return false;
+        }
+        if (txtPopUpBranchName.val().trim() == "") {
+            alert("Please Enter Branch Name");
+            txtPopUpBranchName.focus();
+            return false;
+        }
+        if (txtPopUpBContactPersonName.val().trim() == "") {
+            alert("Please Enter Contact Person name");
+            txtPopUpBContactPersonName.focus();
+            return false;
+        }
+
+        if (txtPopUpBAddress.val().trim() == "") {
+            alert("Please enter branch address");
+            txtPopUpBAddress.focus();
+            return false;
+        }
+
+        if (ddlPopUpBCountry.val() == "" || ddlPopUpBCountry.val() == "0") {
+            alert("Please select Country");
+            ddlPopUpBCountry.focus();
+            return false;
+        }
+        if (ddlPopUpBState.val() == "" || ddlPopUpBState.val() == "0") {
+            alert("Please select State");
+            ddlPopUpBState.focus();
+            return false;
+        }
+
+        if (txtPopUpBCity.val().trim() == "") {
+            alert("Please enter city");
+            txtPopUpBCity.focus();
+            return false;
+        }
+
+        var customerBranchViewModal = {
+            CustomerBranchId: 0,
+            BranchName: txtPopUpBranchName.val().trim(),
+            ContactPersonName: txtPopUpBContactPersonName.val().trim(),
+            MobileNo: txtPopUpBMobileNo.val().trim(),
+            PrimaryAddress: txtPopUpBAddress.val().trim(),
+            City: txtPopUpBCity.val().trim(),
+            StateId: ddlPopUpBState.val(),
+            CountryId: ddlPopUpBCountry.val(),
+            GSTNo: txtPopUpBGSTNo.val().trim()
+        };
+        var requestData = { customerId: hdnCustomerId.val(), customerBranchViewModal: customerBranchViewModal };
+        $.ajax({
+            url: "../Customer/AddEditCustomerBranchMaster",
+            cache: false,
+            type: "POST",
+            dataType: "json",
+            data: JSON.stringify(requestData),
+            contentType: 'application/json',
+            success: function (data) {
+                if (data != null) {
+                    if (data.status == "SUCCESS") {
+                        alert("Party Billing Address Created Successfully..");
+                        //BindConsigneeBranchList(hdnCustomerId.val(), data.trnId);
+                        BindCustomerBranchList(hdnCustomerId.val(), data.trnId);
+                        FillBillingAddress(data.trnId);
+                        ClearFieldsPopUp();
+                        $("#AddNewPartyBranch").modal("hide");
+                    }
+                    else {
+                        alert(data.message);
+                    }
+                }
+            },
+            error: function (err) {
+               // ShowModel("Error", err)
+            }
+        });
+
+    }
+
+    function GetCustomerBranchDetailsById(CustomerId) {
+        if (CustomerId != null && CustomerId != 0) {
+            var requestData = { customerId: CustomerId };
+            $.ajax({
+                url: "../Customer/GetCustomerBranchDetailsById",
+                cache: false,
+                type: "POST",
+                dataType: "json",
+                data: JSON.stringify(requestData),
+                contentType: 'application/json',
+                success: function (data) {
+                    if (data != null) {
+                        $("#hdnConsigneeId").val(data[0].CustomerId);
+                        $("#txtConsigneeName").val(data[0].CustomerName);
+                        $("#txtCustomerCode").val(data[0].CustomerCode);
+                        GetConsigneeDetail(data[0].CustomerId);
+                    }
+                },
+                error: function (err) {
+                    ShowModel("Error", err)
+                }
+            });
+        }
+    }
+
+    function ShowModelPopUp(headerText, bodyText) {
+        $("#alertModel").modal();
+        $("#modelHeader").html(headerText);
+        $("#modelText").html(bodyText);
+    }
+    function ClearFieldsPopUp() {
+        $("#txtPopUpBranchName").val("");
+        $("#txtPopUpBContactPersonName").val("");
+        $("#txtPopUpBMobileNo").val("");
+        $("#txtPopUpBAddress").val("");
+        $("#ddlPopUpBCountry").val("0");
+        $("#ddlPopUpBState").val("0");
+        $("#txtPopUpBGSTNo").val("");
+        $("#txtPopUpBCity").val("");
+    }
+
+    function BindBranchStateList(stateId) {
+        var countryId = $("#ddlPopUpBCountry option:selected").val();
+        $("#ddlPopUpBState").val(0);
+        $("#ddlPopUpBState").html("");
+        if (countryId != undefined && countryId != "" && countryId != "0") {
+            var data = { countryId: countryId };
+            $.ajax({
+                type: "GET",
+                url: "../Company/GetStateList",
+                data: data,
+                asnc: false,
+                dataType: "json",
+                success: function (data) {
+                    $("#ddlPopUpBState").append($("<option></option>").val(0).html("-Select State-"));
+                    $.each(data, function (i, item) {
+                        $("#ddlPopUpBState").append($("<option></option>").val(item.StateId).html(item.StateName));
+                    });
+                    $("#ddlPopUpBState").val(stateId);
+                },
+                error: function (Result) {
+                    $("#ddlPopUpBState").append($("<option></option>").val(0).html("-Select State-"));
+                }
+            });
+        }
+        else {
+
+            $("#ddlBState").append($("<option></option>").val(0).html("-Select State-"));
+        }
+
+    }
+
+
+</script>

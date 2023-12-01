@@ -1,0 +1,71 @@
+﻿@model List<Portal.Core.ViewModel.SaleSummaryRegisterViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+.table {
+    width: 140% !important;
+    max-width: 140%  !important;
+    margin-bottom: 20px;
+}
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblSaleInvoiceList">
+            <thead>
+                <tr>
+                    <th>Invoice No.</th>
+                    <th>Invoice Date</th>
+                    <th>Invoice Type</th>
+                    <th>Customer Name</th>
+                    <th>State</th>
+                    <th>Gross Amount</th>
+                    <th>Freight Value</th>
+                    <th>Loading Value</th>  
+                    <th>Total Amount</th>
+                    <th>Amount Paid</th>
+                    <th>Amount Pending</th>
+                    <th>Created By User</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td style="margin:0px 2px auto;">
+                            @item.InvoiceNo
+                        </td> 
+                        <td>@item.InvoiceDate</td>
+                        <td>@item.InvoiceType</td>
+                        <td>@item.CustomerName</td>
+                        <td>@item.StateName</td>
+                        <td>@item.BasicValue</td>
+                        <td>@item.FreightValue</td>
+                        <td>@item.LoadingValue</td>
+                        <td>@item.TotalValue</td>
+                        <td>@item.AmountPaid</td>
+                        <td>@item.AmountPending</td>
+                        <td>@item.CreatedByUserName</td>
+                        
+  </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblSaleInvoiceList').paging({
+            limit: 100,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>

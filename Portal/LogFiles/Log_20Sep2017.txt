@@ -1,0 +1,136 @@
+01:14:23 AM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+--------------------------------------------------------------------------------------------------------------------------------
+
+01:14:24 AM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+01:14:57 AM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+01:14:57 AM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+01:17:37 AM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 34
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+01:17:37 AM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNProductList
+Error Line No : 141
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:59 AM
+Source : Portal.Core.POBL
+Method Name : GetPOList
+Error Line No : 392
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:59 AM
+Source : Portal.Controllers.PurchaseInvoiceController
+Method Name : GetPurchaseOrderList
+Error Line No : 283
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:56 AM
+Source : Portal.Core.POBL
+Method Name : GetPOList
+Error Line No : 392
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:19:56 AM
+Source : Portal.Controllers.PurchaseInvoiceController
+Method Name : GetPurchaseOrderList
+Error Line No : 283
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:21:21 AM
+Source : Portal.Core.POBL
+Method Name : GetPOList
+Error Line No : 392
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:21:22 AM
+Source : Portal.Controllers.PurchaseInvoiceController
+Method Name : GetPurchaseOrderList
+Error Line No : 283
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:37:07 AM
+Source : Portal.Core.POBL
+Method Name : GetPOList
+Error Line No : 392
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+11:37:07 AM
+Source : Portal.Controllers.PurchaseInvoiceController
+Method Name : GetPurchaseOrderList
+Error Line No : 282
+Exception Type : System.ArgumentException
+Details: Column 'ApprovalStatus' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:07 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStockLedgerSummary
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'FinishedGoodProcess'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:08 PM
+Source : Portal.Core.StockLedgerBL
+Method Name : GetStockSummaryDataTable
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'FinishedGoodProcess'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:41:19 PM
+Source : Portal.Controllers.StockLedgerController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid object name 'FinishedGoodProcess'.
+---------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,145 @@
+15:30:47 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'AddEditDailyExpense' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/DailyExpenses/AddEditDailyExpense.aspx
+~/Views/DailyExpenses/AddEditDailyExpense.ascx
+~/Views/Shared/AddEditDailyExpense.aspx
+~/Views/Shared/AddEditDailyExpense.ascx
+~/Views/DailyExpenses/AddEditDailyExpense.cshtml
+~/Views/DailyExpenses/AddEditDailyExpense.vbhtml
+~/Views/Shared/AddEditDailyExpense.cshtml
+~/Views/Shared/AddEditDailyExpense.vbhtml
+--------------------------------------------------------------------------------------------------------------------------------
+
+15:32:40 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'AddEditDailyExpenses' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/DailyExpenses/AddEditDailyExpenses.aspx
+~/Views/DailyExpenses/AddEditDailyExpenses.ascx
+~/Views/Shared/AddEditDailyExpenses.aspx
+~/Views/Shared/AddEditDailyExpenses.ascx
+~/Views/DailyExpenses/AddEditDailyExpenses.cshtml
+~/Views/DailyExpenses/AddEditDailyExpenses.vbhtml
+~/Views/Shared/AddEditDailyExpenses.cshtml
+~/Views/Shared/AddEditDailyExpenses.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+15:34:21 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'AddEditDailyExpenses' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/DailyExpenses/AddEditDailyExpenses.aspx
+~/Views/DailyExpenses/AddEditDailyExpenses.ascx
+~/Views/Shared/AddEditDailyExpenses.aspx
+~/Views/Shared/AddEditDailyExpenses.ascx
+~/Views/DailyExpenses/AddEditDailyExpenses.cshtml
+~/Views/DailyExpenses/AddEditDailyExpenses.vbhtml
+~/Views/Shared/AddEditDailyExpenses.cshtml
+~/Views/Shared/AddEditDailyExpenses.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+16:31:48 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditDailyExpense
+Error Line No : 18559
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditDailyExpense' expects parameter '@DailyExpenseCode', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:31:48 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : AddEditDailyExpense
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditDailyExpense' expects parameter '@DailyExpenseCode', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:31:48 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : AddEditDailyExpenses
+Error Line No : 54
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditDailyExpense' expects parameter '@DailyExpenseCode', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:33:23 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditDailyExpense
+Error Line No : 18559
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditDailyExpense' expects parameter '@DailyExpenseCode', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:33:23 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : AddEditDailyExpense
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditDailyExpense' expects parameter '@DailyExpenseCode', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:33:50 PM
+Source : Portal.Controllers.CustomerPaymentController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'paymenttrnId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.JsonResult GetCustomerPaymentDetail(Int64)' in 'Portal.Controllers.CustomerPaymentController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+19:14:38 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18637
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:14:38 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:14:38 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:14:42 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18637
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:14:42 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:14:42 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to bigint.
+---------------------------------------------------------------------------------------------------------------------------
+

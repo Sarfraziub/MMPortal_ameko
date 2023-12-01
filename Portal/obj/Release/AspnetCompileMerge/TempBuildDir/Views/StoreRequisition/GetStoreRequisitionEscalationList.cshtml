@@ -1,0 +1,79 @@
+﻿@model List<Portal.Core.ViewModel.StoreRequisitionEscalationViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table th {
+        background: rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;
+    }
+
+    .table th {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .table tr {
+        text-align: center;
+    }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;background-color:white;">
+        <table class="table table-bordered table-hover" id="tblStoreRequisitionList">
+            <thead>
+                <tr>
+                    <th><center>Requisition No.</center></th>
+                    <th><center>Created By</center></th>
+                    <th><center>Created Date</center></th>
+                    <th><center>Requisition Status</center></th>
+                    <th><center>Pending Duration</center></th>
+                    @*<th><center>ApproverName</center></th>
+                    <th><center>ApproverEmail</center></th>*@
+                    <th><center>Pending With</center></th>
+                    <th><center>Designation Name</center></th>
+                    <th><center>Department Name</center></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td>@item.RequisitionNo</td>
+                        <td>@item.CreatedBy</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@item.RequisitionStatus</td>
+                        <td>@String.Concat(item.PendingDuration, " Days")</td>
+                        @*<td>@item.ApproverName</td>
+                        <td>@item.ApproverEmail</td>*@
+                        <td>@item.ApproverName</td>
+                        <td>@item.DesignationName</td>
+                        <td>@item.DepartmentName</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblCountryList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>
+<style>
+    .btn-success a {
+        background-color: #446abc !important;
+        border-color: #233e79 !important;
+        display: -webkit-inline-box;
+        padding: 5px;
+    }
+</style>

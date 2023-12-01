@@ -1,0 +1,121 @@
+﻿@model List<Portal.Core.ViewModel.DailyExpensesViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table {
+        background-color: white;
+        margin-left: 1px;
+        margin-right: 30px;
+    }
+
+        .table th {
+            background: rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;
+            color: #fff;
+        }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblCustomerPaymentList">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    @*<th>Daily Expense Code</th>*@
+                    <th>Employee Name</th>
+                    <th>Daily Expense Date</th>
+                    <th>Time Type</th>
+                    <th>Conveyance Amt.</th>
+                    <th>Food Tea Expense</th>
+                    <th>Wages</th>
+                    <th>Total Expenses</th>
+                    <th>Customer Name</th>
+                    <th>Customer Branch</th>
+                    <th>Company Branch</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px auto;">
+                            <a style="color:white" class="fa fa-eye" aria-hidden="true" href="~/DailyExpenses/AddEditDailyExpenses?dailyExpensesId=@item.DailyExpensesId&AccessMode=3"></a>
+                        </td>
+                        @if (item.DailyExpenseStatus.ToUpper() == "DRAFT")
+                        {
+                            <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                                <a style="color:white" class="fa fa-pencil-square-o" href="~/DailyExpenses/AddEditDailyExpenses?dailyExpensesId=@item.DailyExpensesId&AccessMode=2"></a>
+                            </td>
+                        }
+                        @*<td>@item.DailyExpenseCode</td>*@
+                        <td>@item.EmployeeName</td>
+                        <td>@item.DailyExpenseDate</td>
+                        <td>@item.TimeTypeName</td>
+                        <td class="conveyanceAmt" style="text-align:center;">@item.ConveyanceAmt</td>
+                        <td class="foodTeaExpense" style="text-align:center;">@item.FoodAndTeaExpenses</td>
+                        <td class="vages" style="text-align:center;">@item.Vages</td>
+                        <td style="text-align:center; font-weight:bold;">@(item.ConveyanceAmt + item.FoodAndTeaExpenses + item.Vages)</td>
+                        <td>@item.CustomerName</td>
+                        <td>@item.CustomerBranchName</td>
+                        <td>@item.CompanyBranchName</td>
+                        <td>@item.DailyExpenseStatus</td>
+
+                    </tr>
+                }
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td style="font-weight:bold;">Total : </td>
+                    <td style="text-align:center;font-weight:bold;"><span id="spnTotalConveyanceAmt"></span> </td>
+                    <td style="text-align:center;font-weight:bold;"><span id="spnTotalFoodTeaExpense"></span> </td>
+                    <td style="text-align:center;font-weight:bold;"><span id="spnTotalVages"></span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblCustomerPaymentList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        calc_total();
+    });
+    function calc_total() {
+        var conveyanceAmt = 0;
+        var foodAndTeaExpenses = 0;
+        var vages = 0;
+
+        $(".conveyanceAmt").each(function () {
+            conveyanceAmt += parseFloat($(this).text());
+        });
+        $(".foodTeaExpense").each(function () {
+            foodAndTeaExpenses += parseFloat($(this).text());
+        });
+        $(".vages").each(function () {
+            vages += parseFloat($(this).text());
+        });
+
+        $("#spnTotalConveyanceAmt").html(conveyanceAmt.toFixed(2));
+        $("#spnTotalFoodTeaExpense").html(foodAndTeaExpenses.toFixed(2));
+        $("#spnTotalVages").html(vages.toFixed(2));
+    }
+</script>

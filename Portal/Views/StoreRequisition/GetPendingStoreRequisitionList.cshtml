@@ -1,0 +1,462 @@
+﻿@model List<Portal.Core.ViewModel.PendingStoreRequisitionViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table th {
+        background: rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;
+    }
+
+    .table th {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .table tr {
+        text-align: center;
+    }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;background-color:white;">
+        <table class="table table-bordered table-hover" id="tblPendingStoreRequisition">
+            <thead>
+                <tr>
+                    @*<th colspan="2"><center>Action</center></th>*@
+                    <th><center>RequisitionNo</center></th>
+                    <th><center>RequisitionDate</center></th>
+                    <th><center>RequisitionType</center></th>
+                    <th><center>RequisitionStatus</center></th>
+                    <th><center>ApprovalStatus</center></th>
+                    <th><center>ApprovalDate</center></th>
+                    <th><center>CustomerName</center></th>
+                    <th><center>CustomerSiteName</center></th>
+                    <th><center>CompanyName</center></th>
+                    <th><center>CompanyBranchName</center></th>
+                    <th><center>CreatedBy</center></th>
+                    <th><center>CreatedDate</center></th>
+                    <th><center>ModifyBy</center></th>
+                    <th><center>ModifyDate</center></th>
+                    <th class="thSIN"><center>SIN</center></th>
+                    <th class="thSINDate"><center>SINDate</center></th>
+                    <th class="thIndent"><center>Indent</center></th>
+                    <th class="thIndentDate"><center>IndentDate</center></th>
+                    <th class="thIndentApproval"><center>IndentApprovalStatus</center></th>
+                    <th class="thIndentApprovalDate"><center>IndentApprovalDate</center></th>
+                    <th class="thPO"><center>PO</center></th>
+                    <th class="thPODate"><center style="width: 75px;">PODate</center></th>
+                    <th class="thPOAmount"><center>POAmount</center></th>
+                    <th class="thPOApproval"><center>POApprovalStatus</center></th>
+                    <th class="thPOApprovalDate"><center>POApprovalDate</center></th>
+                    <th class="thPI"><center>PI</center></th>
+                    <th class="thPIDate"><center style="width: 75px;">PIDate</center></th>
+                    <th><center>MRN</center></th>
+                    <th><center>MRNDate</center></th>
+                    <th><center>MRNCreatedBy</center></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        @if (item.SINStatus != "")
+                        {
+                            //With SIN Created-------------------
+                            <td>@item.RequisitionNo</td>
+                            <td>@item.RequisitionDate</td>
+                            <td>@item.RequisitionType</td>
+                            <td>@item.RequisitionStatus</td>
+                            <td>@item.RequisitionApprovalStatus</td>
+                            <td>@item.RequisitionApprovalDate</td>
+                            <td>@item.CustomerName</td>
+                            <td>@item.CustomerSiteName</td>
+                            <td>@item.CompanyName</td>
+                            <td>@item.CompanyBranchName</td>
+                            <td>@item.CreatedBy</td>
+                            <td>@item.CreatedDate</td>
+                            if (item.ModifyBy == "")
+                            {
+                                <td>Not Modified</td>
+                            }
+                            else
+                            {
+                                <td>@item.ModifyBy</td>
+                            }
+                            if (item.ModifyDate == "")
+                            {
+                                <td>NA</td>
+                            }
+                            else
+                            {
+                                <td>@item.ModifyDate</td>
+                            }
+                            if (item.SINStatus == "")
+                            {
+                                <td>NOT DONE</td>
+                            }
+                            else
+                            {
+                                <td>DONE</td>
+                            }
+                            if (item.SINDate == "")
+                            {
+                                <td>NA</td>
+                            }
+                            else
+                            {
+                                <td>@item.SINDate</td>
+                            }
+                            <script type="text/javascript">
+                                $(".thIndent").css('display', 'none');
+                                $(".thIndentData").css('display', 'none');
+                                $(".thIndentDate").css('display', 'none');
+                                $(".thIndentDataDate").css('display', 'none');
+                                $(".thIndentApproval").css('display', 'none');
+                                $(".thIndentApprovalData").css('display', 'none');
+                                $(".thIndentApprovalDate").css('display', 'none');
+                                $(".thIndentApprovalDataDate").css('display', 'none');
+                                $(".thPO").css('display', 'none');
+                                $(".thPOData").css('display', 'none');
+                                $(".thPODate").css('display', 'none');
+                                $(".thPODataDate").css('display', 'none');
+                                $(".thPOAmount").css('display', 'none');
+                                $(".thPOAmountData").css('display', 'none');
+                                $(".thPOApproval").css('display', 'none');
+                                $(".thPOApprovalData").css('display', 'none');
+                                $(".thPOApprovalDate").css('display', 'none');
+                                $(".thPOApprovalDataDate").css('display', 'none');
+                                $(".thPI").css('display', 'none');
+                                $(".thPIData").css('display', 'none');
+                                $(".thPIDate").css('display', 'none');
+                                $(".thPIDataDate").css('display', 'none');
+                            </script>
+                            <td class="thIndentData">Skipped</td>
+                            <td class="thIndentDataDate">NA</td>
+                            <td class="thIndentApprovalData">Skipped</td>
+                            <td class="thIndentApprovalDataDate">NA</td>
+                            <td class="thPOData">Skipped</td>
+                            <td class="thPODataDate">NA</td>
+                            <td class="thPOAmountData">NA</td>
+                            <td class="thPOApprovalData">Skipped</td>
+                            <td class="thPOApprovalDataDate">NA</td>
+                            <td class="thPIData">Skipped</td>
+                            <td class="thPIDataDate">NA</td>
+                            if (item.MRNStatus == "")
+                            {
+                                <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                            }
+                            else
+                            {
+                                <td>DONE</td>
+                            }
+                            if (item.MRNDate == "")
+                            {
+                                <td>NA</td>
+                            }
+                            else
+                            {
+                                <td>@item.MRNDate</td>
+                            }
+                            if (item.MRNCreatedBy == "")
+                            {
+                                <td>NA</td>
+                            }
+                            else
+                            {
+                                <td>@item.MRNCreatedBy</td>
+                            }
+                        }
+                        //Without SIN Created-------------------
+                        else
+                        {
+                            if (item.RequisitionType == "WPO")
+                            {
+                                <td>@item.RequisitionNo</td>
+                                        <td>@item.RequisitionDate</td>
+                                        <td>@item.RequisitionType</td>
+                                        <td>@item.RequisitionStatus</td>
+                                        <td>@item.RequisitionApprovalStatus</td>
+                                        <td>@item.RequisitionApprovalDate</td>
+                                        <td>@item.CustomerName</td>
+                                        <td>@item.CustomerSiteName</td>
+                                        <td>@item.CompanyName</td>
+                                        <td>@item.CompanyBranchName</td>
+                                        <td>@item.CreatedBy</td>
+                                        <td>@item.CreatedDate</td>
+                                if (item.ModifyBy == "")
+                                {
+                                    <td>Not Modified</td>
+                                }
+                                else
+                                {
+                                    <td>@item.ModifyBy</td>
+                                }
+                                if (item.ModifyDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.ModifyDate</td>
+                                }
+                                <script type="text/javascript">
+                                    $(".thSIN").css('display', 'none');
+                                    $(".thSINData").css('display', 'none');
+                                    $(".thSINDate").css('display', 'none');
+                                    $(".thSINDataDate").css('display', 'none');
+                                    $(".thIndent").css('display', 'none');
+                                    $(".thIndentData").css('display', 'none');
+                                    $(".thIndentDate").css('display', 'none');
+                                    $(".thIndentDataDate").css('display', 'none');
+                                    $(".thIndentApproval").css('display', 'none');
+                                    $(".thIndentApprovalData").css('display', 'none');
+                                    $(".thIndentApprovalDate").css('display', 'none');
+                                    $(".thIndentApprovalDataDate").css('display', 'none');
+                                    $(".thPO").css('display', 'none');
+                                    $(".thPOData").css('display', 'none');
+                                    $(".thPODate").css('display', 'none');
+                                    $(".thPODataDate").css('display', 'none');
+                                    $(".thPOAmount").css('display', 'none');
+                                    $(".thPOAmountData").css('display', 'none');
+                                    $(".thPOApproval").css('display', 'none');
+                                    $(".thPOApprovalData").css('display', 'none');
+                                    $(".thPOApprovalDate").css('display', 'none');
+                                    $(".thPOApprovalDataDate").css('display', 'none');
+                                    $(".thPI").css('display', 'none');
+                                    $(".thPIData").css('display', 'none');
+                                    $(".thPIDate").css('display', 'none');
+                                    $(".thPIDataDate").css('display', 'none');
+                                </script>
+                                <td class="thSINData">Skipped</td>
+                                <td class="thSINDataDate">NA</td>
+                                <td class="thIndentData">Skipped</td>
+                                <td class="thIndentDataDate">NA</td>
+                                <td class="thIndentApprovalData">Skipped</td>
+                                <td class="thIndentApprovalDataDate">NA</td>
+                                <td class="thPOData">Skipped</td>
+                                <td class="thPODataDate">NA</td>
+                                <td class="thPOAmountData">NA</td>
+                                <td class="thPOApprovalData">Skipped</td>
+                                <td class="thPOApprovalDataDate">NA</td>
+                                <td class="thPIData">Skipped</td>
+                                <td class="thPIDataDate">NA</td>
+
+                                if (item.MRNStatus == "")
+                                {
+                                    <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.MRNDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.MRNDate</td>
+                                }
+                                if (item.MRNCreatedBy == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.MRNCreatedBy</td>
+                                }
+                            }
+                            else
+                            {
+                                <td>@item.RequisitionNo</td>
+                                <td>@item.RequisitionDate</td>
+                                <td>@item.RequisitionType</td>
+                                <td>@item.RequisitionStatus</td>
+                                <td>@item.RequisitionApprovalStatus</td>
+                                <td>@item.RequisitionApprovalDate</td>
+                                <td>@item.CustomerName</td>
+                                <td>@item.CustomerSiteName</td>
+                                <td>@item.CompanyName</td>
+                                <td>@item.CompanyBranchName</td>
+                                <td>@item.CreatedBy</td>
+                                <td>@item.CreatedDate</td>
+                                if (item.ModifyBy == "")
+                                {
+                                    <td>Not Modified</td>
+                                }
+                                else
+                                {
+                                    <td>@item.ModifyBy</td>
+                                }
+                                if (item.ModifyDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.ModifyDate</td>
+                                }
+                                if (item.SINStatus == "")
+                                {
+                                    <td>NOT DONE</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.SINDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.SINDate</td>
+                                }
+                                if (item.IndentStatus == "")
+                                {
+                                    <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.IndentDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.IndentDate</td>
+                                }
+                                if (item.IndentApprovalStatus == "")
+                                {
+                                    <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.IndentApprovalDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.IndentApprovalDate</td>
+                                }
+                                if (item.POStatus == "")
+                                {
+                                    <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.PODate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.PODate</td>
+                                }
+                                <td>@item.POAmount</td>
+                                if (item.POAmount != 0 && item.POAmount >= 25000)
+                                {
+                                    if (item.POApprovalStatus == "")
+                                    {
+                                        <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                    }
+                                    else
+                                    {
+                                        <td>DONE</td>
+                                    }
+                                }
+                                else
+                                {
+                                    <td>Skipped</td>
+                                }
+
+                                if (item.POApprovalDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.POApprovalDate</td>
+                                }
+                                if (item.PIStatus == "")
+                                {
+                                    <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.PIDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.PIDate</td>
+                                }
+                                if (item.MRNStatus == "")
+                                {
+                                    <td style="background-color:red; color:white; font-weight:bold;">NOT DONE</td>
+                                }
+                                else if (item.MRNStatus.ToUpper() == "DRAFT")
+                                {
+                                    <td style="background-color:yellow;  font-weight:bold;">DRAFT</td>
+                                }
+                                else
+                                {
+                                    <td>DONE</td>
+                                }
+                                if (item.MRNDate == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.MRNDate</td>
+                                }
+                                if (item.MRNCreatedBy == "")
+                                {
+                                    <td>NA</td>
+                                }
+                                else
+                                {
+                                    <td>@item.MRNCreatedBy</td>
+                                }
+                            }
+                        }
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    //$(document).ready(function () {
+    //    $('#tblPendingStoreRequisition').paging({
+    //        limit: 10,
+    //        rowDisplayStyle: 'block',
+    //        activePage: 0,
+    //        rows: []
+    //    });
+
+    //});
+</script>
+<style>
+    .btn-success a {
+        background-color: #446abc !important;
+        border-color: #233e79 !important;
+        display: -webkit-inline-box;
+        padding: 5px;
+    }
+</style>

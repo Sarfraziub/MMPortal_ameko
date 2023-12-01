@@ -1,0 +1,446 @@
+﻿@{
+    ViewBag.Title = "Add/Edit Product";
+    Layout = "~/Views/Shared/_InventoryLayout.cshtml";
+}
+<link href="~/Content/lightbox.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<style>
+    .Mandatory {
+        color: red;
+        font-weight: bold;
+    }
+    /*** custom checkboxes ***/
+
+    input[type=checkbox] {
+        display: none;
+    }
+        /* to hide the checkbox itself */
+        input[type=checkbox] + label:before {
+            font-family: FontAwesome;
+            display: inline-block;
+        }
+
+        input[type=checkbox] + label:before {
+            content: "\f096";
+        }
+        /* unchecked icon */
+        input[type=checkbox] + label:before {
+            letter-spacing: 10px;
+        }
+        /* space between checkbox and label */
+
+        input[type=checkbox]:checked + label:before {
+            content: "\f046";
+        }
+        /* checked icon */
+        input[type=checkbox]:checked + label:before {
+            letter-spacing: 5px;
+        }
+    /* allow space for check mark */
+</style>
+<div class="row top-head">
+    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/InventoryDashboard">Inventory</a> >> Add/Edit Product </b></p></div>
+</div>
+<section>
+    <form action="#" id="frmAddEditProduct" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+        <div class="row inner">
+            <div class="message">
+            </div>
+
+            <div class="col-md-12 ftop">
+                <div class="form-group col-md-6">
+                    <label for="txtProductName" class="col-sm-4 control-label">Product Name&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="txtProductName" name="txtProductName" tabindex="1" placeholder="Enter Product Name" type="text" maxlength="100" />
+                        <input id="hdnProductId" type="hidden" value="@ViewData["productId"]" />
+                        <input id="hdnAccessMode" type="hidden" value="@ViewData["accessMode"]" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtProductCode" class="col-sm-4 control-label">Product Code&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <input id="txtProductCode" name="txtProductCode" tabindex="2" type="text" placeholder="Enter Product Code" maxlength="50" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtProductShortDesc" class="col-sm-4 control-label">Product Short Desc</label>
+                    <div class="col-sm-8">
+                        <input id="txtProductShortDesc" name="txtProductShortDesc" type="text" tabindex="3" placeholder="Enter Product Short Description" maxlength="100" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="txtProductFullDesc" class="col-sm-4 control-label">Product Full Desc</label>
+                    <div class="col-sm-8">
+                        <input id="txtProductFullDesc" name="txtProductFullDesc" type="text" tabindex="4" placeholder="Enter Product Full Description" maxlength="250" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="ddlProductType" class="col-sm-4 control-label">Product Type&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlProductType" name="ddlProductType" tabindex="5" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="ddlProductMainGroup" class="col-sm-4 control-label">Product Main Group&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlProductMainGroup" name="ddlProductMainGroup" onchange="BindProductSubGroupList(0)" tabindex="6" class="form-control"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="ddlProductSubGroup" class="col-sm-4 control-label">Product Sub Group&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlProductSubGroup" name="ddlProductSubGroup" tabindex="7" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="ddlAssemblyType" class="col-sm-4 control-label">Assembly Type&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlAssemblyType" name="ddlAssemblyType" tabindex="8" class="form-control">
+                            <option value="0" selected="selected">-Select Type-</option>
+                            <option value="MA">Main Assembly</option>
+                            <option value="SA">Sub Assembly</option>
+                            <option value="RC">Raw Component</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="ddlUOM" class="col-sm-4 control-label">Sale UOM&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlUOM" name="ddlUOM" tabindex="9" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="ddlPurchaseUOM" class="col-sm-4 control-label">Purchase UOM&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlPurchaseUOM" name="ddlPurchaseUOM" tabindex="10" class="form-control"></select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+
+                <div class="form-group col-md-6">
+                    <label for="ddlBaseUnit" class="col-sm-4 control-label">Other Unit &nbsp;</label>
+                    <div class="col-sm-7">
+                        <select id="ddlBaseUnit" name="ddlBaseUnit" tabindex="10" class="form-control"></select>
+                    </div>
+                    <div class="col-sm-1" style="text-align:right">
+                        <i style="font-size: 24px; color: #587fce; margin-top: 6px; " class="fa"  data-toggle="modal" data-target="#addUnitModel">&#xf067;</i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtSizeDesc" class="col-sm-4 control-label" id="baseUnitLbl">1 unit</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="unitValue" name="unitValue" tabindex="11" placeholder="Enter value" type="number" maxlength="100" />
+                        <input style="display:none" class="form-control" id="txtSizeDesc" name="txtSizeDesc" tabindex="11" placeholder="Enter Size Desc" type="text" maxlength="100" />
+        <input type="hidden" id="hdnSizeId" name="hdnSizeId" value="0" />
+        <input type="hidden" id="hdnSizeCode" name="hdnSizeCode" value="0" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtLength" class="col-sm-4 control-label">Length</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="txtLength" name="txtLength" tabindex="12" placeholder="Enter Length" type="text" maxlength="50" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtBrandName" class="col-sm-4 control-label">Manufacturer/Brand</label>
+                    <div class="col-sm-8">
+                        <input id="txtBrandName" name="txtBrandName" type="text" tabindex="13" placeholder="Enter Brand/ Manufacturer name" maxlength="100" class="form-control" />
+                        <input type="hidden" id="hdnManufacturerId" name="hdnManufacturerId" value="0" />
+                        <input type="hidden" id="hdnManufacturerCode" name="hdnManufacturerCode" value="0" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtSalePrice" class="col-sm-4 control-label">Sale Price</label>
+                    <div class="col-sm-8">
+                        <input id="txtSalePrice" name="txtSalePrice" class="form-control  input-number" onkeyup="checkDec(this)" type="text" tabindex="14" placeholder="Enter Sale Price" maxlength="20" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtPurchasePrice" class="col-sm-4 control-label">Purchase Price</label>
+                    <div class="col-sm-8">
+                        <input id="txtPurchasePrice" class="form-control input-number" onkeyup="checkDec(this)" name="txtPurchasePrice" type="text" tabindex="15" placeholder="Enter Purchase Price" maxlength="20" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtReOrderQty" class="col-sm-4 control-label">Reorder Qty.&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <input id="txtReOrderQty" name="txtReOrderQty" type="text" tabindex="17" placeholder="Enter Re-order Quantity" maxlength="16" class="form-control  input-number" onkeyup="checkDec(this)" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtMinOrderQty" class="col-sm-4 control-label">Minimum Order Qty.</label>
+                    <div class="col-sm-8">
+                        <input id="txtMinOrderQty" name="txtMinOrderQty" type="text" tabindex="18" placeholder="Enter Minimum order Quantity" maxlength="17" class="form-control  input-number" onkeyup="checkDec(this)" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtCGSTPercentage" class="col-sm-4 control-label">CGST (%)&nbsp;</label>
+                    <div class="col-sm-8">
+                        <input id="txtCGSTPercentage" name="txtCGSTPercentage" type="text" tabindex="19" placeholder="Enter CGST Percentage" maxlength="18" class="form-control  input-number" onkeyup="checkDec(this)" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtSGSTPercentage" class="col-sm-4 control-label">SGST (%)</label>
+                    <div class="col-sm-8">
+                        <input id="txtSGSTPercentage" name="txtSGSTPercentage" type="text" tabindex="20" placeholder="Enter SGST Percentage" maxlength="19" class="form-control  input-number" onkeyup="checkDec(this)" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtIGSTPercentage" class="col-sm-4 control-label">IGST (%)&nbsp;</label>
+                    <div class="col-sm-8">
+                        <input id="txtIGSTPercentage" name="txtIGSTPercentage" type="text" tabindex="21" placeholder="Enter IGST Percentage" maxlength="20" class="form-control  input-number" onkeyup="checkDec(this)" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="txtHSNCode" class="col-sm-4 control-label">HSN Code</label>
+                    <div class="col-sm-8">
+                        <input id="txtHSNCode" name="txtHSNCode" type="text" tabindex="22" placeholder="Enter HSN Code" maxlength="21" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="chkIsSerializedProduct" class="col-sm-4 control-label">Serial Applicable</label>
+                    <div class="col-sm-8">
+                        <input type="checkbox" name="chkIsSerializedProduct" id="chkIsSerializedProduct" class="" />
+                        <label style="font-size: 24px; " tabindex="21" for="chkIsSerializedProduct"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="imgUserPic" class="col-sm-4 control-label">Upload Image</label>
+                    <div class="col-sm-8">
+                        @*<a id="lnkUserPic" href="#" data-lightbox="imgUserPic" data-title="Product"></a>*@
+                        <img id="imgUserPic" class="imgUserPic" width="150" height="150" style="margin-bottom:20px;" src="" />
+                        <input type="file" id="FileUpload1" tabindex="22" name="FileUpload1" onchange="ShowImagePreview(this);" />
+                        <a id="btnRemoveImg" style="display:none" onclick="ConfirmRemoveImage()">Remove Image</a>
+                        <input type="hidden" id="hdnRemoveImage" value="0" />
+
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="chkGSTExempt" class="col-sm-4 control-label">GST Exempt</label>
+                    <div class="col-sm-8">
+                        <input type="checkbox" name="chkGSTExempt" id="chkGSTExempt" class="" />
+                        <label style="font-size: 24px;" tabindex="23" for="chkGSTExempt"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                </div>
+                <div class="form-group col-md-6" style="top: -156px;">
+                    <label for="chkStatus" class="col-sm-4 control-label">Active Status</label>
+                    <div class="col-sm-8">
+                        <input type="checkbox" name="chkStatus" id="chkStatus" checked="checked" class="" />
+                        <label style="font-size: 24px;" tabindex="24" for="chkStatus"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-sm-6 col-lg-12 col-md-12">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <center>
+                        <input class="btn btn-success" value="Save" alt="Save" id="btnSave" tabindex="25" onclick="SaveData(1)" type="button" border="0">
+                        <input class="btn btn-success" value="Update" style="display:none;" tabindex="26" alt="Update" id="btnUpdate" onclick="SaveData(2)" type="button" border="0">
+                        <a class="btn btn-success" id="btnReset" tabindex="27" onclick="ResetPage()">Reset</a>  @*href="@Url.Content("~/Product/AddEditProduct")"*@
+                        @*<input class="btn btn-success" type="button" id="btnReset" tabindex="21" onclick="ClearFields()" value="Reset" /> &nbsp;&nbsp;*@
+                        @*<input class="btn btn-success" type="button" id="btnList" value="Search Company" />*@
+                        <a class="btn btn-success" id="btnList" tabindex="28" href="@Url.Content("~/Product/ListProduct")">Search Product</a>
+                    </center>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="alertModel" role="dialog">
+            <div class="modal-dialog  modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="modelHeader"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modelText"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary  btn-block" tabindex="33" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</section>
+<script src="~/Scripts/lightbox.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/Product/AddProduct.js"></script>
+
+
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+</script>
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+    $(document).ready(function () {
+        // Attach change event handler to the dropdown
+        $('#ddlBaseUnit').change(function () {
+            // Get the selected text and update the label
+            var selectedText = $(this).find('option:selected').text();
+            $('#baseUnitLbl').text(selectedText);
+        });
+    });
+</script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="addUnitModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Unit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" id="frmAddEditUnit" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                    <div class="row inner">
+                        <div class="message">
+                        </div>
+
+                        <div class="col-md-12 ftop">
+                            <div class="form-group col-md-12">
+                                <label for="txtUnitName" class="col-sm-4 control-label">Name&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" onblur="UnitNameChange()"  id="txtUnitName" name="txtUnitName" tabindex="1" placeholder="Enter Unit Name" type="text" maxlength="100" />
+                                    <input id="hdnUnitId" type="hidden" value="@ViewData["unitId"]" />
+                                    <input id="hdnAccessMode" type="hidden" value="@ViewData["accessMode"]" />
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="txtUnitShortName" class="col-sm-4 control-label">Short Name&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <input id="txtUnitShortName" name="txtUnitShortName" tabindex="2" type="text" placeholder="Enter Short Name" maxlength="50" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="ddlAllowDecimal" class="col-sm-4 control-label">Allow Decimal&nbsp;<span class="Mandatory">(*)</span></label>
+                                <div class="col-sm-8">
+                                    <select id="ddlAllowDecimal" name="ddlAllowDecimal" tabindex="8" class="form-control">
+                                        <option value="0" selected="selected">-Plesae Select-</option>
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        @*<div class="col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="chkIsAddMultipleLimit" class="col-sm-4 control-label">Add as multiple of other unit</label>
+                                <div class="col-sm-8">
+                                    <input type="checkbox" name="chkIsAddMultipleLimit" id="chkIsAddMultipleLimit" class="" onchange="ShowOtherUnits()" />
+                                    <label style="font-size: 24px;" tabindex="23" for="chkIsAddMultipleLimit"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divMultipleUnits">
+                            <div class="col-md-12">
+                                <div class="form-group col-md-12">
+                                    <label for="txtUnitValue" class="col-sm-4 control-label">1 <span id="lblUnitShortName"></span> =</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtUnitValue" name="txtUnitValue" type="text" tabindex="3" placeholder="time base unit" maxlength="100" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group col-md-12">
+                                    <label for="ddlBaseUnit1" class="col-sm-4 control-label">Base Unit</label>
+                                    <div class="col-sm-8">
+                                        <select id="ddlBaseUnit1" name="ddlBaseUnit1" tabindex="1" class="form-control"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>*@
+
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="alertModel" role="dialog">
+                        <div class="modal-dialog  modal-sm">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title" id="modelHeader"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="modelText"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary  btn-block" tabindex="33" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"  value="Save" alt="Save" id="btnSave" tabindex="25" onclick="SaveUnitData(1)"   border="0">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+   
+</script>

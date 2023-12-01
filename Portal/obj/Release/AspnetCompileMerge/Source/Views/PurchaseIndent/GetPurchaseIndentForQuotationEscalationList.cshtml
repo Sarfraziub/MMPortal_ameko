@@ -1,0 +1,79 @@
+﻿@model List<Portal.Core.ViewModel.PurchaseIndentEscalationViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table th {
+        background: rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;
+    }
+
+    .table th {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .table tr {
+        text-align: center;
+    }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;background-color:white;">
+        <table class="table table-bordered table-hover" id="tblPurchaseIndentForQuotationEscalationList">
+            <thead>
+                <tr>
+                    <th><center>Indent No.</center></th>
+                    <th><center>CreatedBy</center></th>
+                    <th><center>CreatedDate</center></th>
+                    <th><center>IndentStatus</center></th>
+                    <th><center>PendingDuration</center></th>
+                    @*<th><center>ApproverName</center></th>
+                    <th><center>ApproverEmail</center></th>*@
+                    <th><center>PendingWith</center></th>
+                    <th><center>DesignationName</center></th>
+                    <th><center>DepartmentName</center></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">                    
+                        <td>@item.IndentNo</td>
+                        <td>@item.CreatedBy</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@item.IndentStatus</td>
+                        <td>@String.Concat(item.PendingDuration," Days")</td>                       
+                        @*<td>@item.ApproverName</td>
+                        <td>@item.ApproverEmail</td>*@
+                        <td>@item.ApproverName</td>
+                        <td>@item.DesignationName</td>
+                        <td>@item.DepartmentName</td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblPurchaseIndentForQuotationEscalationList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>
+<style>
+    .btn-success a {
+        background-color: #446abc !important;
+        border-color: #233e79 !important;
+        display: -webkit-inline-box;
+        padding: 5px;
+    }
+</style>

@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "AdminDashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    .crm-box {
+        width: 31%;
+    }
+
+    .crm-box-1 {
+        margin-left: -14px;
+        width: 33%;
+    }
+
+    .crm-box-2 {
+        margin-left: 14px;
+        width: 32%;
+    }
+
+    .inventory-box {
+        background: #fff;
+        width: 34%;
+        padding-right: 0;
+    }
+
+    #DivInOutProductQuantityCount {
+        padding: 0px;
+        width: 65%;
+    }
+    .popular-bran-right{ 
+        background-color:#4a9a79; 
+            margin-top: -18px !important;
+            min-height: 135px !important;
+
+    }
+    .popular-brand{margin-top:19px ! important;}
+    @@media(max-width:760px) {
+        .admin-box-4{background-color:transparent;}
+        .popular-bran-right{margin-top:-100px; background-color:transparent;}
+        .popular-brand{margin-top:-83px!important; margin-left: -21px;width: 100%;}
+        .popular-bran-left{z-index:99999; color:#fff; position:relative; top:95px;}
+        .popular-bran-left a{color:#fff;padding-left:20px;}
+        .admin-box-4{height:auto;}
+       .climate-grids{width:100%!important ; position:static!important;}
+       .market-update-gd{width:100%!important;}
+    }
+</style>
+<link href="~/Content/dashboard.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<div id="wrapper">
+    <div id="page-content-wrapper" style="padding-top:5px !important;">
+        <div class="page-content">
+            <div class="container-fluid">
+                @*<div class="row top-head">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6" style="margin-top: 5px;margin-bottom:5px">
+                        <b><label for="ddlFinYear" class="col-sm-4" style="margin-top: 5px;color:#fff">Financial Year</label></b>
+                        <div class="col-sm-8">
+                            <select id="ddlFinYear" name="ddlFinYear" onchange="SetFinancialYearSession()" tabindex="1" class="form-control"></select>
+                            <input type="hidden" id="hdnCurrentFinyearId" value="@ViewData["currentFinyearId"]" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>*@
+
+                <div class="market-updates sale-dash" style="clear:both;margin-top: 10px;margin-left: 12px;">
+                    <a href="@Url.Content("~/User/ListUser")" target="_blank">
+                        <div class="col-md-3 col-xs-12 market-update-gd">
+                            <div class="market-update-block clr-block-1">
+                                <div class="col-md-8 market-update-left">
+                                    <P>Today Created User(s)</P>
+                                    <H4>&nbsp;</H4>
+                                    <h3>@ViewData["TodayUsersCount"]</h3>
+                                </div>
+                                <div class="col-md-4 market-update-right">
+                                    <i class="fa fa-user" style="font-size:53px;color: #fff;"> </i>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="@Url.Content("~/User/ListUser")" target="_blank">
+                        <div class="col-md-3 col-xs-12 market-update-gd">
+                            <div class="market-update-block clr-block-1" style="background-color:#4f75c6">
+                                <div class="col-md-8 market-update-left">
+                                    <P>Total Active User(s)</P>
+                                    <H4>&nbsp;</H4>
+                                    <h3>@ViewData["TotalUsersCount"]</h3>
+                                </div>
+                                <div class="col-md-4 market-update-right">
+                                    <i class="fa fa-users" style="font-size:53px;color: #fff;"> </i>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="@Url.Content("~/Role/ListRole")" target="_blank">
+                        <div class="col-md-3 col-xs-12 market-update-gd">
+                            <div class="market-update-block clr-block-2">
+                                <div class="col-md-8 market-update-left">
+                                    <p>Total Active Role(s)</p>
+                                    <h4>&nbsp;</h4>
+
+                                    <h3>@ViewData["TotalRolesCount"] @*<i style="font-size: 24px;color: aliceblue;" class="fa fa-inr">&nbsp;</i><label id="lblSiSumAmount" style="color: white; font-size: 25px;"></label>*@</h3>
+                                </div>
+                                <div class="col-md-4 col-xs-12 market-update-right">
+                                    <i class="fa fa-list-alt" area-hidden="true" style="font-size:53px;color: #fff;"> </i>
+                                </div>
+
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="col-md-3 col-xs-12 admin-box-4">
+                            <div class="climate-grid3">
+                                <div class="popular-brand">
+                                    <div class="col-md-6 popular-bran-left">
+                                        <p><i aria-hidden="true"></i><a href="@Url.Content("~/User/AddEditUser")" target="_blank">Add New Users</a></p>
+                                        <p><i aria-hidden="true"></i><a href="@Url.Content("~/Role/AddEditRole")" target="_blank">Add New Roles</a></p>
+                                        <p><i aria-hidden="true"></i><a href="@Url.Content("~/Role/AddEditRoleUIMapping" )" target="_blank">Add New Map User</a></p>
+
+                                    </div>
+                                    <div class="col-md-6 popular-bran-right">
+                                        <h3 style="margin-top:-33px; background-color:#4a9a79; margin-right: -2px;"><i class="fa fa-link" aria-hidden="true" style="color: white;font-size: 38px; margin-top: 16px;"></i></h3>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+
+</div>
+
+                <div class="row" id="midcontentofadmindash">
+                    <div class="col-md-6" id="DivUsersList">
+
+                    </div>
+                    <div class="col-md-6" id="DivRolesList">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end body content -->
+    </div>
+</div>
+
+   
+  
+<script src="~/Scripts/Dashboard/AdminDashboard.js"></script>
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+
+</script>

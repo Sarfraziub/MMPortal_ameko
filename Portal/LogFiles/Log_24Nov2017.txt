@@ -1,0 +1,129 @@
+16:55:00 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 16251
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+--------------------------------------------------------------------------------------------------------------------------------
+
+16:55:00 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 300
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:55:00 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 422
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:56:08 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 16251
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:56:08 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 300
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:56:08 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 422
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:04:59 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\StoreRequisition\ListApprovedStoreRequisition.cshtml(21): error CS1002: ; expected
+---------------------------------------------------------------------------------------------------------------------------
+
+17:05:57 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\StoreRequisition\ListApprovedStoreRequisition.cshtml(21): error CS1002: ; expected
+---------------------------------------------------------------------------------------------------------------------------
+
+17:12:37 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 565
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:12:41 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 565
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:12:43 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 565
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:12:47 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionApprovalList
+Error Line No : 565
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:13:12 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 16251
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:13:12 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 300
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:13:12 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetPendingStoreRequisitionList
+Error Line No : 422
+Exception Type : System.Data.SqlClient.SqlException
+Details: Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+The statement has been terminated.
+---------------------------------------------------------------------------------------------------------------------------
+

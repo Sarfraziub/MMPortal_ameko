@@ -1,0 +1,306 @@
+﻿@{
+    ViewBag.Title = "Purchase Dashboard";
+    Layout = "~/Views/Shared/_PurchaseLayout.cshtml";
+}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+    .crm-box {
+        width: 30%;
+        padding-right: 0;
+        margin-left: 35px;
+    }
+
+    .crm-box-last {
+        background-color: #fff;
+    }
+
+    .crm-box-1 {
+        margin-left: 16px;
+        width: 31%;
+    }
+
+    @@media(max-width:760px) {
+        .crm-box-1 {
+            margin-top: -2px;
+            margin-left: -9px;
+        }
+
+        .admin-box-4 {
+            background-color: transparent;
+        }
+
+        .popular-bran-right {
+            margin-top: -100px;
+            background-color: transparent;
+        }
+
+        .popular-brand {
+            margin-top: -83px !important;
+            margin-left: -21px;
+            width: 100%;
+        }
+
+        .popular-bran-left {
+            z-index: 99999;
+            color: #fff;
+            position: relative;
+            top: 95px;
+        }
+
+            .popular-bran-left a {
+                color: #fff;
+                padding-left: 20px;
+            }
+
+        .admin-box-4 {
+            height: auto;
+        }
+
+        .climate-grids {
+            width: 100% !important;
+            position: static !important;
+        }
+
+        .market-update-gd {
+            width: 100% !important;
+        }
+
+        .crm-box {
+            width: 100%;
+            background: transparent;
+            padding-right: 0px;
+            margin-top: 10px;
+            margin-left: -9px;
+        }
+
+        .crm-box-last {
+            background-color: #FC8213;
+        }
+
+        .market-update-block.clr-block-2 {
+            margin-right: 0px;
+        }
+    }
+</style>
+
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<div id="wrapper">
+    <div id="page-content-wrapper" style="padding-top:5px !important;">
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row top-head">
+                    
+                    <div class="col-md-6" style="margin-top: 5px;margin-bottom:5px;    margin-left: 167px;">
+                        <b><label for="ddlFinYear" class="col-sm-4" style="margin-top: 5px;color:#fff">Financial Year</label></b>
+                        <div class="col-sm-8">
+                            <select id="ddlFinYear" name="ddlFinYear" onchange="SetFinancialYearSession()" tabindex="1" class="form-control"></select>
+                            <input type="hidden" id="hdnCurrentFinyearId" value="@ViewData["currentFinyearId"]" />
+                        </div>
+                    </div>
+                    <div class="col-md-3" ng-app="purchase" style="margin-bottom: -12px;">
+                        <div ng-controller="purchaseController">
+                            @if (Session["UserEmail"].ToString() == "pe@mmps.co.in" || Session["IsAdmin"].ToString() == "True")
+                            {
+                                <li class="hidden-xs" style="list-style:none;">
+                                    <form class="navbar-form" ng-init="MdPendingPoCount()">
+                                        <div style="margin-top:15px;color:blue;font-size:17px;">
+                                            <a id="poApproval" href="/PO/ListApprovedPO" target="_blank">
+                                                <span class="badge badge-danger pull-right" id="spanMDApproval" data-toggle="spanMDApproval" title="Pending MD Approval" style="z-index: 9999999; margin-right: -93px; margin-top:-8px;">
+                                                    {{TotalCount}}
+                                                    <i class="material-icons" id="spnNotify">notifications_none</i>
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                    </form>
+                                </li>
+                                <li class="hidden-xs" style="list-style:none;">
+                                    <form class="navbar-form" ng-init="PoLessThan25KCount()">
+                                        <div style="color:blue;font-size:17px;">
+                                            <a id="poLessThan25K" href="/PO/ListPOLessThan25K" target="_blank">
+                                                <span class="badge badge-danger pull-right" id="spanPOLessThan25KApproval" data-toggle="spanPOLessThan25KApproval" title="PO Less Than ₹25000" style="z-index: 9999999;    margin-top: -9px;     margin-right: -24px; ">
+                                                    {{TotalPOLess25KCount}}
+                                                    <i class="material-icons" id="spnNotify">notifications_none</i>
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                    </form>
+                                </li>
+                            }
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+
+                @*<div class="market-updates" style="clear:both;margin-top: 10px;margin-left: 12px;">
+                    <a href="@Url.Content("~/PO/ListPO")">
+                        <div class="col-md-3 col-xs-12 market-update-gd crm-box">
+                            <div class="market-update-block clr-block-2">
+                                <div class="col-md-8 market-update-left">
+                                    <h4>New Purchase order</h4>
+                                    <p>Today Purchase order value</p>
+                                    <h3><i style="font-size: 30px;color: aliceblue;" class="fa fa-inr">&nbsp;</i><label id="lblTodayPOSum" style="color: white;"></label> </h3>
+                                </div>
+                                <div class="col-md-4 market-update-right">
+
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="@Url.Content("~/PurchaseInvoice/ListPI")">
+                        <div class="col-md-3 col-xs-12 market-update-gd crm-box-1">
+                            <div class="market-update-block clr-block-3">
+                                <div class="col-md-8 market-update-left">
+                                    <h4>New Purchase Invoice</h4>
+                                    <p>Today Purchase Invoice value</p>
+                                    <h3><i style="font-size: 30px;color: aliceblue;" class="fa fa-inr">&nbsp;</i><label id="lblTodayPISum" style="color: white;"></label></h3>
+                                </div>
+                                <div class="col-md-4 market-update-right">
+                                    <h3><i style="font-size: 50px;color: aliceblue; font-weight:bold;" class="fa fa-inr circle-container">&nbsp;</i><label id="lblTodayPISum" style="color: white;"></label></h3>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="col-md-3 col-xs-12 climate-grids crm-box crm-box-last">
+                        <div class="climate-grid3">
+                            <div class="popular-brand" style="margin-top:18px;">
+                                <div class="col-md-6 popular-bran-left">
+                                    <h4><i aria-hidden="true"></i><a href="@Url.Content("~/PO/AddEditPO")" ) target="_blank">Add New PO</a></h4>
+                                    <h4><i aria-hidden="true"></i><a href="@Url.Content("~/PurchaseInvoice/AddEditPI")" )target="_blank">Add New PI</a></h4>
+                                    <h4><i aria-hidden="true"></i><a href="@Url.Content("~/Vendor/AddEditVendor")" )target="_blank">Add New Vendor</a></h4>
+
+                                </div>
+                                <div class="col-md-6 popular-bran-right" style="margin-top: -19px; min-height: 132px;">
+                                    <h3 style="margin-top: -17px;"><i class="fa fa-link" aria-hidden="true" style="color: white;font-size: 38px; margin-top: 16px;"></i></h3>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"> </div>
+
+                </div>*@
+
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Purchase Module Summary</a></li>
+                        <li><a href="#tabs-2">Graphical Representation</a></li>
+                       
+                        </ul>
+                        <div id="tabs-1">
+                            <div class="row">
+                                <div class="col-md-4" id="DivPOCount">
+
+                                </div>
+
+
+                                <div class="col-md-4" id="DivApprovedStoreRequisitionListWithoutPO">
+
+                                </div>
+
+                                <div class="col-md-4" id="DivEscalationCount">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" id="DivPIICount">
+
+                                </div>
+
+
+                                <div class="col-md-4" id="DivRecommendationPOList">
+
+                                </div>
+
+                                <div class="col-md-4" >
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-2">
+                            <div class="row">
+                                <div class="col-md-4" style="padding:10px" id="divPOCountChart">
+                                    <canvas id="barcanvasPO" height="200" width="200"></canvas>
+                                </div>
+                                <div class="col-md-4" style="padding:10px" id="divPIICountChart">
+                                    <canvas id="barcanvasPII" height="200" width="200"></canvas>
+                                </div>
+                                <div ng-app="purchase">
+                                    <div ng-controller="purchaseController">
+                                        <div class="col-md-4" style="padding:10px" id="divEscalationCountChart" ng-init="GetEscalationMatrixData()">
+                                            <canvas id="barcanvasEscalation" height="200" width="200"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <!--end body content -->
+    </div>
+</div>
+<script src="~/Scripts/Chart.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<link href="~/Content/angularcss/angular-ui-notificatio.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-notification/0.3.6/angular-ui-notification.min.js"></script>
+
+
+<script src="~/Scripts/MasterDashboard/MasterDashboard.js"></script>
+<script src="~/Scripts/AngularApp/PurchaseApp/PurchaseApp.js"></script>
+<script src="~/Scripts/AngularApp/PurchaseApp/PurchaseController/PurchaseCntrl.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript">
+		$(function() {			
+		    $('[data-toggle="spanMDApproval"]').tooltip();
+		    $('[data-toggle="spanPOLessThan25KApproval"]').tooltip();
+		});
+</script>
+<style>
+    .tooltip-inner {
+        max-width: 500px;
+        /* If max-width does not work, try using width instead */
+        width: 120%;
+        height: auto;
+        border-radius: none;
+        min-height: 70px;
+        padding: 10px;
+        background-color: #393a3d;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    .tooltip.top .tooltip-arrow {
+        bottom: -8px;
+        left: 10%;
+        margin-left: -5px;
+        border-width: 20px 10px 0;
+        border-top-color: #393a3d;
+    }
+
+    .tooltip.top .tooltip-arrow {
+        -webkit-transform: translate(0em) rotate(60deg) rotate(-30deg);
+    }
+
+    .modal {
+        z-index: 999999 !important;
+    }
+    .fade {
+    opacity:2 !important;
+    }
+</style>
+@*<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });    
+
+</script>*@

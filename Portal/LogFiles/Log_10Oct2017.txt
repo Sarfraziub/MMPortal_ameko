@@ -1,0 +1,52 @@
+13:42:43 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\SIN\GetSINProductList.cshtml(74): error CS1002: ; expected
+--------------------------------------------------------------------------------------------------------------------------------
+
+13:49:46 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetFromLocationList(Int32)' in 'Portal.Controllers.SINController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+13:49:46 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetFromLocationList(Int32)' in 'Portal.Controllers.SINController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+13:56:51 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\SIN\GetSINProductList.cshtml(78): error CS1525: Invalid expression term 'else'
+---------------------------------------------------------------------------------------------------------------------------
+
+14:11:00 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetFromLocationList(Int32)' in 'Portal.Controllers.SINController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+14:11:00 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetFromLocationList(Int32)' in 'Portal.Controllers.SINController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

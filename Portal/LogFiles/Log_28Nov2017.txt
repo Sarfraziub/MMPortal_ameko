@@ -1,0 +1,57 @@
+12:14:42 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetDashboardApprovedStoreRequisitionListWithoutPO
+Error Line No : 666
+Exception Type : System.ArgumentException
+Details: Column 'RequisitionType' does not belong to table .
+--------------------------------------------------------------------------------------------------------------------------------
+
+12:14:42 PM
+Source : Portal.Controllers.DashboardController
+Method Name : GetDashboardApprovedRequisitionListWithoutPO
+Error Line No : 1155
+Exception Type : System.ArgumentException
+Details: Column 'RequisitionType' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+12:14:42 PM
+Source : Portal.Controllers.DashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The partial view 'GetDashboardApprovedRequisitionListWithoutPO' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Dashboard/GetDashboardApprovedRequisitionListWithoutPO.aspx
+~/Views/Dashboard/GetDashboardApprovedRequisitionListWithoutPO.ascx
+~/Views/Shared/GetDashboardApprovedRequisitionListWithoutPO.aspx
+~/Views/Shared/GetDashboardApprovedRequisitionListWithoutPO.ascx
+~/Views/Dashboard/GetDashboardApprovedRequisitionListWithoutPO.cshtml
+~/Views/Dashboard/GetDashboardApprovedRequisitionListWithoutPO.vbhtml
+~/Views/Shared/GetDashboardApprovedRequisitionListWithoutPO.cshtml
+~/Views/Shared/GetDashboardApprovedRequisitionListWithoutPO.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+12:17:31 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetDashboardApprovedStoreRequisitionListWithoutPO
+Error Line No : 666
+Exception Type : System.ArgumentException
+Details: Column 'RequisitionType' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+12:17:51 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : GetDashboardApprovedRequisitionListWithoutPO
+Error Line No : 1120
+Exception Type : System.ArgumentException
+Details: Column 'RequisitionType' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+12:39:50 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetBranchLocationList(Int32)' in 'Portal.Controllers.StoreRequisitionController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

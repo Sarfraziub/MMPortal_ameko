@@ -1,0 +1,94 @@
+﻿@model List<Portal.Core.CustomerSiteMRNViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table table-bordered table-hover" id="tblChallanList">
+            <thead>
+                <tr aling="center"  style="background:rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;">
+                    <th>Action</th>
+                    <th>CustomerSite MRN No.</th>
+                    <th>CustomerSite MRN Date</th>
+                    <th>Vendor Name</th>
+                    <th>Shipping City</th>
+                    <th>Shipping State</th>
+                    <th>Dispatch Ref. No.</th>
+                    <th>Dispatch Ref. Date</th>
+                    <th>CustomeSite MRN Status</th>
+                    <th>Created By User</th>
+                    <th>Created Date</th>
+                    <th>Modified By User</th>
+                    <th>Modified Date</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td class="teal text" style="margin:0px auto;">
+                            <a style="color:darkblue" class="fa fa-eye" aria-hidden="true" href="~/CustomerSiteMRN/AddEditCustomerSiteMRN?customerSiteMrnId=@item.CustomerSiteMRNId&AccessMode=3"></a>
+                            @if (item.ApprovalStatus.ToUpper() == "DRAFT")
+                            {
+
+                                <a style="color:darkgreen" class="fa fa-pencil" href="~/CustomerSiteMRN/AddEditCustomerSiteMRN?customerSiteMrnId=@item.CustomerSiteMRNId&AccessMode=2"></a>
+                            }
+                        </td>
+                        <td>@item.CustomerSiteMRNNo</td>
+                        <td>@item.CustomerSiteMRNDate</td>
+                        <td>@item.VendorName</td>
+                        <td>@item.ShippingCity</td>
+                        <td>@item.ShippingStateName</td>
+                        <td>@item.DispatchRefNo</td>
+                        <td>@item.DispatchRefDate</td>
+
+                        @if (item.ApprovalStatus.ToUpper() == "DRAFT")
+                        {
+                            <td style="background-color:aquamarine">
+                                @item.ApprovalStatus
+                            </td>
+                        }
+                        else
+                        {
+                            <td style="background-color:green">
+                                @item.ApprovalStatus
+                            </td>
+
+                        }
+
+                        <td>@item.CreatedByUserName</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@item.ModifiedByUserName</td>
+                        <td>@item.ModifiedDate</td>
+                       
+                    
+                    </tr>
+                }
+              
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblChallanList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>
+<style>
+    .btn-success a {
+        background-color: #446abc !important;
+        border-color: #233e79 !important;
+        display: -webkit-inline-box;
+        padding: 5px;
+    }
+</style>

@@ -1,0 +1,606 @@
+12:31:43 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19019
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_GetProducts' expects parameter '@ProductName', which was not supplied.
+--------------------------------------------------------------------------------------------------------------------------------
+
+12:31:43 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_GetProducts' expects parameter '@ProductName', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:31:44 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_GetProducts' expects parameter '@ProductName', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:34:44 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19019
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_GetProducts' expects parameter '@ProductName', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:34:44 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_GetProducts' expects parameter '@ProductName', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:34:44 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_GetProducts' expects parameter '@ProductName', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:36:50 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19019
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:36:50 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:36:50 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:37:28 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19019
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:37:28 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:37:28 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:48:51 pm
+Source : Portal.Controllers.UnitController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'baseUnitType' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.PartialViewResult GetUnitList(System.String, System.String, Int32)' in 'Portal.Controllers.UnitController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+12:49:57 pm
+Source : Portal.Controllers.UnitController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'baseUnitType' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.PartialViewResult GetUnitList(System.String, System.String, Int32)' in 'Portal.Controllers.UnitController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+12:50:44 pm
+Source : Portal.Controllers.UnitController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'baseUnitType' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.PartialViewResult GetUnitList(System.String, System.String, Int32)' in 'Portal.Controllers.UnitController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+12:50:58 pm
+Source : Portal.Controllers.UnitController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'baseUnitType' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.PartialViewResult GetUnitList(System.String, System.String, Int32)' in 'Portal.Controllers.UnitController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+12:51:06 pm
+Source : Portal.Controllers.UnitController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'baseUnitType' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.PartialViewResult GetUnitList(System.String, System.String, Int32)' in 'Portal.Controllers.UnitController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+12:53:22 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:53:22 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:53:22 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Error converting data type nvarchar to int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:55:40 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p  and p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = '%' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:55:40 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p  and p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = '%' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:55:41 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p  and p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = '%' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:57:17 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p  and p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:57:17 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p  and p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:57:17 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p  and p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:59:30 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p wherep.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:59:30 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p wherep.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:59:30 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p wherep.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:02:40 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p where p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:02:40 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p where p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:02:40 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Conversion failed when converting the nvarchar value 'select p.UnitId,
+p.UnitName,
+p.UnitShortName,
+p.AllowDecimal,
+p.IsMultipleUnit,
+p.TimBaseUnit,
+p.BaseUnit from Unit p where p.UnitName like '%asdf%' and p.UnitShortName like '%asdf%' and p.BaseUnit = ' to data type int.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:30:52 pm
+Source : Portal.DAL.DBInterface
+Method Name : AddEditUnit
+Error Line No : 8393
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:30:52 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : AddEditUnit
+Error Line No : 39
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:30:52 pm
+Source : Portal.Controllers.UnitController
+Method Name : AddEditUnit
+Error Line No : 90
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:40:58 pm
+Source : Portal.DAL.DBInterface
+Method Name : AddEditUnit
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:40:58 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : AddEditUnit
+Error Line No : 39
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:40:58 pm
+Source : Portal.Controllers.UnitController
+Method Name : AddEditUnit
+Error Line No : 90
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:58:13 pm
+Source : Portal.DAL.DBInterface
+Method Name : AddEditUnit
+Error Line No : 8393
+Exception Type : System.InvalidOperationException
+Details: The entity type Unit is not part of the model for the current context.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:44:19 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:44:19 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:44:19 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:57:54 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'order'.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:57:54 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'order'.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:57:55 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'order'.
+---------------------------------------------------------------------------------------------------------------------------
+
+21:20:32 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitList
+Error Line No : 19018
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure proc_GetUnits has no parameters and arguments were supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+21:20:33 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 56
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure proc_GetUnits has no parameters and arguments were supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+21:20:33 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure proc_GetUnits has no parameters and arguments were supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:18:51 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitDetail
+Error Line No : 19041
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:18:51 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitDetail
+Error Line No : 90
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:18:51 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitDetail
+Error Line No : 121
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:19:25 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitDetail
+Error Line No : 19041
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:19:25 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitDetail
+Error Line No : 90
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:19:25 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitDetail
+Error Line No : 121
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:20:01 pm
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetUnitDetail
+Error Line No : 19041
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:21:17 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitDetail
+Error Line No : 90
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:21:17 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitDetail
+Error Line No : 121
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'TimBaseUnit'.
+Invalid column name 'BaseUnit'.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:23:30 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 0
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:23:31 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:23:34 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 0
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:23:34 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:24:19 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 0
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:24:19 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:25:50 pm
+Source : Portal.Core.Unit.UnitBL
+Method Name : GetUnitList
+Error Line No : 0
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+22:25:50 pm
+Source : Portal.Controllers.UnitController
+Method Name : GetUnitList
+Error Line No : 42
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+

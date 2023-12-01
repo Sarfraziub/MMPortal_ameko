@@ -1,0 +1,168 @@
+14:59:14 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+--------------------------------------------------------------------------------------------------------------------------------
+
+14:59:15 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:59:15 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:59:42 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:03:22 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:03:28 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:05:31 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 4057
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:05:31 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 77
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:05:31 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : GetEmployeeAttendanceFormList
+Error Line No : 181
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetEmployeeAttendanceDetails has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:54 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 4138
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:54 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 148
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:40:54 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 201
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:48:16 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 4138
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:48:16 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 148
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:48:16 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 201
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:50:40 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 4138
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:50:40 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 148
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:50:40 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 201
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@InTime', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:52:41 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 4138
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@CustomerBranchId', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:52:41 PM
+Source : Portal.Core.EmployeeAttendanceBL
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 148
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@CustomerBranchId', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:52:41 PM
+Source : Portal.Controllers.EmployeeAttendanceController
+Method Name : AddEditEmployeeAttendanceFormByEmployer
+Error Line No : 201
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditEmployeeAttendanceFormByEmployer' expects parameter '@CustomerBranchId', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+

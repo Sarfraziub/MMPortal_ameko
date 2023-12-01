@@ -1,0 +1,91 @@
+12:38:47 PM
+Source : Portal.Controllers.DeliveryChallanController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'challanId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetChallanTaxList(System.Collections.Generic.List`1[Portal.Core.ViewModel.ChallanTaxViewModel], Int64)' in 'Portal.Controllers.DeliveryChallanController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+--------------------------------------------------------------------------------------------------------------------------------
+
+12:39:23 PM
+Source : Portal.Controllers.DeliveryChallanController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'challanId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetChallanTaxList(System.Collections.Generic.List`1[Portal.Core.ViewModel.ChallanTaxViewModel], Int64)' in 'Portal.Controllers.DeliveryChallanController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+14:07:02 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 4801
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:07:02 PM
+Source : Portal.Core.PayrollMonthlyAdjustmentBL
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 84
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:07:02 PM
+Source : Portal.Controllers.PayrollMonthlyAdjustmentController
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 99
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:08:47 PM
+Source : Portal.DAL.HRSQLDBInterface
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 4801
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:08:47 PM
+Source : Portal.Core.PayrollMonthlyAdjustmentBL
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 84
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:08:47 PM
+Source : Portal.Controllers.PayrollMonthlyAdjustmentController
+Method Name : GetPayrollMonthlyAdjustmentList
+Error Line No : 99
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPayrollMonthlyAdjustments'.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:56:34 PM
+Source : Portal.Core.GoalCategoryBL
+Method Name : GetGoalCategoryList
+Error Line No : 57
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:56:34 PM
+Source : Portal.Controllers.PMSGoalCategoryController
+Method Name : GetGoalCategoryList
+Error Line No : 93
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:58:06 PM
+Source : Portal.Controllers.ApplicantController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'resumeSource' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.PartialViewResult GetShortlistApplicantList(System.String, System.String, System.String, System.String, Int32, Int32, System.String, System.String, System.String)' in 'Portal.Controllers.ApplicantController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

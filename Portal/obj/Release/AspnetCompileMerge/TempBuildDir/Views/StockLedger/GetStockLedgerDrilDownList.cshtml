@@ -1,0 +1,46 @@
+﻿@model List<Portal.Core.ViewModel.StockLedgerViewModel>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:2px;">
+        <table class="table" id="tblUserList">
+            <thead>
+                <tr class="label-success">                                      
+                    <th>Trn Type</th>
+                    <th>Trn Qty</th>
+                    <th>Trn Date </th>
+                    <th>Ref. No.</th>
+                    <th>Ref. Date</th>
+                    <th>Party Name</th>
+                    <th>Branch Name</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="text-success">
+                        @*<td class="btn btn-success table_btn" style="width:30px; margin:0px auto;">
+                            <a style="color:white" class="fa fa-eye" aria-hidden="true" href="~/ProductBOM/AddEditProductBOM?BOMId=@item.ProductId&AccessMode=3"></a>
+                        </td>
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:white" class="fa fa-pencil-square-o" href="~/ProductBOM/AddEditProductBOM?BOMId=@item.ProductId&AccessMode=2"></a>
+                        </td>*@                      
+                        <td>@item.TrnType</td>
+                        <td>@item.TrnQty</td>
+                        <td>@item.TrnDate</td>
+                        <td>@item.RefNo</td>
+                        <td>@item.RefDate</td>
+                        <td>@item.PartyName</td>    
+                        <td>@item.BranchName</td>                                         
+                    </tr>
+                }
+              
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+

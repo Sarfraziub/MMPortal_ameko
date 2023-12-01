@@ -1,0 +1,136 @@
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Portal.Core.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Portal.Core.pdb
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Portal.Common.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Portal.DAL.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\System.Web.Http.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\System.Web.Mvc.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\EntityFramework.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Portal.Common.pdb
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\Portal.DAL.pdb
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\System.Web.Http.xml
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\System.Web.Mvc.xml
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\bin\Debug\EntityFramework.xml
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\obj\Debug\MMPortal.Core.csprojResolveAssemblyReference.cache
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\obj\Debug\Portal.Core.dll
+D:\RUPAK WORK AREA\MMPortal\Portal.Core\obj\Debug\Portal.Core.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Portal.Core.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Portal.Core.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Portal.Common.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Portal.DAL.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\System.Web.Http.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\System.Web.Mvc.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\EntityFramework.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\System.Net.Http.Formatting.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Portal.Common.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\Portal.DAL.pdb
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\System.Web.Http.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\System.Web.Mvc.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\EntityFramework.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\bin\Debug\System.Net.Http.Formatting.xml
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\obj\Debug\MMPortal.Core.csprojResolveAssemblyReference.cache
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\obj\Debug\Portal.Core.dll
+E:\VINOD\HTSNewWorkArea\MMPortal\Portal.Core\obj\Debug\Portal.Core.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\obj\Debug\MMPortal.Core.csprojResolveAssemblyReference.cache
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\obj\Debug\Portal.Core.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\obj\Debug\Portal.Core.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.Core.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.Core.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.Common.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.DAL.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\System.Web.Http.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\EntityFramework.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.Common.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.DAL.pdb
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\System.Web.Http.xml
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\EntityFramework.xml
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\System.Web.Mvc.dll
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\Portal.DAL.dll.config
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\bin\Debug\System.Web.Mvc.xml
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\obj\Debug\MMPortal.Core.csproj.CoreCompileInputs.cache
+E:\My Projects\HTS Solutions\MM PORTAL\MMPortal_13-01-2018\MMPortal\Portal.Core\obj\Debug\MMPortal.Core.csproj.CopyComplete
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.Core.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.Core.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.Common.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.DAL.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\System.Web.Http.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\System.Web.Mvc.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\EntityFramework.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.Common.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.DAL.pdb
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\Portal.DAL.dll.config
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\System.Web.Http.xml
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\System.Web.Mvc.xml
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\bin\Debug\EntityFramework.xml
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\obj\Debug\MMPortal.Core.csprojResolveAssemblyReference.cache
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\obj\Debug\MMPortal.Core.csproj.CoreCompileInputs.cache
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\obj\Debug\MMPortal.Core.csproj.CopyComplete
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\obj\Debug\Portal.Core.dll
+E:\My Projects\DNHUB\Dot Net Hub Softwares For Sale\Dot Net Hub ERP\Portal.Core\obj\Debug\Portal.Core.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.Core.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.Core.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.Common.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.DAL.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\System.Web.Http.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\EntityFramework.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.Common.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.DAL.pdb
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\Portal.DAL.dll.config
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\System.Web.Http.xml
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\System.Web.Mvc.xml
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\bin\Debug\EntityFramework.xml
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\obj\Debug\MMPortal.Core.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\obj\Debug\MMPortal.Core.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\obj\Debug\MMPortal.Core.csproj.CopyComplete
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\obj\Debug\Portal.Core.dll
+C:\Users\HP\Downloads\ERP_Source_Code\Portal\Portal.Core\obj\Debug\Portal.Core.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\obj\Debug\MMPortal.Core.csproj.AssemblyReference.cache
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\obj\Debug\MMPortal.Core.csproj.CoreCompileInputs.cache
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Core.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Core.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Common.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Http.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Mvc.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\EntityFramework.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Common.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.DAL.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.DAL.dll.config
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Http.xml
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Mvc.xml
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\EntityFramework.xml
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\obj\Debug\MMPortal.Core.csproj.CopyComplete
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\obj\Debug\Portal.Core.dll
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\obj\Debug\Portal.Core.pdb
+D:\My Extra Projects\Srf\dotmet\2023-11-29\ERP_Source_Code\Portal.Core\bin\Debug\Portal.DAL.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Core.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Core.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Common.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.DAL.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Http.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Mvc.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\EntityFramework.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.Common.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Newtonsoft.Json.xml
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.DAL.pdb
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\Portal.DAL.dll.config
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Http.xml
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\System.Web.Mvc.xml
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\bin\Debug\EntityFramework.xml
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\obj\Debug\MMPortal.Core.csproj.AssemblyReference.cache
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\obj\Debug\MMPortal.Core.csproj.CoreCompileInputs.cache
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\obj\Debug\MMPortal.Core.csproj.CopyComplete
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\obj\Debug\Portal.Core.dll
+D:\Development\Freelancing\Fiverr\Ameko\Data package from December 1st\ERP_Source_Code-updated\ERP_Source_Code\Portal.Core\obj\Debug\Portal.Core.pdb

@@ -1,0 +1,185 @@
+15:01:43 PM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 91
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceProductDetailId' does not belong to table .
+--------------------------------------------------------------------------------------------------------------------------------
+
+15:01:43 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceProductDetailId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:03:13 PM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 91
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceProductDetailId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:03:13 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceProductDetailId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:05:37 PM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 91
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceProductDetailId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:06:12 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceProductDetailId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:08:21 PM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 91
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:48:19 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOListForMRN
+Error Line No : 3767
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+Incorrect syntax near the keyword 'and'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate,                
+E.VendorName,             
+E.City,            
+St.StateName,           
+E.RefNo,      
+E.VendorId,      
+V.VendorCode,      
+E.ConsigneeId,
+E.ConsigneeName,
+CN.CustomerCode as ConsigneeCode,
+case when E.RefDate is null or RefDate < '1900-12-01' then '' else replace(convert(varchar, E.RefDate,106),' ','-') end RefDate,            
+E.BasicValue,      
+E.TotalValue,  
+isnull(E.POStatus,'') POStatus,
+isnull(E.ApprovalStatus,'') ApprovalStatus,  
+E.RejectedReason,    
+isnull(E.CancelReason,'') CancelReason,
+ISNULL(E.PORevisedStatus,0)  PORevisedStatus,        
+E.CreatedBy,            
+cu.FullName CreatedByName,              
+replace(convert(varchar, E.CreatedDate,106),' ','-') CreatedDate,                
+E.ModifiedBy,                 
+isnull(mu.FullName,'') ModifiedByName,              
+case when E.ModifiedDate is null then '' else replace(convert(varchar, E.ModifiedDate,106),' ','-') end ModifiedDate      
+from [PO] E         
+inner join [Vendor] V on E.VendorId=V.VendorId        
+inner join [Customer] CN on E.ConsigneeId=CN.CustomerId
+inner join [State] St on E.StateId=St.StateId           
+inner join [User] cu on E.createdBy=cu.UserId              
+left join [User] mu on E.ModifiedBy=mu.Userid              
+where  E.CompanyId=1  and E.POId IN (select POId from POProductDetail 
+where ISNULL(Quantity,0)>=ISNULL(AcceptQuantity,0 and POId=E.POId))  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId not in (Select POId from PurchaseInvoice where cancelStatus is null  ) and isnull(E.PORevisedStatus,0)=0  and E.POStatus='Final' and E.ApprovalStatus='Approved' order by E.PONo Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+17:48:19 PM
+Source : Portal.Core.POBL
+Method Name : GetPOListForMRN
+Error Line No : 488
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+Incorrect syntax near the keyword 'and'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate,                
+E.VendorName,             
+E.City,            
+St.StateName,           
+E.RefNo,      
+E.VendorId,      
+V.VendorCode,      
+E.ConsigneeId,
+E.ConsigneeName,
+CN.CustomerCode as ConsigneeCode,
+case when E.RefDate is null or RefDate < '1900-12-01' then '' else replace(convert(varchar, E.RefDate,106),' ','-') end RefDate,            
+E.BasicValue,      
+E.TotalValue,  
+isnull(E.POStatus,'') POStatus,
+isnull(E.ApprovalStatus,'') ApprovalStatus,  
+E.RejectedReason,    
+isnull(E.CancelReason,'') CancelReason,
+ISNULL(E.PORevisedStatus,0)  PORevisedStatus,        
+E.CreatedBy,            
+cu.FullName CreatedByName,              
+replace(convert(varchar, E.CreatedDate,106),' ','-') CreatedDate,                
+E.ModifiedBy,                 
+isnull(mu.FullName,'') ModifiedByName,              
+case when E.ModifiedDate is null then '' else replace(convert(varchar, E.ModifiedDate,106),' ','-') end ModifiedDate      
+from [PO] E         
+inner join [Vendor] V on E.VendorId=V.VendorId        
+inner join [Customer] CN on E.ConsigneeId=CN.CustomerId
+inner join [State] St on E.StateId=St.StateId           
+inner join [User] cu on E.createdBy=cu.UserId              
+left join [User] mu on E.ModifiedBy=mu.Userid              
+where  E.CompanyId=1  and E.POId IN (select POId from POProductDetail 
+where ISNULL(Quantity,0)>=ISNULL(AcceptQuantity,0 and POId=E.POId))  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId not in (Select POId from PurchaseInvoice where cancelStatus is null  ) and isnull(E.PORevisedStatus,0)=0  and E.POStatus='Final' and E.ApprovalStatus='Approved' order by E.PONo Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+17:48:19 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOListForMRN
+Error Line No : 329
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near the keyword 'and'.
+Incorrect syntax near the keyword 'and'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate,                
+E.VendorName,             
+E.City,            
+St.StateName,           
+E.RefNo,      
+E.VendorId,      
+V.VendorCode,      
+E.ConsigneeId,
+E.ConsigneeName,
+CN.CustomerCode as ConsigneeCode,
+case when E.RefDate is null or RefDate < '1900-12-01' then '' else replace(convert(varchar, E.RefDate,106),' ','-') end RefDate,            
+E.BasicValue,      
+E.TotalValue,  
+isnull(E.POStatus,'') POStatus,
+isnull(E.ApprovalStatus,'') ApprovalStatus,  
+E.RejectedReason,    
+isnull(E.CancelReason,'') CancelReason,
+ISNULL(E.PORevisedStatus,0)  PORevisedStatus,        
+E.CreatedBy,            
+cu.FullName CreatedByName,              
+replace(convert(varchar, E.CreatedDate,106),' ','-') CreatedDate,                
+E.ModifiedBy,                 
+isnull(mu.FullName,'') ModifiedByName,              
+case when E.ModifiedDate is null then '' else replace(convert(varchar, E.ModifiedDate,106),' ','-') end ModifiedDate      
+from [PO] E         
+inner join [Vendor] V on E.VendorId=V.VendorId        
+inner join [Customer] CN on E.ConsigneeId=CN.CustomerId
+inner join [State] St on E.StateId=St.StateId           
+inner join [User] cu on E.createdBy=cu.UserId              
+left join [User] mu on E.ModifiedBy=mu.Userid              
+where  E.CompanyId=1  and E.POId IN (select POId from POProductDetail 
+where ISNULL(Quantity,0)>=ISNULL(AcceptQuantity,0 and POId=E.POId))  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId not in (Select POId from PurchaseInvoice where cancelStatus is null  ) and isnull(E.PORevisedStatus,0)=0  and E.POStatus='Final' and E.ApprovalStatus='Approved' order by E.PONo Desc 
+---------------------------------------------------------------------------------------------------------------------------
+

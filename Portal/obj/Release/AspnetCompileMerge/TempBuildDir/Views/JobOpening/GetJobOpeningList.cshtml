@@ -1,0 +1,94 @@
+﻿@model List<Portal.Core.ViewModel.JobOpeningViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblJobOpeningList">
+            <thead>
+                <tr>
+                    <th>Job Opening No.</th>
+                    <th>Requisition No.</th>
+                    <th>Job Title</th>
+                    <th>Job Opening Date</th>
+                    <th>Job Portal RefNo</th>
+                    <th>No Of Opening</th>
+                    <th>Min Exp</th>
+                    <th>Max Exp</th>
+                    <th>Min Salary</th>
+                    <th>Max Salary</th>
+                    <th>Job Start Date</th>
+                    <th>Job Expiry Date</th>
+                    <th>Key Skills</th>
+                    <th>Created By User</th>
+                    <th>Created Date</th>
+                    <th>Modified By User</th>
+                    <th>Modified Date</th>
+                    <th>Status</th>
+                    <th align="center" colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td>@item.JobOpeningNo</td>
+                        <td>@item.RequisitionNo</td>
+                        <td>@item.JobTitle</td>
+                        <td>@item.JobOpeningDate</td>
+                        <td>@item.JobPortalRefNo</td>
+                        <td>@item.NoOfOpening</td>
+                        <td>@item.MinExp</td>
+                        <td>@item.MaxExp</td>
+                        <td>@item.MinSalary</td>
+                        <td>@item.MaxSalary</td>
+                        <td>@item.JobStartDate</td>
+                        <td>@item.JobExpiryDate</td>
+                        <td>@item.KeySkills</td>
+                        <td>@item.CreatedByUserName</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@item.ModifiedByUserName</td>
+                        <td>@item.ModifiedDate</td>
+                        @if (@item.JobStatus.ToUpper() == "TRUE")
+                        {
+                        <td>Active</td>
+                        }
+                        else
+                        {
+                            <td> Inactive</td>
+                        }
+                         <td class="btn btn-success table_btn" style="margin:0px auto;">
+                            <a style="color:white" class="fa fa-eye" aria-hidden="true" href="~/JobOpening/AddEditJobOpening?jobopeningId=@item.JobOpeningId&AccessMode=3"></a>
+                            <a style="color:white" class="fa fa-pencil-square-o" href="~/JobOpening/AddEditJobOpening?jobopeningId=@item.JobOpeningId&AccessMode=2"></a>
+                        </td>
+
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblJobOpeningList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>
+<style>
+    .btn-success a {
+        background-color: #446abc !important;
+        border-color: #233e79 !important;
+        display: -webkit-inline-box;
+        padding: 5px;
+    }
+</style>

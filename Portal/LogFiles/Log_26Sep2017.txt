@@ -1,0 +1,42 @@
+13:48:27 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The partial view '_BookPartial' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/CustomerSiteMRN/_BookPartial.aspx
+~/Views/CustomerSiteMRN/_BookPartial.ascx
+~/Views/Shared/_BookPartial.aspx
+~/Views/Shared/_BookPartial.ascx
+~/Views/CustomerSiteMRN/_BookPartial.cshtml
+~/Views/CustomerSiteMRN/_BookPartial.vbhtml
+~/Views/Shared/_BookPartial.cshtml
+~/Views/Shared/_BookPartial.vbhtml
+--------------------------------------------------------------------------------------------------------------------------------
+
+15:24:29 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : AddEditVendorMaster
+Error Line No : 368
+Exception Type : System.MissingMethodException
+Details: Method not found: 'Portal.Common.ResponseOut Portal.DAL.DBInterface.AddEditVendorMaster(Portal.DAL.Vendor)'.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:04:14 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetFromLocationList(Int32)' in 'Portal.Controllers.SINController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+19:04:14 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetFromLocationList(Int32)' in 'Portal.Controllers.SINController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

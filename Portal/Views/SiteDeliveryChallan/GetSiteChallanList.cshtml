@@ -1,0 +1,109 @@
+﻿@model List<Portal.Core.ViewModel.SiteDeliveryChallanViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table {
+        width: 112% !important;
+        max-width: 112% !important;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+     #tblChallanList tr th{text-align:center; border:1px solid #ccc!important; font-family:Arial; color:#fff;}
+    table tr td {
+    border:1px solid #ccc!important; font-family:Arial;}
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table table-bordered table-hover" id="tblChallanList">
+            <thead>
+                <tr aling="center"  style="background:rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;">
+                    <th rowspan="2">Action</th>
+                    <th>Site Challan No.</th>
+                    <th>Site Challan Date</th>
+                    <th>Customer Name</th>
+                    <th>Shipping City</th>
+                    <th>Shipping State</th>
+                    <th>Dispatch Ref. No.</th>
+                    <th>Dispatch Ref. Date</th>
+                    <th style="display:none;">Gross Amount</th>
+                    <th>Net Amount</th>
+                    <th>Challan Status</th>
+                    <th>Created By User</th>
+                    <th>Created Date</th>
+                    <th>Modified By User</th>
+                    <th>Modified Date</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td class="teal text" style="margin:0px auto;">
+                            <a style="color:darkblue" class="fa fa-eye" aria-hidden="true" href="~/SiteDeliveryChallan/AddEditSiteDeliveryChallan?SiteChallanId=@item.SiteChallanId&AccessMode=3"></a>
+                            @if (item.ApprovalStatus.ToUpper() == "DRAFT")
+                            {
+                                <a style="color:darkgreen" class="fa fa-pencil" href="~/SiteDeliveryChallan/AddEditSiteDeliveryChallan?SiteChallanId=@item.SiteChallanId&AccessMode=2"></a>
+                            }
+                        </td>
+                        <td>@item.SiteChallanNo</td>
+                        <td>@item.SiteChallanDate</td>
+                        <td>@item.CustomerName</td>
+                        <td>@item.ShippingCity</td>
+                        <td>@item.ShippingStateName</td>
+                        <td>@item.DispatchRefNo</td>
+                        <td>@item.DispatchRefDate</td>
+                        <td style="display:none;">@item.BasicValue</td>
+                        <td>@item.TotalValue</td>
+                        @if (item.ApprovalStatus.ToUpper() == "DRAFT")
+                        {
+                            <td style="background-color:aquamarine">
+                                @item.ApprovalStatus
+                            </td>
+                        }
+                        else
+                        {
+                            <td style="background-color:green">
+                                @item.ApprovalStatus
+                            </td>
+
+                        }
+                        <td>@item.CreatedByUserName</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@item.ModifiedByUserName</td>
+                        <td>@item.ModifiedDate</td>
+                        
+                        @*<td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                         
+                        </td>*@
+
+                    </tr>
+                }
+              
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblChallanList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>
+<style>
+    .btn-success a {
+        background-color: #446abc !important;
+        border-color: #233e79 !important;
+        display: -webkit-inline-box;
+        padding: 5px;
+    }
+</style>

@@ -1,0 +1,68 @@
+﻿
+@model List<Portal.Core.ViewModel.UnitViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+    .table {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 18px !important;
+        margin-left: 10px !important;
+        margin-right: 5px !important;
+    }
+
+        .table th {
+            background: rgba(0, 0, 0, 0) linear-gradient(#375CB0, #6e96e2) repeat scroll 0 0;
+            color: #fff;
+        }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="padding:7px; margin-right: 19px;">
+        <table class="table table-bordered" id="tblUnitList">
+            <thead>
+                <tr>
+                    <th colspan="2"><center>Action</center></th>
+                    <th><center>Unit Name</center></th>
+                    <th><center>Short Name</center></th>
+                    <th><center>Allow Decimal</center></th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td class="teal text" style="width:30px; margin:0px auto;">
+                            <a style="color:darkblue" class="fa fa-eye" aria-hidden="true" href="~/Unit/AddEditUnit?unitId=@item.UnitId&AccessMode=3"></a>
+                        </td>
+                        <td class="teal text" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:darkgreen" class="fa fa-pencil" href="~/Unit/AddEditUnit?unitId=@item.UnitId&AccessMode=2"></a>
+                        </td>
+                        <td>@item.UnitName @(!string.IsNullOrEmpty(item.UnitValue)? "("+item.UnitValue+")":"")</td>
+                        <td align="center">@item.UnitShortName</td>
+                        <td align="center">@(item.AllowDecimal == 1 ? "Yes" : "No")</td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblUnitList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>

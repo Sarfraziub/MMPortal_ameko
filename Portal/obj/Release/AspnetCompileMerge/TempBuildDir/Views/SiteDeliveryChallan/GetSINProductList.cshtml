@@ -1,0 +1,186 @@
+﻿@model List<Portal.Core.ViewModel.SINProductDetailViewModel>
+<style>
+    .table {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 18px !important;
+        margin-left: 10px !important;
+        margin-right: 5px !important;
+    }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table  table-bordered" id="tblProductList">
+            <thead>
+                <tr>
+                    <th style="display:none">S.No.</th>
+                    <th><center>Product Name</center></th>
+                    <th><center>Product Code</center></th>
+                    <th><center>Product Desc</center></th>
+                    <th><center>Unit</center></th>
+                    <th style="display:none;">Price</th>
+                    <th><center>Quantity</center></th> 
+                    <th style="display:none;">Discount Amount</th>
+                    <th style="display:none;">Total</th>
+                    <th style="display:none;">CGST(%)</th>
+                    <th style="display:none;">CGST Amt</th>
+                    <th style="display:none;">SGST(%)</th>
+                    <th style="display:none;">SGST Amt</th>
+                    <th style="display:none;">IGST(%)</th>
+                    <th style="display:none;">IGST Amt</th>
+                    <th style="display:none;">Total Price</th>
+                    <th style="display:none;">HSN Code</th> 
+                    @*<th><center>Req. Quantity</center></th>
+                    <th><center>Issued Qty</center></th>
+                    <th><center>Balance Qty</center></th>*@
+                            
+                    <th align="center"  class="editonly">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    if (@item.IssuedQuantity> 0){ 
+                    <tr class="success">
+                        <td style="display:none">
+                            @item.SequenceNo
+                            <input type="hidden" id="hdnSequenceNo" value="@item.SequenceNo" />
+                        </td>
+                        <td style="text-align:left">
+                            @item.ProductName
+                            <input type="hidden" id="hdnSINProductDetailId" value="@item.SINProductDetailId" />
+                            <input type="hidden" id="hdnProductId" value="@item.ProductId" />
+                            <input type="hidden" id="hdnProductName" value="@item.ProductName" />
+                            <input type="hidden" id="hdnSequenceNo" value="@item.SequenceNo" />
+                        </td>
+                        <td style="text-align:left">
+                            @item.ProductCode
+                            <input type="hidden" id="hdnProductCode" value="@item.ProductCode" />
+                        </td>
+                        <td style="text-align:left">
+                            @item.ProductShortDesc
+                            <input type="hidden" id="hdnProductShortDesc" value="@item.ProductShortDesc" />
+                        </td>
+                        <td style="text-align:left">
+                            @item.UOMName
+                            <input type="hidden" id="hdnUOMName" value="@item.UOMName" />
+                        </td>
+                        <td style="display:none;">
+                            <input type="hidden" id="hdnPrice" value="0.00" />
+                        </td>
+                        <td style="text-align:left">
+                            @item.Quantity
+                            <input type="hidden" id="hdnQuantity" value="@item.Quantity" />
+                          
+                            <input type="hidden" id="hdnCGSTPerc" value="0" />
+                            <input type="hidden" id="hdnCGSTAmount" value="0" />
+                            <input type="hidden" id="hdnSGSTPerc" value="0" />
+                            <input type="hidden" id="hdnSGSTAmount" value="0" />
+                            <input type="hidden" id="hdnIGSTPerc" value="0" />
+                            <input type="hidden" id="hdnIGSTAmount" value="0" />
+                            <input type="hidden" id="hdnTotalPrice" value="0" />
+                            <input type="hidden" id="hdnProductTaxId" value="0" />
+                            <input type="hidden" id="hdnProductTaxPerc" value="0" />
+                            <input type="hidden" id="hdnProductTaxAmount" value="0" />
+                            <input type="hidden" id="hdnProductTaxName" value="0" />
+                        </td>
+                        <td style="display:none;">
+                            @*@item.DiscountAmount*@
+                            <input type="hidden" id="hdnDiscountPerc" value="0" />
+                            <input type="hidden" id="hdnDiscountAmount" value="0" />
+                        </td>
+                        <td style="display:none;">
+                            @*@((item.Price * item.Quantity) - item.DiscountAmount)*@
+                        </td>
+                        <td id="tdCGST_Perc" style="display:none;">
+                            @*@item.CGST_Perc*@
+
+                        </td>
+                        <td id="tdCGSTAmount" style="display:none;">
+                            @*@item.CGST_Amount*@
+
+                        </td>
+
+                        <td id="tdSGST_Perc" style="display:none;">
+                            @*@item.SGST_Perc*@
+
+                        </td>
+                        <td id="tdSGSTAmount" style="display:none;">
+                            @*@item.SGST_Amount*@
+
+
+                        </td>
+                        <td id="tdIGST_Perc" style="display:none;">
+                            @*@item.IGST_Perc*@
+
+                        </td>
+                        <td id="tdIGSTAmount" style="display:none;">
+                            @*@item.IGST_Amount*@
+
+
+                        </td>
+                        <td id="tdTotalPrice" style="display:none;">
+                            @*@item.TotalPrice*@
+
+                        </td>
+                        <td style="display:none;">
+                            @*@item.HSN_Code*@
+                            <input type="hidden" id="hdnHSN_Code" value="0" />
+                        </td>
+                        @*<td>
+                            @item.IssuedQuantity
+                            <input type="hidden" id="hdnIssuedQuantity" value="@item.IssuedQuantity" />
+
+                        </td>
+                        <td>
+                            @item.BalanceQuantity
+                            <input type="hidden" id="hdnBalanceQuantity" value="@item.BalanceQuantity" />
+
+                        </td>
+                        <td>
+                            @item.IssueQuantity
+                            <input type="hidden" id="hdnIssueQuantity" value="@item.IssueQuantity" />
+
+                        </td>                     
+                        <td class="btn btn-success table_btn editonly" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:white" class="fa fa-pencil-square-o " onclick="EditProductRow(this);" href="#"></a>
+                        </td>*@
+                        
+                    </tr>
+                    }
+                }
+              
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table table-bordered" id="tblSINProductList">
+            <thead>
+                <tr>
+                    <th><center>Product Name</center></th>
+                    <th><center>Product Code</center></th>
+                    <th><center>Product Desc</center></th>
+                    <th><center>Unit</center></th>
+                    <th><center>Req. Quantity</center></th>
+                    <th><center>Issued Qty</center></th>
+                    <th><center>Balance Qty</center></th>
+                    <th><center>Issue Qty</center></th>                 
+                    <th  align="center"  class="editonly">Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+}
+<script>
+    $(document).ready(function () {
+        if ($("#hdnAccessMode").val() == "3") {
+            $(".editonly").hide();
+        }
+
+    });
+</script>

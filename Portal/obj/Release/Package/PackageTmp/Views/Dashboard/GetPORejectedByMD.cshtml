@@ -1,0 +1,55 @@
+﻿@model List<Portal.Core.ViewModel.POViewModel>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="padding:10px;">
+        <table class="table int-product" id="tblReorderProductCountList" style="margin-top:10px;">
+            <thead style="border-top-left-radius:15px;">
+                <tr style="border:none;">
+                    <th style="background:#4f75c6; color:#fff;" colspan="8">PO Rejected By MD</th> 
+                </tr>
+                <tr style="background:#D0DDEC; border:1px solid #ccc;">
+                    <th style="text-align:center">PO No.</th>                 
+                    <th style="text-align:center">PO Date</th> 
+                    <th style="text-align:center">Approval Status</th>
+                </tr>
+               
+            </thead>
+            <tbody style="border:1px solid #ccc;">
+                @foreach (var item in Model)
+                {
+                <tr class="success">
+                    <td align="center">
+                        <a href="~/PO/AddEditPO?POId=@item.POId&AccessMode=3" style="color: blue;text-decoration: underline;" target="_blank">@item.PONo</a>
+                        @*@item.PONo*@
+                    <input type="hidden" id="hdnPOId" value="@item.POId" />
+                        @*<a target="_blank" href="@Url.Content("~/PO/ListApprovedPO?type=Pending")"></a>*@                   
+                    </td>
+                    <td align="center">@item.PODate</td>
+                    <td align="center">@item.ApprovalStatus</td>
+                </tr>
+                }
+                <tr>
+        <td colspan="8" align="center" style="background:#bfdfff;">
+            <a target="_blank" href="@Url.Content("~/PO/ListApprovedPO?status=Rejected")">View All Rejected PO</a>
+        </td>
+    </tr>
+            </tbody>
+        </table>
+    </div>
+
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">PO Rejected By MD Not Found !!!</h3>
+}
+@*<script>
+    $(document).ready(function () {
+        $('#tblReorderProductCountList').paging({
+            limit: 10,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>*@

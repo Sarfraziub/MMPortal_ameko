@@ -1,0 +1,96 @@
+12:13:12 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+--------------------------------------------------------------------------------------------------------------------------------
+
+12:13:13 PM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:13:13 PM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:15:53 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:15:53 PM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:15:53 PM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:17:19 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:17:19 PM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:17:19 PM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:08 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:08 PM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:23:08 PM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@Remarks1', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+

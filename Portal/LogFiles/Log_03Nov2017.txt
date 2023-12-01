@@ -1,0 +1,144 @@
+11:09:09 AM
+Source : Portal.DAL.DBInterface
+Method Name : AddEditEscalationMaster
+Error Line No : 8179
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+--------------------------------------------------------------------------------------------------------------------------------
+
+11:09:09 AM
+Source : Portal.Core.EscalationMasterBL
+Method Name : AddEditEscalationMaster
+Error Line No : 55
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:09:09 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : AddEditEscalationMaster
+Error Line No : 54
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:12:02 AM
+Source : Portal.DAL.DBInterface
+Method Name : AddEditEscalationMaster
+Error Line No : 8179
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:12:02 AM
+Source : Portal.Core.EscalationMasterBL
+Method Name : AddEditEscalationMaster
+Error Line No : 55
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:12:02 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : AddEditEscalationMaster
+Error Line No : 54
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:14:02 AM
+Source : Portal.DAL.DBInterface
+Method Name : AddEditEscalationMaster
+Error Line No : 8179
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:14:02 AM
+Source : Portal.Core.EscalationMasterBL
+Method Name : AddEditEscalationMaster
+Error Line No : 55
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:14:03 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : AddEditEscalationMaster
+Error Line No : 54
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:14:08 AM
+Source : Portal.DAL.DBInterface
+Method Name : AddEditEscalationMaster
+Error Line No : 8179
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:14:08 AM
+Source : Portal.Core.EscalationMasterBL
+Method Name : AddEditEscalationMaster
+Error Line No : 55
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:14:08 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : AddEditEscalationMaster
+Error Line No : 54
+Exception Type : System.Data.Entity.Infrastructure.DbUpdateException
+Details: Unable to update the EntitySet 'EscalationMaster' because it has a DefiningQuery and no <InsertFunction> element exists in the <ModificationFunctionMapping> element to support the current operation.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:45:27 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Portal.Core.ViewModel.EscalationMasterViewModel]', but this dictionary requires a model item of type 'System.Collections.Generic.List`1[Portal.Core.ViewModel.CustomerTypeViewModel]'.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:45:28 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Portal.Core.ViewModel.EscalationMasterViewModel]', but this dictionary requires a model item of type 'System.Collections.Generic.List`1[Portal.Core.ViewModel.CustomerTypeViewModel]'.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:46:05 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Portal.Core.ViewModel.EscalationMasterViewModel]', but this dictionary requires a model item of type 'System.Collections.Generic.List`1[Portal.Core.ViewModel.CustomerTypeViewModel]'.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:53:01 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\EscalationMaster\GetEscalationMasterList.cshtml(32): error CS1061: 'Portal.Core.ViewModel.EscalationMasterViewModel' does not contain a definition for 'CustomerTypeId' and no extension method 'CustomerTypeId' accepting a first argument of type 'Portal.Core.ViewModel.EscalationMasterViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+11:53:27 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\EscalationMaster\GetEscalationMasterList.cshtml(32): error CS1061: 'Portal.Core.ViewModel.EscalationMasterViewModel' does not contain a definition for 'CustomerTypeId' and no extension method 'CustomerTypeId' accepting a first argument of type 'Portal.Core.ViewModel.EscalationMasterViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+11:53:45 AM
+Source : Portal.Controllers.EscalationMasterController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: e:\VINOD\HTSNewWorkArea\MMPortal\Portal\Views\EscalationMaster\GetEscalationMasterList.cshtml(32): error CS1061: 'Portal.Core.ViewModel.EscalationMasterViewModel' does not contain a definition for 'CustomerTypeId' and no extension method 'CustomerTypeId' accepting a first argument of type 'Portal.Core.ViewModel.EscalationMasterViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+

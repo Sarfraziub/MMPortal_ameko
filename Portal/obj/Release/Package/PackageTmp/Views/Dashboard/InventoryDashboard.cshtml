@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "Inventory Dashboard";
+    Layout = "~/Views/Shared/_InventoryLayout.cshtml";
+}
+<style>
+    .crm-box {
+        width: 31%;
+    }
+
+    .crm-box-1 {
+        margin-left: -14px;
+        width: 33%;
+
+    }
+    .crm-box-2 {
+        margin-left: 14px;
+        width: 32%;
+
+    }
+    .inventory-box{background:#fff; width:34%; padding-right: 0;}
+    #DivInOutProductQuantityCount{padding:0px; width:65%;}
+    
+    @@media(max-width:800px){
+        .int-dash{padding: 10px; overflow-x: scroll; width: 89%;margin-left: 16px;}
+        .crm-box-1{width:100%; margin-left:0px;}
+        .crm-box-2{width:100%; margin-left:0px;}
+        .market-update-gd{float:none;}
+        .int-link{margin-top: 15px; clear: both; position: absolute; top: 48px;z-index: 999999;left: 57px;}
+        #DivReorderProductCount{margin-top:0px!important;}
+        #DivInOutProductQuantityCount{margin-top:-33px;}
+        .int-product{width:100%!important;}
+        .int-link a{color:#fff; font-size:17px;}
+        .inventory-box{margin-left: 0px;
+    padding: 0px;
+    width: 98%;
+    margin-top: 35px;
+    min-height: 212px;
+    background-color: #4a9a79;}
+        .table{width:88%;}
+        #DivInOutProductQuantityCount{padding:0px; width:auto;}
+        
+    }
+</style>
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<div id="wrapper">
+    <div id="page-content-wrapper" style="padding-top:5px !important;">
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row top-head">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6" style="margin-top: 1%;margin-bottom:1%">
+                        <b><label for="ddlFinYear" class="col-sm-4" style="margin-top: 1%;color:#fff">Financial Year</label></b>
+                        <div class="col-sm-8">
+                            <select id="ddlFinYear" name="ddlFinYear" onchange="SetFinancialYearSession()" tabindex="1" class="form-control"></select>
+                            <input type="hidden" id="hdnCurrentFinyearId" value="@ViewData["currentFinyearId"]" />
+
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-top: 1%;margin-bottom:1%">
+                    </div>
+                </div>
+
+                <div class="market-updates" style="clear:both;margin-top: 10px;">
+                    <a href="@Url.Content("~/Product/ListProduct")" target="_blank">
+                        <div class="col-md-4 market-update-gd crm-box-1">
+                            <div class="market-update-block clr-block-2">
+                                <div class="col-md-8 market-update-left">
+                                    <P>Today New Product</P>
+                                    <H4>&nbsp;</H4>
+
+
+                                    <h3>@ViewData["todayProductCount"]</h3>
+                                </div>
+                                <div class="col-md-4 market-update-right">
+                                    <i class="fa fa-plus-circle" style="font-size: 73px;color: #fff;"> </i>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="@Url.Content("~/Product/ListProduct")" target="_blank">
+                        <div class="col-md-4 market-update-gd crm-box-2">
+                            <div class="market-update-block clr-block-2" style="background-color:#4f75c6">
+                                <div class="col-md-8 market-update-left">
+                                    <P>Total Product</P>
+                                    <H4>&nbsp;</H4>
+                                    <h3>@ViewData["totalProductCount"]</h3>
+                                </div>
+                                <div class="col-md-4 market-update-right">
+                                    <i class="fa fa-file-text-o"> </i>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="col-md-4 climate-grids inventory-box">
+                        <div class="climate-grid3">
+                            <div class="popular-brand" style="margin-top:18px;">
+                                <div class="col-md-6 popular-bran-left int-link">
+                                    <h4><i aria-hidden="true"></i><a href="@Url.Content("~/Product/AddEditProduct")" target="_blank">Add New Product</a></h4>
+                                    <h4><i aria-hidden="true"></i><a href="@Url.Content("~/ProductOpeningStock/AddEditProductOpening")" target="_blank">Add Product Opening</a></h4>
+                                    <h4><i aria-hidden="true"></i><a href="@Url.Content("~/Product/ListProduct" )" target="_blank">Product List</a></h4>
+
+                                </div>
+                                <div class="col-md-6 popular-bran-right" style="margin-top:-19px; background-color:#4a9a79; min-height: 132px;">
+                                    <h3 style="margin-top:-33px; background-color:#4a9a79; margin-right: -2px;"><i class="fa fa-link" aria-hidden="true" style="color: white;font-size: 38px; margin-top: 16px;"></i></h3>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row" id="midcontentofinventory">
+                <div class="col-md-4 " id="DivReorderProductCount">
+
+                </div>
+                <div class="col-md-8" id="DivInOutProductQuantityCount">
+
+                </div>
+
+            </div>
+            <div class="row">
+
+
+                <div class="col-md-4" id="DivSINQuantityCount">
+
+                </div>
+                <div class="col-md-8">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end body content -->
+</div>
+
+<script src="~/Scripts/Chart.bundle.min.js"></script>
+@*<script src="~/Scripts/jquery-ui.min.js"></script>*@
+<script src="~/Scripts/paging.js"></script>
+<script src="~/Scripts/Dashboard/InventoryDashboard.js"></script>
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+
+</script>

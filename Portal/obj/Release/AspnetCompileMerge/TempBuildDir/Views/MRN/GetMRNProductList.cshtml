@@ -1,0 +1,121 @@
+﻿@model List<Portal.Core.MRNProductDetailViewModel>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblProductList">
+            <thead>
+                <tr>
+                    <th style="display:none">S. No.</th>
+                    <th>Product Name</th>
+                    <th>Product Code</th>
+                    <th>Product Desc</th>
+                    <th>Price</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                    <th class="pendingQty">PendingQty</th>
+                    <th>Received Quantity</th>
+                    <th>Accept Quantity</th>
+                    <th>Reject Quantity</th>
+                    <th colspan="2" align="center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        
+                        <td style="display:none">
+                            @item.SequenceNo
+                            <input type="hidden" id="hdnSequenceNo" value="@item.SequenceNo" />
+                        </td>
+                        <td>@item.ProductName
+                        <input type="hidden" id="hdnMRNProductDetailId" value="@item.MRNProductDetailId" />
+                        <input type="hidden" id="hdnProductId" value="@item.ProductId" />
+                            <input type="hidden" id="hdnProductName" value="@item.ProductName" />
+                        </td>
+                        <td>@item.ProductCode
+                        <input type="hidden" id="hdnProductCode" value="@item.ProductCode" />
+                        </td>
+                        <td>
+                         @item.ProductShortDesc
+                        <input type="hidden" id="hdnProductShortDesc" value="@item.ProductShortDesc" />
+                            
+                        </td>   
+                        <td>
+                            @item.Price
+                        <input type="hidden" id="hdnPrice" value="@item.Price" />
+                        </td>
+                        <td>
+                            @item.UOMName
+                            <input type="hidden" id="hdnUOMName" value="@item.UOMName" />
+                        </td>
+                        <td>
+                            @item.Quantity
+                            <input type="hidden" id="hdnQuantity" value="@item.Quantity" />
+                        </td>
+
+                        @if (item.PendingQuantity != 0)
+                        {                           
+                        <td>
+                            @(item.PendingQuantity == 0 ? 0 : item.PendingQuantity)
+                            <input type="hidden" id="hdnPendingQuantity" value="@item.PendingQuantity" />
+                        </td>
+                        }
+                        else
+                        {
+                            <td>
+                                @(item.PendingQuantity == 0 ? 0 : item.PendingQuantity)
+                                <input type="hidden" id="hdnPendingQuantity" value="@item.PendingQuantity" />
+                            </td>
+                        }
+
+                        <td>
+                            @item.ReceivedQuantity
+                            <input type="hidden" id="hdnReceivedQuantity" value="@item.ReceivedQuantity" />
+                        </td>
+
+                        <td>
+                            @item.AcceptQuantity
+                            <input type="hidden" id="hdnAcceptQuantity" value="@item.AcceptQuantity" />
+                        </td>
+
+                        <td>
+                            @item.RejectQuantity
+                            <input type="hidden" id="hdnRejectQuantity" value="@item.RejectQuantity" />
+                        </td>
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:white" class="fa fa-pencil-square-o editproduct" onclick="EditProductRow(this);" href="#"></a>
+                        </td>
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:white" class="fa fa-trash deleteproduct"  onclick="RemoveProductRow(this)" href="#"></a>
+                        </td>
+                    </tr>
+                }
+              
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblProductList">
+            <thead>
+                <tr>
+                    <th style="display:none">S. No.</th>
+                    <th>Product Name</th>
+                    <th>Product Code</th>
+                    <th>Product Desc</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>PendingQty</th>
+                    <th>Received Quantity</th>
+                    <th>Accept Quantity</th>
+                    <th>Reject Quantity</th>
+                    <th colspan="2" align="center">Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "Add/Edit Unit";
+    Layout = "~/Views/Shared/_InventoryLayout.cshtml";
+}
+<link href="~/Content/lightbox.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<style>
+    .Mandatory {
+        color: red;
+        font-weight: bold;
+    }
+    /*** custom checkboxes ***/
+
+    input[type=checkbox] {
+        display: none;
+    }
+        /* to hide the checkbox itself */
+        input[type=checkbox] + label:before {
+            font-family: FontAwesome;
+            display: inline-block;
+        }
+
+        input[type=checkbox] + label:before {
+            content: "\f096";
+        }
+        /* unchecked icon */
+        input[type=checkbox] + label:before {
+            letter-spacing: 10px;
+        }
+        /* space between checkbox and label */
+
+        input[type=checkbox]:checked + label:before {
+            content: "\f046";
+        }
+        /* checked icon */
+        input[type=checkbox]:checked + label:before {
+            letter-spacing: 5px;
+        }
+    /* allow space for check mark */
+</style>
+<div class="row top-head">
+    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/InventoryDashboard">Inventory</a> >> Add/Edit Unit </b></p></div>
+</div>
+<section>
+    <form action="#" id="frmAddEditUnit" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+        <div class="row inner">
+            <div class="message">
+            </div>
+
+            <div class="col-md-12 ftop">
+                <div class="form-group col-md-6">
+                    <label for="txtUnitName" class="col-sm-4 control-label">Name&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="txtUnitName" name="txtUnitName" tabindex="1" placeholder="Enter Unit Name" type="text" maxlength="100" />
+                        <input id="hdnUnitId" type="hidden" value="@ViewData["unitId"]" />
+                        <input id="hdnAccessMode" type="hidden" value="@ViewData["accessMode"]" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtUnitShortName" class="col-sm-4 control-label">Short Name&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <input id="txtUnitShortName" name="txtUnitShortName" tabindex="2" type="text" placeholder="Enter Short Name" maxlength="50" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="ddlAllowDecimal" class="col-sm-4 control-label">Allow Decimal&nbsp;<span class="Mandatory">(*)</span></label>
+                    <div class="col-sm-8">
+                        <select id="ddlAllowDecimal" name="ddlAllowDecimal" tabindex="8" class="form-control">
+                            <option value="0" selected="selected">-Plesae Select-</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="chkIsAddMultipleLimit" class="col-sm-4 control-label">Add as multiple of other unit</label>
+                    <div class="col-sm-8">
+                        <input type="checkbox" name="chkIsAddMultipleLimit" id="chkIsAddMultipleLimit" class="" onchange="ShowOtherUnits()"/>
+                        <label style="font-size: 24px;" tabindex="23" for="chkIsAddMultipleLimit"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" id="divMultipleUnits">
+                <div class="form-group col-md-6">
+                    <label for="txtUnitValue" class="col-sm-4 control-label">1 <span id="lblUnitShortName"></span> =</label>
+                    <div class="col-sm-8">
+                        <input id="txtUnitValue" name="txtUnitValue" type="text" tabindex="3" placeholder="time base unit" maxlength="100" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+
+                    <div class="form-group col-sm-8">
+                        <div class="col-sm-8">
+                            <select id="ddlBaseUnit" name="ddlBaseUnit" tabindex="1" class="form-control"></select>
+                        </div>
+                    </div>
+                    @*<div class="col-sm-8">
+                        <select id="ddlUnitType" name="ddlUnitType" tabindex="8" class="form-control">
+                            <option value="0" selected="selected">-Select base unit-</option>
+                            <option value="1">Pieces (Pc(s))</option>
+                            <option value="2">Grams (G)</option>
+                            <option value="3">SERVICE (S)</option>
+                            <option value="4">LITRES (LTRS)</option>
+                            <option value="5">TABLESPOON (TBS)</option>
+                        </select>
+                    </div>*@
+                </div>
+            </div>
+
+
+
+
+            <div class="row col-sm-6 col-lg-12 col-md-12">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <center>
+                        <input class="btn btn-success" value="Save" alt="Save" id="btnSave" tabindex="25" onclick="SaveData(1)" type="button" border="0">
+                        <input class="btn btn-success" value="Update" style="display:none;" tabindex="26" alt="Update" id="btnUpdate" onclick="SaveData(2)" type="button" border="0">
+                        <a class="btn btn-success" id="btnReset" tabindex="27" onclick="ResetPage()">Reset</a>  @*href="@Url.Content("~/Product/AddEditProduct")"*@
+
+                        <a class="btn btn-success" id="btnList" tabindex="28" href="@Url.Content("~/Unit/ListUnit")">Search Unit</a>
+                    </center>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="alertModel" role="dialog">
+            <div class="modal-dialog  modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="modelHeader"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modelText"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary  btn-block" tabindex="33" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</section>
+<script src="~/Scripts/lightbox.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/Unit/AddNewUnit.js"></script>
+
+
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+</script>
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+
+</script>

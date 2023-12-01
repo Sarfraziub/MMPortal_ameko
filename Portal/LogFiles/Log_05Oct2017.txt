@@ -1,0 +1,192 @@
+17:25:39 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+--------------------------------------------------------------------------------------------------------------------------------
+
+17:28:42 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:29:30 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:29:46 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:29:47 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:29:48 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:29:48 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:29:49 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:33:02 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MasterDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MasterDashboard.aspx
+~/Views/MasterDashboard/MasterDashboard.ascx
+~/Views/Shared/MasterDashboard.aspx
+~/Views/Shared/MasterDashboard.ascx
+~/Views/MasterDashboard/MasterDashboard.cshtml
+~/Views/MasterDashboard/MasterDashboard.vbhtml
+~/Views/Shared/MasterDashboard.cshtml
+~/Views/Shared/MasterDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:38:01 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MDDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MDDashboard.aspx
+~/Views/MasterDashboard/MDDashboard.ascx
+~/Views/Shared/MDDashboard.aspx
+~/Views/Shared/MDDashboard.ascx
+~/Views/MasterDashboard/MDDashboard.cshtml
+~/Views/MasterDashboard/MDDashboard.vbhtml
+~/Views/Shared/MDDashboard.cshtml
+~/Views/Shared/MDDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:41:10 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MDDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MDDashboard.aspx
+~/Views/MasterDashboard/MDDashboard.ascx
+~/Views/Shared/MDDashboard.aspx
+~/Views/Shared/MDDashboard.ascx
+~/Views/MasterDashboard/MDDashboard.cshtml
+~/Views/MasterDashboard/MDDashboard.vbhtml
+~/Views/Shared/MDDashboard.cshtml
+~/Views/Shared/MDDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+
+17:42:08 PM
+Source : Portal.Controllers.MasterDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.InvalidOperationException
+Details: The view 'MDDashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/MasterDashboard/MDDashboard.aspx
+~/Views/MasterDashboard/MDDashboard.ascx
+~/Views/Shared/MDDashboard.aspx
+~/Views/Shared/MDDashboard.ascx
+~/Views/MasterDashboard/MDDashboard.cshtml
+~/Views/MasterDashboard/MDDashboard.vbhtml
+~/Views/Shared/MDDashboard.cshtml
+~/Views/Shared/MDDashboard.vbhtml
+---------------------------------------------------------------------------------------------------------------------------
+

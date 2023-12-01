@@ -1,0 +1,32 @@
+18:10:41 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNRequisitionList
+Error Line No : 347
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+--------------------------------------------------------------------------------------------------------------------------------
+
+18:10:41 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetStoreRequisitionList
+Error Line No : 347
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:28:22 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNRequisitionList
+Error Line No : 347
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:28:22 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetStoreRequisitionList
+Error Line No : 347
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+

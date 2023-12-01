@@ -1,0 +1,1137 @@
+10:27:38 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+--------------------------------------------------------------------------------------------------------------------------------
+
+10:27:38 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:38 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:45 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:45 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:45 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:50 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:50 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:50 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:53 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:53 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:53 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:59 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:59 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:27:59 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:28:03 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:28:03 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:28:03 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:28:09 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:28:09 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:28:09 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:29:44 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetPOProductListForMRN
+Error Line No : 3665
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:31:38 AM
+Source : Portal.Core.POBL
+Method Name : GetPOProductListForMRN
+Error Line No : 86
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:31:38 AM
+Source : Portal.Controllers.MRNController
+Method Name : GetPOProductListForMRN
+Error Line No : 347
+Exception Type : System.Data.SqlClient.SqlException
+Details: Could not find stored procedure 'proc_GetPOProductsForMRN'.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:45:50 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 16267
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetStoreRequisitions has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:45:50 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 262
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetStoreRequisitions has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+10:46:05 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 177
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function proc_GetStoreRequisitions has too many arguments specified.
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:53 AM
+Source : Portal.DAL.DBInterface
+Method Name : GetProductTaxPercentage
+Error Line No : 1806
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:53 AM
+Source : Portal.Core.ProductBL
+Method Name : GetProductTaxPercentage
+Error Line No : 386
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:53 AM
+Source : Portal.Controllers.QuotationController
+Method Name : GetProductTaxPercentage
+Error Line No : 535
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:54 AM
+Source : Portal.DAL.DBInterface
+Method Name : GetProductTaxPercentage
+Error Line No : 1806
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:54 AM
+Source : Portal.Core.ProductBL
+Method Name : GetProductTaxPercentage
+Error Line No : 386
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:54 AM
+Source : Portal.Controllers.QuotationController
+Method Name : GetProductTaxPercentage
+Error Line No : 535
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:54 AM
+Source : Portal.DAL.DBInterface
+Method Name : GetProductTaxPercentage
+Error Line No : 1806
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:54 AM
+Source : Portal.Core.ProductBL
+Method Name : GetProductTaxPercentage
+Error Line No : 386
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:18:54 AM
+Source : Portal.Controllers.QuotationController
+Method Name : GetProductTaxPercentage
+Error Line No : 535
+Exception Type : System.InvalidOperationException
+Details: The 'VendorId' property on 'Product' could not be set to a 'System.Int64' value. You must set this property to a non-null value of type 'System.Int32'. 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:53:54 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 16598
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:53:54 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 579
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:54:11 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:55:04 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 16598
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:55:04 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 579
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:55:09 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:26 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 16598
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:26 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 579
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:42 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:42 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 16598
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:42 AM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 579
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:58:44 AM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Ambiguous column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(POId,0) from MRN) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+11:59:59 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 16598
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(M.POId,0) from MRN M) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+12:01:03 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 579
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(M.POId,0) from MRN M) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+12:01:05 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(M.POId,0) from MRN M) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+12:01:11 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 16598
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(M.POId,0) POId from MRN M) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+12:01:14 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetApprovedPOsCustomerSiteMRNNotDone
+Error Line No : 579
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(M.POId,0) POId from MRN M) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+12:01:17 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'POId'.
+select E.POId,            
+E.PONo,                
+replace(convert(varchar, E.PODate,106),' ','-') PODate, 
+ replace(convert(varchar, E.ExpectedDeliveryDate,106),' ','-') ExpectedDeliveryDate,               
+E.VendorName,     
+E.TotalValue,  
+E.POStatus,
+E.ConsigneeId,
+E.CustomerBranchId,
+ISNULL(CN.CustomerName,'') CustomerName,
+ISNULL(Cb.BranchName,'') CustomerSite,
+(case when ISNULL(E.ApprovalStatus,'')='Canceled' then 'Rejected' else E.ApprovalStatus end) ApprovalStatus,      
+ISNULL(E.ApprovedBy,'') ApprovedBy,            
+             
+
+case when Isnull(E.ApprovalStatus,'')='Approved' THEN replace(convert(varchar, E.ApprovedDate,106),' ','-')
+when Isnull(E.ApprovalStatus,'')='Rejected' THEN replace(convert(varchar, E.RejectedDate,106),' ','-')
+else '' end as ApprovedDate                   
+
+from [PO] E  
+left join [CustomerSiteMRN] M on E.PONo=M.PONo        
+left join [Vendor] V on E.VendorId=V.VendorId        
+left join [Customer] CN on E.ConsigneeId=CN.CustomerId
+left join [CustomerBranch] CB on E.CustomerBranchId=CB.CustomerBranchId
+left join [User] au on E.ApprovedBy=au.UserId                  
+left join [User] ru on E.RejectedBy=ru.Userid
+left join [User] cu on E.CancelBy = cu.UserId
+where  E.CompanyId=1 and E.TotalValue >= 25000 and E.ApprovalStatus='Approved' and E.POStatus='Final'  and  E.PODate BETWEEN '2017-04-01' AND  '2018-03-31'  and E.POId NOT IN (select ISNULL(M.POId,0) POId from MRN M) and E.ExpectedDeliveryDate >= GETDATE() order by E.CreatedDate Desc 
+---------------------------------------------------------------------------------------------------------------------------
+
+12:25:10 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetProductAvailableStock
+Error Line No : 8012
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:25:10 PM
+Source : Portal.Core.StockLedgerBL
+Method Name : GetProductAvailableStock
+Error Line No : 57
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:25:10 PM
+Source : Portal.Controllers.ProductController
+Method Name : GetProductAvailableStock
+Error Line No : 333
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:32:07 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetProductAvailableStock
+Error Line No : 8012
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:32:07 PM
+Source : Portal.Core.StockLedgerBL
+Method Name : GetProductAvailableStock
+Error Line No : 57
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:32:25 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetProductAvailableStock
+Error Line No : 8012
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:35:01 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetProductAvailableStock
+Error Line No : 8012
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:35:01 PM
+Source : Portal.Core.StockLedgerBL
+Method Name : GetProductAvailableStock
+Error Line No : 57
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+12:35:01 PM
+Source : Portal.Controllers.ProductController
+Method Name : GetProductAvailableStock
+Error Line No : 333
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:15:23 PM
+Source : Portal.Core.MRNBL
+Method Name : GetMRNProductList
+Error Line No : 34
+Exception Type : System.ArgumentException
+Details: Column 'PendingQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:15:23 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetMRNProductList
+Error Line No : 141
+Exception Type : System.ArgumentException
+Details: Column 'PendingQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:15:32 PM
+Source : Portal.Core.MRNBL
+Method Name : GetMRNDetail
+Error Line No : 205
+Exception Type : System.ArgumentException
+Details: Column 'POId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:16:22 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetMRNDetail
+Error Line No : 160
+Exception Type : System.ArgumentException
+Details: Column 'POId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:16:27 PM
+Source : Portal.Core.MRNBL
+Method Name : GetMRNProductList
+Error Line No : 34
+Exception Type : System.ArgumentException
+Details: Column 'PendingQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:16:27 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetMRNProductList
+Error Line No : 141
+Exception Type : System.ArgumentException
+Details: Column 'PendingQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:16:46 PM
+Source : Portal.Core.MRNBL
+Method Name : GetMRNProductList
+Error Line No : 34
+Exception Type : System.ArgumentException
+Details: Column 'PendingQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+14:17:49 PM
+Source : Portal.Controllers.MRNController
+Method Name : GetMRNProductList
+Error Line No : 141
+Exception Type : System.ArgumentException
+Details: Column 'PendingQuantity' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+15:28:34 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningDetail
+Error Line No : 99
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:28:34 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningDetail
+Error Line No : 111
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:28:51 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningDetail
+Error Line No : 99
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:28:51 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningDetail
+Error Line No : 111
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:30:36 PM
+Source : Portal.Core.SiteProductOpeningBL
+Method Name : GetSiteProductOpeningDetail
+Error Line No : 99
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:30:36 PM
+Source : Portal.Controllers.SiteProductOpeningStockController
+Method Name : GetSiteProductOpeningDetail
+Error Line No : 111
+Exception Type : System.OverflowException
+Details: Value was either too large or too small for an Int16.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:15:49 PM
+Source : Portal.Controllers.SINController
+Method Name : OnException
+Error Line No : 0
+Exception Type : Microsoft.Reporting.WebForms.LocalProcessingException
+Details: An error occurred during local report processing.
+---------------------------------------------------------------------------------------------------------------------------
+
+19:28:32 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'companyBranchID' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.JsonResult GetBranchLocationList(Int32)' in 'Portal.Controllers.StoreRequisitionController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+

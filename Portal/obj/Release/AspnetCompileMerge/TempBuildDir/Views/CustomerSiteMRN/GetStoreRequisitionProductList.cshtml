@@ -1,0 +1,114 @@
+﻿@model List<Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel>
+<style>
+    .table {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 18px !important;
+        margin-left: 10px !important;
+        margin-right: 5px !important;
+    }
+</style>
+@if (Model != null && Model.Count > 0)
+{
+
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table  table-bordered" id="tblProductList">
+            <thead>
+                <tr>
+                    <th style="display:none">S. No.</th>
+                    <th><center>Product Name</center></th>
+                    <th><center>Product Code</center></th>
+                    <th><center>Product Desc</center></th>
+                    <th><center>Unit</center></th>
+                    <th>Req. Qty</th>
+                    <th>Total Qty Received at Site</th>
+                    <th>Current Received Qty</th>
+                    <th>Accepted Qty</th>
+                    <th>Rejected Qty</th>
+                    <th  align="center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td style="display:none">
+                            @item.SequenceNo
+                            <input type="hidden" id="hdnSequenceNo" value="@item.SequenceNo" />
+                        </td>
+                        <td>
+                            @item.ProductName
+                            <input type="hidden" id="hdnCustomerSiteMRNProductDetailId" value="@item.RequisitionProductDetailId" />
+                            <input type="hidden" id="hdnProductId" value="@item.ProductId" />
+                            <input type="hidden" id="hdnProductName" value="@item.ProductName" />
+                            <input type="hidden" id="hdnPrice" value="@item.Price" />
+                            <input type="hidden" id="hdnSequenceNo" value="@item.SequenceNo" />
+                        </td>
+                        <td>
+                            @item.ProductCode
+                            <input type="hidden" id="hdnProductCode" value="@item.ProductCode" />
+                        </td>
+                        <td>
+                            @item.ProductShortDesc
+                            <input type="hidden" id="hdnProductShortDesc" value="@item.ProductShortDesc" />
+                        </td>
+                        <td>
+                            @item.UOMName
+                            <input type="hidden" id="hdnUOMName" value="@item.UOMName" />
+                        </td>
+                        <td>
+                            @item.Quantity
+                            <input type="hidden" id="hdnQuantity" value="@item.Quantity" />
+
+                        </td>
+                        <td>
+                            @item.TotalReceivedQuantity
+                            <input type="hidden" id="hdnTotalReceivedQtyatSite" value="@item.TotalReceivedQuantity" />
+                        </td>
+                        <td>
+                            0.00
+                            <input type="hidden" id="hdnCurrentRcvdQuantity" value="0.00" />
+                        </td>
+                        <td>
+                            0.00
+                            <input type="hidden" id="hdnAcceptQuantity" value="0.00" />
+                        </td>
+
+                        <td>
+                            0.00
+                            <input type="hidden" id="hdnRejectQuantity" value="0.00" />
+                        </td>
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;text-align:center;">
+                            <a style="color:white" class="fa fa-pencil-square-o" onclick="EditProductRow(this);" href="#"></a>
+                        </td>
+                        
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblSINProductList">
+            <thead>
+                <tr>
+
+                    <th><center>Product Name</center></th>
+                    <th><center>Product Code</center></th>
+                    <th><center>Product Desc</center></th>
+                    <th><center>Unit</center></th>
+                    <th>Req. Qty</th>
+                    <th>Total Qty Received at Site</th>
+                    <th>Current Received Qty</th>
+                    <th>Accepted Qty</th>
+                    <th>Rejected Qty</th>
+                    <th  align="center">Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+}

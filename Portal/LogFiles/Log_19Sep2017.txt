@@ -1,0 +1,160 @@
+07:09:08 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+--------------------------------------------------------------------------------------------------------------------------------
+
+07:09:08 AM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:09:08 AM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:10:37 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:10:56 AM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:10:57 AM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:13:26 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:13:26 AM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:13:26 AM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:13:53 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:14:52 AM
+Source : Portal.DAL.SQLDbInterface
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:14:52 AM
+Source : Portal.Core.SiteDeliveryChallanBL
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 164
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+07:14:52 AM
+Source : Portal.Controllers.SiteDeliveryChallanController
+Method Name : AddEditSiteDeliveryChallan
+Error Line No : 70
+Exception Type : System.Data.SqlClient.SqlException
+Details: Procedure or function 'proc_AddEditSiteDeliveryChallan' expects parameter '@SinNo', which was not supplied.
+---------------------------------------------------------------------------------------------------------------------------
+
+23:50:53 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+23:51:01 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+23:52:30 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+23:52:36 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+23:52:56 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+23:53:03 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+
+23:53:59 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpCompileException
+Details: d:\RUPAK WORK AREA\MMPortal\Portal\Views\CustomerSiteMRN\GetCustomerSiteMRNProductList.cshtml(57): error CS1061: 'Portal.Core.CustomerSiteMRNProductDetailViewModel' does not contain a definition for 'TotalReceivedQuantity' and no extension method 'TotalReceivedQuantity' accepting a first argument of type 'Portal.Core.CustomerSiteMRNProductDetailViewModel' could be found (are you missing a using directive or an assembly reference?)
+---------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,431 @@
+13:57:06 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+--------------------------------------------------------------------------------------------------------------------------------
+
+13:57:07 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:07 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:10 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:11 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:11 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:15 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string ' order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:15 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string ' order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:15 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string ' order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:18 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:18 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:18 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:23 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:23 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:23 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:35 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:35 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:36 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+13:57:55 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.FormatException
+Details: String was not recognized as a valid DateTime.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:00:33 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:00:33 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:00:34 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:01:00 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetStoreRequisitionList
+Error Line No : 0
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:01:00 PM
+Source : Portal.Core.StoreRequisitionBL
+Method Name : GetStoreRequisitionList
+Error Line No : 215
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+14:03:10 PM
+Source : Portal.Controllers.StoreRequisitionController
+Method Name : GetStoreRequisitionList
+Error Line No : 168
+Exception Type : System.Data.SqlClient.SqlException
+Details: Incorrect syntax near ','.
+Unclosed quotation mark after the character string '  order by E.RequisitionNo Desc '.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:52:08 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'customerSiteMrnId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetCustomerSiteMRNProductList(System.Collections.Generic.List`1[Portal.Core.CustomerSiteMRNProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:03:52 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:06:19 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:07:21 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'requisitionId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetStoreRequisitionProductList(System.Collections.Generic.List`1[Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:07:29 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'requisitionId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetStoreRequisitionProductList(System.Collections.Generic.List`1[Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:08:45 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'requisitionId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetStoreRequisitionProductList(System.Collections.Generic.List`1[Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:11:19 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'requisitionId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetStoreRequisitionProductList(System.Collections.Generic.List`1[Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:11:58 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'requisitionId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetStoreRequisitionProductList(System.Collections.Generic.List`1[Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:12:55 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.ArgumentException
+Details: The parameters dictionary contains a null entry for parameter 'requisitionId' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.PartialViewResult GetStoreRequisitionProductList(System.Collections.Generic.List`1[Portal.Core.ViewModel.StoreRequisitionProductDetailViewModel], Int64)' in 'Portal.Controllers.CustomerSiteMRNController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+---------------------------------------------------------------------------------------------------------------------------
+
+16:16:54 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:20:02 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:27:37 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:34:00 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:31:59 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 203
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:31:59 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:32:49 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 203
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:32:49 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:54:21 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 203
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:54:21 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:54:34 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 203
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:54:34 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:57:18 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 203
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+17:57:18 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:00:11 PM
+Source : Portal.Core.CustomerSiteMRNBL
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 203
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+
+18:00:11 PM
+Source : Portal.Controllers.CustomerSiteMRNController
+Method Name : GetCustomerSiteMRNDetail
+Error Line No : 159
+Exception Type : System.ArgumentException
+Details: Column 'InvoiceId' does not belong to table .
+---------------------------------------------------------------------------------------------------------------------------
+

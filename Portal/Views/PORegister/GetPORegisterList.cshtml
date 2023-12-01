@@ -1,0 +1,99 @@
+﻿@model List<Portal.Core.ViewModel.POViewModel>
+<script src="~/Scripts/jquery.tablesorter.js"></script>
+<style>
+   .table {
+    width: 206% !important;
+    max-width: 206% !important;
+    margin-bottom: 20px;
+}
+</style>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblPOList">
+            <thead>
+                <tr>
+                    <th>PO No.</th>
+                    <th>PO Date</th>
+                    <th>Vendor Name</th>
+                    <th>Vendor Code</th>
+                    <th>Billing Address</th>
+                    <th>Shipping Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>PinCode</th>
+                    <th>CST No.</th>
+                    <th>TIN No.</th>
+                    <th>Ref. No.</th>
+                    <th>Ref. Date</th>
+                    <th>Gross Amount</th>
+                    <th>Freight Value</th>
+                    <th>Loading Value</th>
+                    <th>Net Amount</th> 
+                    <th>Remarks1</th>
+                    <th>Remarks2</th> 
+                    <th>Created By User</th>
+                    <th>Created Date</th>
+                    <th>Modified By User</th>
+                    <th>Modified Date</th> 
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+                        <td style="margin:0px 2px auto;">
+                            <a  target="_blank" style="color:dodgerblue"  href="~/PO/AddEditPO?POId=@item.POId&AccessMode=2">@item.PONo</a>
+                        </td> 
+                        <td>@item.PODate</td>
+                        <td>@item.VendorName</td>
+                        <td>@item.VendorCode</td>
+                        <td>@item.BillingAddress</td>
+                        <td>@item.ShippingAddress</td>
+                        <td>@item.City</td>
+                        <td>@item.StateName</td>
+                        <td>@item.PinCode</td>
+                        <td>@item.CSTNo</td>
+                        <td>@item.TINNo</td> 
+                        <td>@item.RefNo</td>
+                        <td>@item.RefDate</td>
+                        <td>@item.BasicValue</td>
+                        <td>@item.FreightValue</td>
+                        <td>@item.LoadingValue</td>
+                        <td>@item.TotalValue</td> 
+                        <td>@item.Remarks1</td>
+                        <td>@item.Remarks2</td>
+                        <td>@item.CreatedByUserName</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@item.ModifiedByUserName</td>
+                        <td>@item.ModifiedDate</td>
+                      <!--  <td class="btn btn-success table_btn" style="width:30px; margin:0px auto;">
+                            <a style="color:white" class="fa fa-eye" aria-hidden="true" href="~/PO/AddEditPO?POId=@item.POId&AccessMode=3"></a>
+                        </td>
+                     
+                        <td class="btn btn-success table_btn" style="width:30px; margin:0px 2px auto;">
+                            <a style="color:white" class="fa fa-plus-square-o" href="~/PO/AddRevisedPO?POId=@item.POId&AccessMode=1"></a>
+                        </td>-->
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Records not Found!!!</h3>
+}
+<script>
+    $(document).ready(function () {
+        $('#tblPOList').paging({
+            limit: 100,
+            rowDisplayStyle: 'block',
+            activePage: 0,
+            rows: []
+        });
+
+    });
+</script>

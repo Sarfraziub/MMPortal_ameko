@@ -1,0 +1,100 @@
+﻿@model List<Portal.Core.ViewModel.EscalationCountViewModel>
+@if (Model != null && Model.Count > 0)
+{
+    <div style="padding:10px;" ng-app="purchase">
+        <div ng-controller="purchaseController">
+            <table class="table" id="tblBookBalanceList" style="margin-top:10px;" ng-init="GetEscalationMatrixData()">
+                <thead style="border-top-left-radius:15px;">
+                    <tr style="border:none;">
+                        <th style="background:#68ae00; color:#fff;width:100%;" colspan="3">Escalated Items</th>
+                        @*<th style="border:none;"></th>*@
+                    </tr>
+                    <tr style="background:#D0DDEC; border:1px solid #ccc;">
+                        <th style="text-align:center;">Particulars</th>
+                        <th style="text-align:center;">Count</th>
+                    </tr>
+                </thead>
+                <tbody style="border:1px solid #ccc;">
+                    @foreach (var item in Model)
+                    {
+                        if (item.EscalationCount_Head == "Purchase Indent Escalation Count")
+                        {
+                            <tr class="success">
+                                <td><a href="../PurchaseIndent/ListPurchaseIndentEscalation" target="_blank">@item.EscalationCount_Head</a></td>
+                                <td><a href="../PurchaseIndent/ListPurchaseIndentEscalation" target="_blank">@item.EscalationTotalCount</a></td>
+                            </tr>
+                        }
+                        if (item.EscalationCount_Head == "Requisition Escalation Count")
+                        {
+                            <tr class="success">
+                                <td><a href="../StoreRequisition/ListStoreRequisitionEscalation" target="_blank">@item.EscalationCount_Head</a></td>
+                                <td><a href="../StoreRequisition/ListStoreRequisitionEscalation" target="_blank">@item.EscalationTotalCount</a></td>
+                            </tr>
+                        }
+                        if (item.EscalationCount_Head == "PO Escalation Count")
+                        {
+                            <tr class="success">
+                                <td><a href="../PO/ListPOEscalation" target="_blank">Recommended PO Escalation Count</a></td>
+                                <td><a href="../PO/ListPOEscalation" target="_blank">@item.EscalationTotalCount</a></td>
+                            </tr>
+                        }
+                        if (item.EscalationCount_Head == "PO Less Than 25000 Escalation Count")
+                        {
+                            <tr class="success">
+                                <td><a href="../PO/ListPOLessThan25KEscalation" target="_blank">PO Less Than ₹25000 Escalation Count</a></td>
+                                <td><a href="../PO/ListPOLessThan25KEscalation" target="_blank">@item.EscalationTotalCount</a></td>
+                            </tr>
+                        }
+                        if (item.EscalationCount_Head == "Purchase Quotation Count")
+                        {
+                            <tr class="success">
+                                <td><a href="../PurchaseIndent/ListPurchaseIndentForQuotationEscalation" target="_blank">Purchase Quotation Escalation Count</a></td>
+                                <td><a href="../PurchaseIndent/ListPurchaseIndentForQuotationEscalation" target="_blank">@item.EscalationTotalCount</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+}
+else
+{
+    <h3 style="color:firebrick;text-align:center">Escalation Matrix not updated</h3>
+
+}
+@*<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <link href="~/Content/angularcss/angular-ui-notificatio.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-notification/0.3.6/angular-ui-notification.min.js"></script>
+    <script src="~/Scripts/AngularApp/PurchaseApp/PurchaseApp.js"></script>
+    <script src="~/Scripts/AngularApp/PurchaseApp/PurchaseController/PurchaseCntrl.js"></script>*@
+
+<script>
+    var barChartData =
+        {
+            labels: [@Html.Raw(ViewBag.EscalationList)],
+            datasets: [{
+                label: 'Escalation Matrix Summary',
+                backgroundColor: [
+                    "#f990a7",
+                    "#aad2ed",
+                    "#9966FF",
+                    "#99e5e5",
+                    "#f7bd83",
+                ],
+                borderWidth: 2,
+                data: [@ViewBag.EscalationCountList],
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            }]
+        };
+
+</script> 

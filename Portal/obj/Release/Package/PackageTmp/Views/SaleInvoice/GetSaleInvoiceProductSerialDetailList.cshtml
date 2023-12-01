@@ -1,0 +1,119 @@
+﻿@model List<Portal.Core.ViewModel.SaleInvoiceProductSerialDetailViewModel>
+@using System.Data;
+@if (Model != null && Model.Count > 0)
+{
+    <div class="message" style="padding-left:20px;color:red;">
+        @if (!String.IsNullOrEmpty(Convert.ToString(ViewBag.Error)) && ViewBag.Error!=" ")
+        {
+            @MvcHtmlString.Create((ViewBag.Error != null ? ViewBag.Error.ToString() : "").Replace(Environment.NewLine, "<br />"))
+
+            <table class="table" id="tblVendorList">
+                @if (ViewBag.Error != null && !String.IsNullOrEmpty(Convert.ToString(ViewBag.Error)))
+                {
+                    if ((ViewBag.Data as System.Data.DataTable).Rows.Count > 0)
+                    {
+                    <thead>
+                        <tr>
+                             @foreach (DataColumn column in (ViewBag.Data as System.Data.DataTable).Columns)
+                            {
+                                <th>@column.ColumnName.ToUpper()</th>
+                                
+                            }
+
+                        </tr>
+                    </thead>
+                  
+                        foreach (DataRow dr in (ViewBag.Data as System.Data.DataTable).Rows)
+                        {
+                            if (Convert.ToBoolean(dr["UploadStatus"]) == false)
+                            {
+                                <tr style="background-color:cornsilk;">
+                                    @foreach (DataColumn column in (ViewBag.Data as System.Data.DataTable).Columns)
+                                    {
+                                        <td data-title='@column.ColumnName'>
+                                            @dr[column].ToString()
+                                        </td>
+                                    }
+                                </tr>
+                            }
+                           
+                        }
+                    }
+                    else
+                    {
+                        int count = (ViewBag.Data as System.Data.DataTable).Columns.Count;
+                        <tr>
+                            <td colspan='@count' style="color:red;">
+                                No Data Found.
+                            </td>
+                        </tr>
+
+                    }
+
+                }
+                
+            </table>
+
+
+        }
+    </div>
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblProductSerialDetail">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>RefSerial1</th>
+                    <th>RefSerial2</th>
+                    <th>RefSerial3</th>
+                    <th>RefSerial3</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="success">
+
+                        <td>
+                            @item.ProductName
+                        <input type="hidden" id="hdnProductId" value="@item.ProductId" />
+                       @*<input type="hidden" id="hdnInvoiceId" value="@item.hdnInvoiceId" />*@
+                
+                    </td>
+                    <td> @item.RefSerial1
+                        <input type="hidden" id="hdnRefSerial1" value="@item.RefSerial1" />
+                        </td>
+                    <td> @item.RefSerial2
+                        <input type="hidden" id="hdnRefSerial2" value="@item.RefSerial2" />
+                        </td>
+                    <td> @item.RefSerial3
+                        <input type="hidden" id="hdnRefSerial3" value="@item.RefSerial3" />
+                        </td>
+                    <td> @item.RefSerial4
+                        <input type="hidden" id="hdnRefSerial4" value="@item.RefSerial4" />
+                        </td>
+               
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div style="overflow-x:scroll; padding:10px;">
+        <table class="table" id="tblProductSerialDetail">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>RefSerial1</th>
+                    <th>RefSerial2</th>
+                    <th>RefSerial3</th>
+                    <th>RefSerial3</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+}

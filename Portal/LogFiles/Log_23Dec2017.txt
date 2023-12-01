@@ -1,0 +1,72 @@
+18:21:45 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18990
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+--------------------------------------------------------------------------------------------------------------------------------
+
+18:21:45 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:21:45 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:21:48 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18990
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:21:48 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:21:49 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:31 PM
+Source : Portal.DAL.SQLDbInterface
+Method Name : GetDailyExpensesList
+Error Line No : 18990
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:31 PM
+Source : Portal.Core.DailyExpenseBL
+Method Name : GetDailyExpensesList
+Error Line No : 144
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+
+18:22:31 PM
+Source : Portal.Controllers.DailyExpensesController
+Method Name : GetDailyExpensesList
+Error Line No : 114
+Exception Type : System.Data.SqlClient.SqlException
+Details: Invalid column name 'BasicPay'.
+---------------------------------------------------------------------------------------------------------------------------
+

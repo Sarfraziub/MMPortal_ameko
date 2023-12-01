@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "List Unit";
+    Layout = "~/Views/Shared/_InventoryLayout.cshtml";
+}
+<style>
+    .table {
+        width: 121%;
+        max-width: 121%;
+        margin-bottom: 20px;
+    }
+</style>
+<div class="row top-head">
+    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/InventoryDashboard">Inventory</a> >> List Unit </b></p></div>
+</div>
+<section>
+    <form action="#" id="frmListProduct" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+        <div class="row inner">
+            <div class="message">
+
+            </div>
+            <div class="col-md-12 ftop">
+                <div class="form-group col-md-6">
+                    <label for="txtUnitName" class="col-sm-4 control-label">Unit Name</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" id="txtUnitName" name="txtUnitName" tabindex="1" placeholder="Search with Product Name" type="text" maxlength="100" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="txtUnitShortName" class="col-sm-4 control-label">Short Name</label>
+                    <div class="col-sm-8">
+                        <input id="txtUnitShortName" name="txtUnitShortName" tabindex="2" type="text" placeholder="Search with Product Code" maxlength="50" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="form-group col-md-6">
+                    <label for="ddlUnitType" class="col-sm-4 control-label">Base Unit Type</label>
+                    <div class="form-group col-sm-8">
+                        <div class="col-sm-8">
+                            <select id="ddlBaseUnit" name="ddlBaseUnit" tabindex="1" class="form-control"></select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row col-sm-6 col-lg-12 col-md-12">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <center>
+                        <input class="btn btn-success" value="Search" alt="Save" tabindex="9" id="btnSearch" onclick="SearchUnits()" type="button" border="0">
+                        <input class="btn btn-success" type="button" id="btnReset" tabindex="10" onclick="ClearFields()" value="Reset" />
+                        <a class="btn btn-success" id="btnList" tabindex="11" href="@Url.Content("~/Unit/AddEditUnit?accessMode=1")">Add More Unit</a>
+                    </center>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row col-sm-6 col-lg-12 col-md-12">
+                <div id="divList" style="margin:10px;margin-top:10px;margin-right:5px">
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="alertModel" role="dialog">
+            <div class="modal-dialog  modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="modelHeader"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modelText"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary  btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</section>
+<script src="~/Scripts/Unit/ListUnit.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/paging.js"></script>
+<script type="text/javascript">
+    $("body").on('click', '.dropdown-toggle', function () {
+        $(".dropdown-toggle").parent().toggleClass('open');
+    });
+
+</script>

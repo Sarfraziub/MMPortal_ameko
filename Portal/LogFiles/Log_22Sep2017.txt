@@ -1,0 +1,32 @@
+16:26:36 PM
+Source : Portal.Core.SINBL
+Method Name : GetStoreRequisitionList
+Error Line No : 302
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+--------------------------------------------------------------------------------------------------------------------------------
+
+16:26:36 PM
+Source : Portal.Controllers.SINController
+Method Name : GetStoreRequisitionList
+Error Line No : 347
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:31:40 PM
+Source : Portal.Core.SINBL
+Method Name : GetStoreRequisitionList
+Error Line No : 302
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+
+16:31:40 PM
+Source : Portal.Controllers.SINController
+Method Name : GetStoreRequisitionList
+Error Line No : 347
+Exception Type : System.InvalidCastException
+Details: Object cannot be cast from DBNull to other types.
+---------------------------------------------------------------------------------------------------------------------------
+

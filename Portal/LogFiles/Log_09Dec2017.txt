@@ -1,0 +1,33 @@
+14:28:11 PM
+Source : Portal.Controllers.SupervisorDashboardController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.Web.HttpParseException
+Details: The "" element was not closed.  All elements must be either self-closing or have a matching end tag.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+14:50:26 PM
+Source : Portal.Controllers.SiteConsumptionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:15:46 PM
+Source : Portal.Controllers.SiteConsumptionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
+15:27:21 PM
+Source : Portal.Controllers.SiteConsumptionController
+Method Name : OnException
+Error Line No : 0
+Exception Type : System.NullReferenceException
+Details: Object reference not set to an instance of an object.
+---------------------------------------------------------------------------------------------------------------------------
+
