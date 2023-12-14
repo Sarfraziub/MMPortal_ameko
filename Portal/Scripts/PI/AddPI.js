@@ -1762,7 +1762,7 @@ function GetPIDetail(invoiceId) {
             $("#txtSPinCode").val(data.ShippingPinCode);
             $("#txtSGSTNo").val(data.ConsigneeGSTNo);
 
-            $("#txtRefNo").val(data.RefNo);
+            //$("#txtRefNo").val(data.RefNo);
             $("#txtRefDate").val(data.RefDate);
             $("#txtRemarksValue").val(data.Remarks);    
             $("#ddlApprovalStatus").val(data.ApprovalStatus)
@@ -1851,7 +1851,7 @@ function SaveData() {
     var txtSPinCode = $("#txtSPinCode");
     var txtSGSTNo = $("#txtSGSTNo");
 
-    var txtRefNo = $("#txtRefNo");
+    //var txtRefNo = $("#txtRefNo");
     var txtRefDate = $("#txtRefDate");
     var txtBasicValue = $("#txtBasicValue");
     var txtTotalValue = $("#txtTotalValue");
@@ -2051,7 +2051,7 @@ function SaveData() {
         ShippingCountryId: ddlSCountry.val(),
         ShippingPinCode: txtSPinCode.val().trim(),
         ConsigneeGSTNo: txtSGSTNo.val().trim(),
-        RefNo: txtRefNo.val().trim(),
+        RefNo: '',//txtRefNo.val().trim(),
         RefDate: txtRefDate.val(),
         BasicValue: txtBasicValue.val(),
         FreightValue: txtFreightValue.val(),
@@ -2302,7 +2302,7 @@ function ClearFields() {
     $("#txtBPinCode").val("");
     $("#txtBTINNo").val("");
 
-    $("#txtRefNo").val("");
+   // $("#txtRefNo").val("");
     $("#txtRefDate").val("");
     $("#ddlApprovalStatus").val("Draft");
     $("#btnSave").show();
@@ -2641,7 +2641,7 @@ function SearchPO() {
     var txtSearchPONo = $("#txtSearchPONo");
     var txtVendorName = $("#txtSearchVendorName");
 
-    var txtRefNo = $("#txtSearchRefNo");
+    var txtRefNo = ''; //$("#txtSearchRefNo");
     var txtFromDate = $("#txtSearchFromDate");
     var txtToDate = $("#txtSearchToDate");
 

@@ -1962,16 +1962,16 @@ function SaveData() {
         return false;
     }
 
-    if (txtConsigneeName.val().trim() == "") {
-        ShowModel("Alert", "Please Enter Consignee Name")
-        txtConsigneeName.focus();
-        return false;
-    }
-    if (hdnConsigneeId.val() == "" || hdnConsigneeId.val() == "0") {
-        ShowModel("Alert", "Please select Consignee from list")
-        txtConsigneeName.focus();
-        return false;
-    }
+    //if (txtConsigneeName.val().trim() == "") {
+    //    ShowModel("Alert", "Please Enter Consignee Name")
+    //    txtConsigneeName.focus();
+    //    return false;
+    //}
+    //if (hdnConsigneeId.val() == "" || hdnConsigneeId.val() == "0") {
+    //    ShowModel("Alert", "Please select Consignee from list")
+    //    txtConsigneeName.focus();
+    //    return false;
+    //}
     if (txtDeliveryDate.val() == "") {
         ShowModel("Alert", "Please select Delivery Date")
         txtDeliveryDate.focus();
@@ -2539,11 +2539,12 @@ function validateStateSelection(action) {
     var hdnCustomerStateId = $("#ddlSState");
     var hdnBillingStateId = $("#ddlBState");
 
-    if (hdnCustomerStateId.val() == "0") {
-        ShowModel("Alert", "Please Select Consignee")
-        return false;
-    }
-    else if (hdnBillingStateId.val() == "0") {
+    //if (hdnCustomerStateId.val() == "0") {
+    //    ShowModel("Alert", "Please Select Consignee")
+    //    return false;
+    //}
+    //else
+        if (hdnBillingStateId.val() == "0") {
         ShowModel("Alert", "Please Select Vendor")
         return false;
     }

@@ -4,7 +4,7 @@
 }
 <link href="~/Content/jquery-ui.css" rel="stylesheet" />
 <div class="row top-head">
-    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/PurchaseDashboard">Purchase </a> >> List Purchase Indent </b></p></div>
+    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/PurchaseDashboard">Purchase </a> >> List Purchase Requisition </b></p></div>
 </div>
 <section>
     <form action="#" id="frmListPurchaseIndent" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
@@ -14,14 +14,14 @@
             </div>
             <div class="col-md-12 ftop">
                 <div class="form-group  col-md-6">
-                    <label for="txtIndentNo" class="col-sm-4 control-label">Indent No.</label>
+                    <label for="txtIndentNo" class="col-sm-4 control-label">Requisition No.</label>
                     <div class="col-sm-8 ">
-                        <input class="form-control" id="txtIndentNo" name="txtIndentNo" tabindex="1" placeholder="Search with Indent No." type="text" maxlength="50" />
+                        <input class="form-control" id="txtIndentNo" name="txtIndentNo" tabindex="1" placeholder="Search with Requisition No." type="text" maxlength="50" />
                     </div>
                     
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="ddlIndentType" class="col-sm-4 control-label">Indent Type</label>
+                    <label for="ddlIndentType" class="col-sm-4 control-label">Requisition Type</label>
                     <div class="col-sm-8">
                         <select id="ddlIndentType" name="ddlIndentType" tabindex="2" class="form-control">
                             <option value="0">Select Indent Type</option>
@@ -50,14 +50,14 @@
             
             <div class="col-md-12">
                 <div class="form-group col-md-6">
-                    <label for="txtFromDate" class="col-sm-4 control-label">Indent From Date</label>
+                    <label for="txtFromDate" class="col-sm-4 control-label">Requisition From Date</label>
                     <div class="col-sm-8 ">
                         <input class="form-control" id="txtFromDate" name="txtFromDate" tabindex="5" value="@ViewData["fromDate"]" type="text" maxlength="50" />
                         <input id="hdnFromDate" name="hdnFromDate" value="@ViewData["fromDate"]" type="hidden" />
                     </div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="txtToDate" class="col-sm-4 control-label">Indent To Date</label>
+                    <label for="txtToDate" class="col-sm-4 control-label">Requisition To Date</label>
                     <div class="col-sm-8 ">
                         <input class="form-control" id="txtToDate" name="txtToDate" tabindex="6" value="@ViewData["toDate"]" type="text" maxlength="50" />
                         <input id="hdnToDate" name="hdnToDate" value="@ViewData["toDate"]" type="hidden" />
@@ -66,7 +66,7 @@
             </div>
             <div class="col-md-12">
                 <div class="form-group  col-md-6">
-                    <label for="ddlIndentStatus" class="col-sm-4 control-label">Indent Status</label>
+                    <label for="ddlIndentStatus" class="col-sm-4 control-label">Requisition Status</label>
                     <div class="col-sm-8">
                         <select id="ddlIndentStatus" name="ddlIndentStatus" tabindex="7" class="form-control">
                             <option value="0">--Status--</option>
@@ -82,13 +82,13 @@
                     <center>
                         <input class="btn btn-success" value="Search" alt="Save" id="btnSearch" tabindex="8" onclick="SearchPurchaseIndent()" type="button" border="0">
                         <input class="btn btn-success" type="button" id="btnReset" onclick="ClearFields()" tabindex="9" value="Reset" />
-                        <a class="btn btn-success" id="btnList" tabindex="10" href="@Url.Content("~/PurchaseIndent/AddEditPurchaseIndent?accessMode=1")">Add More Purchase Indent</a>
+                        <a class="btn btn-success" id="btnList" tabindex="10" href="@Url.Content("~/PurchaseIndent/AddEditPurchaseIndent?accessMode=1")">Add More Purchase Requisition</a>
                     </center>
                 </div>
 
-                <div class="col-md-3 text-right">
+                <diRequisition Nov class="col-md-3 text-right">
                     
-                </div>
+                </diRequisition>
             </div>
             <div class="row col-sm-6 col-lg-12 col-md-12 ftop">
                 <div id="divList">

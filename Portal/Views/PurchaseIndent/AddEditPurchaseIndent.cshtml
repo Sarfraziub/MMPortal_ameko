@@ -39,7 +39,7 @@
     /* allow space for check mark */
 </style>
 <div class="row top-head">
-    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/PurchaseDashboard">Purchase</a> >> Add/Edit Purchase Indent</b></p></div>
+    <div class="col-md-12"><p><b><a style="color:#fff;" href="~/Dashboard/PurchaseDashboard">Purchase</a> >> Add/Edit Purchase Requisition</b></p></div>
 </div>
 <section>
     <form action="#" id="frmAddEditProduct" class="form-horizontal as" enctype="multipart/form-data" method="post" accept-charset="utf-8">
@@ -49,9 +49,9 @@
 
             <div class="col-md-12 ftop">
                 <div class="form-group col-md-6">
-                    <label for="txtIndentNo" class="col-sm-4 control-label">Indent No.</label>
+                    <label for="txtIndentNo" class="col-sm-4 control-label">Requisition No.</label>
                     <div class="col-sm-8">
-                        <input class="form-control" id="txtIndentNo" name="txtIndentNo" placeholder="Auto Generated Indent No." tabindex="1" type="text" maxlength="100" />
+                        <input class="form-control" id="txtIndentNo" name="txtIndentNo" placeholder="Auto Generated Requisition No." tabindex="1" type="text" maxlength="100" />
                         <a style="display:none;" class="btn btn-success" id="btnAddNew" href="@Url.Content("~/PurchaseIndent/AddEditPurchaseIndent?accessMode=1")">New</a>
                         @*<a style="display:none;color:#fff;" class="btn btn-success" id="btnEmail" onclick="SendMail()">Email</a>*@
                         <a style="display:none;" class="btn btn-success" target="_blank" href="@Url.Action("Report",new {indentId=ViewData["purchaseIndentId"], reportType="PDF" })" id="btnPrint">Print</a>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group col-md-6">
 
-                    <label for="txtIndentDate" class="col-sm-4 control-label">Indent Date</label>
+                    <label for="txtIndentDate" class="col-sm-4 control-label">Requisition Date</label>
                     <div class="col-sm-8 ">
                         <input class="form-control" id="txtIndentDate" name="txtIndentDate" tabindex="2" placeholder="Enter Purchase Indent Date" value="@ViewData["currentDate"]" type="text" maxlength="50" />
                         <input id="hdnCurrentDate" name="hdnCurrentDate" value="@ViewData["currentDate"]" type="hidden" />
@@ -88,7 +88,7 @@
             </div>
             <div class="col-md-12">
                 <div class="form-group col-md-6">
-                    <label for="ddlIndentType" class="col-sm-4 control-label">Indent Type&nbsp;<span class="Mandatory">(*)</span></label>
+                    <label for="ddlIndentType" class="col-sm-4 control-label">Requisition Type&nbsp;<span class="Mandatory">(*)</span></label>
                     <div class="col-sm-8">
                         <select id="ddlIndentType" name="ddlIndentType" tabindex="3" class="form-control">
                             <option value="0">Select Indent Type</option>
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                     <div class="form-group col-md-6">
-                        <label for="txtIndentByUser" class="col-sm-4 control-label">Indent Raised By&nbsp;<span class="Mandatory">(*)</span></label>
+                        <label for="txtIndentByUser" class="col-sm-4 control-label">Requisition Raised By&nbsp;<span class="Mandatory">(*)</span></label>
                         <div class="col-sm-8">
                             <input class="form-control" id="txtIndentByUser" name="txtIndentByUser" tabindex="9" placeholder="Indent By User" type="text" maxlength="100" />
                             <input type="hidden" id="hdnUserId" name="hdnUserId" value="0" />
@@ -331,7 +331,7 @@
                         <input class="btn btn-success" value="Save" alt="Save" id="btnSave" tabindex="31" onclick="SaveData(1)" type="button" border="0">
                         <input class="btn btn-success" value="Update" style="display:none;" tabindex="32" alt="Update" id="btnUpdate" onclick="SaveData(2)" type="button" border="0">
                         <a class="btn btn-success" id="btnReset" tabindex="33" onclick="ResetPage()">Reset</a>
-                        <a class="btn btn-success" id="btnList" tabindex="34" href="@Url.Content("~/PurchaseIndent/ListPurchaseIndent")">Search Purchase Indent</a>
+                        <a class="btn btn-success" id="btnList" tabindex="34" href="@Url.Content("~/PurchaseIndent/ListPurchaseIndent")">Search Purchase Requisition</a>
                     </center>
                 </div>
                 <div class="col-md-3"></div>
